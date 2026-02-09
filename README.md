@@ -53,7 +53,7 @@ An AI-powered conversational chatbot that:
 
 ## System overview (Prototype architecture)
 
-This repo is a **front-end prototype** built with **React + Vite**.
+This repo is a **front-end prototype** built with **[React](https://img.shields.io/badge/React-20232A?logo=React&logoColor=61DAFB&style=for-the-badge) + [Vite](https://img.shields.io/badge/Vite-646CFF?logo=Vite&logoColor=white&style=for-the-badge)**.
 
 Core characteristics:
 
