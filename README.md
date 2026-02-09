@@ -103,4 +103,4 @@ Core characteristics:
 
 ---
 
-### Visit "https://guangzeliu.github.io/social-good-assistant/" to access
+### Visit "[Social Good Chatbot](https://guangzeliu.github.io/social-good-assistant/)" to access
