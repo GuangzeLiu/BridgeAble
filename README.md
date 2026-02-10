@@ -2,7 +2,7 @@
 
 A lightweight, **AI-inspired conversational assistant** for Singapore social support discovery.  
 Users can type simple keywords (e.g., “financial aid”, “housing grant”), and the assistant guides them with follow-up questions, returns **plain-language** and **multilingual** (EN/中文) scheme summaries, and redirects them to **verified agencies / portals / hotlines**.  
-This prototype is designed as a **guidance tool** (not an eligibility decision-maker) and supports **human escalation** for complex or sensitive cases.
+This prototype is designed as a **guidance tool** (not an eligibility decision-maker) and supports **human agents** for complex or sensitive cases.
 
 > **Area:** Social Good  
 > **Target users:** vulnerable populations such as elderly individuals and low-income families
@@ -72,7 +72,7 @@ Core characteristics:
 - ✅ Guided clarification via follow-up questions / quick replies
 - ✅ Plain-language summaries & step-by-step guidance
 - ✅ Multilingual outputs (EN/中文)
-- ✅ Human escalation for urgent/sensitive scenarios (hotlines / service offices)
+- ✅ Human agents support for urgent/sensitive scenarios (hotlines / service offices)
 
 ---
 
@@ -91,7 +91,7 @@ Core characteristics:
   Users may share sensitive personal info → mitigate by minimizing data collection and encouraging offline/human channels for sensitive details.
 
 - **Contextual complexity**  
-  Real cases can require discretion → keep escalation paths prominent; avoid automated decisions.
+  Real cases can require discretion; avoid automated decisions.
 
 ---
 
