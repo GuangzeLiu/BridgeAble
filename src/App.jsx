@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import "./App.css";
+import HumanAgentBox from "./components/HumanAgentBox";
 
 import { LANGS } from "./utils/languages";
 import { t } from "./utils/i18n";
@@ -124,11 +125,13 @@ function QuickReplies({ items, onClick }) {
 }
 
 export default function App() {
+    const [humanOpen, setHumanOpen] = useState(false);
+
     const [lang, setLang] = useState("en");
 
     // Accessibility toggles
-    const [seniorMode, setSeniorMode] = useState(false);     // large text + larger tap targets
-    const [highContrast, setHighContrast] = useState(false); // strong contrast palette
+    const [seniorMode, setSeniorMode] = useState(false);
+    const [highContrast, setHighContrast] = useState(false);
 
     const [dlg, setDlg] = useState(() => initDialogState("en"));
 
@@ -148,6 +151,7 @@ export default function App() {
 
     const [input, setInput] = useState("");
     const bottomRef = useRef(null);
+    const inputRef = useRef(null); // NEW: for focusing when returning from Human Agent
 
     const lastAssistant = useMemo(() => {
         for (let i = messages.length - 1; i >= 0; i--) {
@@ -221,6 +225,10 @@ export default function App() {
 
     function onQuickReply(it) {
         pushUserMessage(it.sendText || it.label);
+        if (it.action?.type === "ESCALATE") {
+            setHumanOpen(true);
+            return;
+        }
         const { state: nextState, message } = handleAction(dlg, it.action);
         setDlg(nextState);
         if (message) pushAssistantMessage(message);
@@ -240,11 +248,37 @@ export default function App() {
         pushAssistantMessage(message);
     }
 
-    const rootClass = [
-        "page",
-        seniorMode ? "senior" : "",
-        highContrast ? "contrast" : ""
-    ]
+    // NEW: Human Agent -> return to main chatbot
+    // autoSend=true: close panel and immediately send the text as a user message
+    // autoSend=false: just fill input box and focus
+    function onAskChatbotFromHumanAgent(text, autoSend = true, meta = null) {
+        const q = (text || "").trim();
+        if (!q) return;
+
+        setHumanOpen(false);
+
+        if (!autoSend) {
+            setInput(q);
+            setTimeout(() => inputRef.current?.focus(), 0);
+            return;
+        }
+
+        // 可选：把 NLP 结果放进 dlg state（如果你愿意改 dialogEngine 支持）
+        // 目前先只在控制台/日志用，不影响用户体验
+        if (meta?.nlp) {
+            console.log("[HumanAgent NLP]", meta.nlp);
+        }
+
+        pushUserMessage(q);
+        const { state: nextState, message } = handleUserText(dlg, q);
+        setDlg(nextState);
+        pushAssistantMessage(message);
+        setInput("");
+        setTimeout(() => inputRef.current?.focus(), 0);
+    }
+
+
+    const rootClass = ["page", seniorMode ? "senior" : "", highContrast ? "contrast" : ""]
         .filter(Boolean)
         .join(" ");
 
@@ -253,12 +287,21 @@ export default function App() {
             <header className="topbar">
                 <div className="brand">
                     <div className="title">{t(lang, "title")}</div>
-
                 </div>
 
                 <div className="actions">
                     <button className="btn ghost" onClick={doUrgent} type="button">
                         {t(lang, "urgent")}
+                    </button>
+
+                    {/* Human Agent button */}
+                    <button
+                        className="btn ghost humanEntry"
+                        onClick={() => setHumanOpen(true)}
+                        type="button"
+                        title={lang === "zh" ? "打开人工代理（模拟）" : "Open Human Agent (simulated)"}
+                    >
+                        {lang === "zh" ? "人工代理" : "Human Agent"}
                     </button>
 
                     {/* Accessibility toggles */}
@@ -308,7 +351,6 @@ export default function App() {
                             <div key={m.id}>
                                 <ChatBubble role={m.role} text={m.text} ts={m.ts} />
 
-                                {/* assistant cards inline */}
                                 {m.role === "assistant" && m.cards?.length ? (
                                     <div className="cardList">
                                         {m.cards.map((c) => (
@@ -321,12 +363,12 @@ export default function App() {
                         <div ref={bottomRef} />
                     </div>
 
-                    {/* single quick reply bar */}
                     <div className="chatFooter">
                         <QuickReplies items={lastAssistant?.quickReplies} onClick={onQuickReply} />
 
                         <div className="composer">
                             <input
+                                ref={inputRef}
                                 className="input"
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
@@ -342,6 +384,13 @@ export default function App() {
                     </div>
                 </div>
             </main>
+
+            {/* Human Agent panel (no answers; only intake + queue) */}
+            <HumanAgentBox
+                open={humanOpen}
+                onClose={() => setHumanOpen(false)}
+                onAskChatbot={onAskChatbotFromHumanAgent}
+            />
         </div>
     );
 }

@@ -1,0 +1,4296 @@
+{
+  "meta": {
+    "country": "Singapore",
+    "last_updated": "2026-02-10",
+    "note": "Eligibility and steps can change. Always prefer official sources; sources links are attached per item.",
+    "kb_version": "2026-02-10.v2"
+  },
+  "entry_points": [
+    {
+      "id": "supportgowhere",
+      "name_en": "SupportGoWhere (LifeSG)",
+      "name_zh": "SupportGoWhere（LifeSG）",
+      "links": [
+        "https://supportgowhere.life.gov.sg/"
+      ],
+      "sources": [
+        "https://supportgowhere.life.gov.sg/"
+      ]
+    },
+    {
+      "id": "sso_comcare",
+      "name_en": "Social Service Office (SSO) + ComCare Hotline",
+      "name_zh": "社会服务办公室（SSO）+ ComCare 热线",
+      "contacts": {
+        "hotline": "1800-222-0000",
+        "email": "Ask_SSO@msf.gov.sg"
+      },
+      "links": [
+        "https://www.msf.gov.sg/what-we-do/comcare"
+      ],
+      "sources": [
+        "https://www.msf.gov.sg/what-we-do/comcare",
+        "https://ask.gov.sg/msf?topic=ComCare"
+      ]
+    },
+    {
+      "id": "aic",
+      "name_en": "Agency for Integrated Care (AIC)",
+      "name_zh": "综合护理机构（AIC）",
+      "contacts": {
+        "hotline": "1800-650-6060"
+      },
+      "links": [
+        "https://www.aic.sg/"
+      ],
+      "sources": [
+        "https://www.aic.sg/"
+      ]
+    },
+    {
+      "id": "mindline_1771",
+      "name_en": "national mindline 1771",
+      "name_zh": "国家心理援助热线 mindline 1771",
+      "contacts": {
+        "hotline": "1771"
+      },
+      "links": [
+        "https://www.mindline.sg/"
+      ],
+      "sources": [
+        "https://www.mindline.sg/"
+      ]
+    }
+  ],
+  "schemes": [
+    {
+      "id": "comcare_smta",
+      "category": "financial_assistance",
+      "name_en": "ComCare Short-to-Medium-Term Assistance (SMTA)",
+      "name_zh": "ComCare 短至中期援助（SMTA）",
+      "summary_en": "Temporary financial support for individuals/families facing difficulties; assessed holistically by SSOs.",
+      "summary_zh": "为面临短期经济困难的个人/家庭提供支持；由 SSO 进行整体评估。",
+      "keywords_en": [
+        "financial aid",
+        "cash assistance",
+        "low income",
+        "comcare",
+        "sso"
+      ],
+      "keywords_zh": [
+        "经济援助",
+        "现金补助",
+        "低收入",
+        "ComCare",
+        "SSO"
+      ],
+      "eligibility_en": [
+        "Applicant must be a Singapore Citizen or Permanent Resident (PR); if PR, at least one immediate family member in the same household must be a Singapore Citizen.",
+        "Eligibility is decided by SSO via holistic assessment (e.g., household income, savings, and availability of family support).",
+        "SMTA is typically granted for 3–6 months initially; renewals depend on continued need."
+      ],
+      "eligibility_zh": [
+        "申请人须为新加坡公民或永久居民（PR）；若为 PR，同住家庭成员中至少一名直系亲属须为新加坡公民。",
+        "是否符合由 SSO 进行整体评估（例如家庭收入、储蓄、家庭支持情况等）。",
+        "一般首次批复为 3–6 个月，是否续批视后续需要而定。"
+      ],
+      "how_to_apply_en": [
+        "Online: apply anytime via SupportGoWhere (ComCare SMTA).",
+        "In-person: visit your nearest Social Service Office (SSO) and apply.",
+        "If you need help completing the online form, contact the ComCare hotline or email Ask_SSO@msf.gov.sg."
+      ],
+      "how_to_apply_zh": [
+        "线上：通过 SupportGoWhere 随时提交 ComCare SMTA 申请。",
+        "线下：前往就近的社会服务办公室（SSO）办理。",
+        "如需协助填写线上表格，可致电 ComCare 热线或邮件联系 Ask_SSO@msf.gov.sg。"
+      ],
+      "docs_to_prepare_en": [
+        "Basic identification details for household members.",
+        "Information needed for assessment (e.g., income/employment situation, household circumstances)."
+      ],
+      "docs_to_prepare_zh": [
+        "家庭成员的基本身份信息。",
+        "用于评估所需信息（如收入/就业情况、家庭困难状况等）。"
+      ],
+      "official_links": [
+        "https://supportgowhere.life.gov.sg/schemes/COMCARE-SMTA/comcare-short-to-medium-term-assistance-smta",
+        "https://www.msf.gov.sg/what-we-do/comcare"
+      ],
+      "sources": [
+        "https://supportgowhere.life.gov.sg/schemes/COMCARE-SMTA/comcare-short-to-medium-term-assistance-smta",
+        "https://www.msf.gov.sg/what-we-do/comcare",
+        "https://ask.gov.sg/msf/questions/cls1lenh900irjzsgj9wh0wrw",
+        "https://ask.gov.sg/msf/questions/cls1lenhf00lsjzsgm0r5ahon",
+        "https://ask.gov.sg/msf/questions/cls1lenha00j3jzsg08fudd5y"
+      ],
+      "domain_id": "financial",
+      "sections": {
+        "overview": {
+          "en": "Temporary financial support for individuals/families facing difficulties; assessed holistically by SSOs.",
+          "zh": "为面临短期经济困难的个人/家庭提供支持；由 SSO 进行整体评估。"
+        },
+        "eligibility": {
+          "en": [
+            "Applicant must be a Singapore Citizen or Permanent Resident (PR); if PR, at least one immediate family member in the same household must be a Singapore Citizen.",
+            "Eligibility is decided by SSO via holistic assessment (e.g., household income, savings, and availability of family support).",
+            "SMTA is typically granted for 3–6 months initially; renewals depend on continued need."
+          ],
+          "zh": [
+            "申请人须为新加坡公民或永久居民（PR）；若为 PR，同住家庭成员中至少一名直系亲属须为新加坡公民。",
+            "是否符合由 SSO 进行整体评估（例如家庭收入、储蓄、家庭支持情况等）。",
+            "一般首次批复为 3–6 个月，是否续批视后续需要而定。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Online: apply anytime via SupportGoWhere (ComCare SMTA).",
+            "In-person: visit your nearest Social Service Office (SSO) and apply.",
+            "If you need help completing the online form, contact the ComCare hotline or email Ask_SSO@msf.gov.sg."
+          ],
+          "zh": [
+            "线上：通过 SupportGoWhere 随时提交 ComCare SMTA 申请。",
+            "线下：前往就近的社会服务办公室（SSO）办理。",
+            "如需协助填写线上表格，可致电 ComCare 热线或邮件联系 Ask_SSO@msf.gov.sg。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "financial",
+        "category": "financial_assistance",
+        "aliases_en": [
+          "ComCare Short-to-Medium-Term Assistance (SMTA)",
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "comcare",
+          "sso"
+        ],
+        "aliases_zh": [
+          "ComCare 短至中期援助（SMTA）",
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "ComCare",
+          "SSO"
+        ],
+        "broader_terms_en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "broader_terms_zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ],
+        "search_text_en": "comcare short to medium term assistance smta temporary financial support for individuals families facing difficulties assessed holistically by ssos financial aid cash assistance low income comcare sso applicant must be a singapore citizen or permanent resident pr if pr at least one immediate family member in the same household must be a singapore citizen eligibility is decided by sso via holistic assessment e g household income savings and availability of family support smta is typically granted for 3 6 months initially renewals depend on continued need online apply anytime via supportgowhere comcare smta in person visit your nearest social service office sso and apply if you need help completing the online form contact the comcare hotline or email ask_sso msf gov sg basic identification details for household members information needed for assessment e g income employment situation household circumstances financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "comcare 短至中期援助 smta 为面临短期经济困难的个人 家庭提供支持 由 sso 进行整体评估 经济援助 现金补助 低收入 comcare sso 申请人须为新加坡公民或永久居民 pr 若为 pr 同住家庭成员中至少一名直系亲属须为新加坡公民 是否符合由 sso 进行整体评估 例如家庭收入 储蓄 家庭支持情况等 一般首次批复为 3 6 个月 是否续批视后续需要而定 线上 通过 supportgowhere 随时提交 comcare smta 申请 线下 前往就近的社会服务办公室 sso 办理 如需协助填写线上表格 可致电 comcare 热线或邮件联系 ask_sso msf gov sg 家庭成员的基本身份信息 用于评估所需信息 如收入 就业情况 家庭困难状况等 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      }
+    },
+    {
+      "id": "comcare_interim_assistance",
+      "category": "financial_assistance",
+      "name_en": "ComCare Interim Assistance",
+      "name_zh": "ComCare 临时援助",
+      "summary_en": "Short-term support while longer-term assistance is being assessed (administered via SSOs).",
+      "summary_zh": "在评估更长期援助期间提供短期支持（通常由 SSO 协助）。",
+      "keywords_en": [
+        "urgent cash",
+        "immediate help",
+        "comcare interim",
+        "no money"
+      ],
+      "keywords_zh": [
+        "紧急援助",
+        "临时补助",
+        "没钱",
+        "立即帮助"
+      ],
+      "eligibility_en": [
+        "Administered via SSOs; assessment depends on the household’s situation.",
+        "Generally used when immediate help is needed while longer-term support is being assessed."
+      ],
+      "eligibility_zh": [
+        "由 SSO 协助办理，是否符合视个案评估而定。",
+        "常用于“急需支援、同时正在评估更长期援助”的情形。"
+      ],
+      "how_to_apply_en": [
+        "Contact ComCare/SSO (hotline or visit SSO) for urgent financial assistance triage.",
+        "SSO will advise what interim support is appropriate and what follow-up steps are needed."
+      ],
+      "how_to_apply_zh": [
+        "如需紧急经济支援，可联系 ComCare/SSO（热线或就近 SSO）。",
+        "SSO 会根据情况安排适当的临时支援并告知后续步骤。"
+      ],
+      "official_links": [
+        "https://www.msf.gov.sg/what-we-do/comcare"
+      ],
+      "sources": [
+        "https://www.msf.gov.sg/what-we-do/comcare",
+        "https://ask.gov.sg/msf?topic=ComCare"
+      ],
+      "domain_id": "financial",
+      "sections": {
+        "overview": {
+          "en": "Short-term support while longer-term assistance is being assessed (administered via SSOs).",
+          "zh": "在评估更长期援助期间提供短期支持（通常由 SSO 协助）。"
+        },
+        "eligibility": {
+          "en": [
+            "Administered via SSOs; assessment depends on the household’s situation.",
+            "Generally used when immediate help is needed while longer-term support is being assessed."
+          ],
+          "zh": [
+            "由 SSO 协助办理，是否符合视个案评估而定。",
+            "常用于“急需支援、同时正在评估更长期援助”的情形。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Contact ComCare/SSO (hotline or visit SSO) for urgent financial assistance triage.",
+            "SSO will advise what interim support is appropriate and what follow-up steps are needed."
+          ],
+          "zh": [
+            "如需紧急经济支援，可联系 ComCare/SSO（热线或就近 SSO）。",
+            "SSO 会根据情况安排适当的临时支援并告知后续步骤。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "financial",
+        "category": "financial_assistance",
+        "aliases_en": [
+          "ComCare Interim Assistance",
+          "urgent cash",
+          "immediate help",
+          "comcare interim",
+          "no money"
+        ],
+        "aliases_zh": [
+          "ComCare 临时援助",
+          "紧急援助",
+          "临时补助",
+          "没钱",
+          "立即帮助"
+        ],
+        "broader_terms_en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "broader_terms_zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ],
+        "search_text_en": "comcare interim assistance short term support while longer term assistance is being assessed administered via ssos urgent cash immediate help comcare interim no money administered via ssos assessment depends on the household s situation generally used when immediate help is needed while longer term support is being assessed contact comcare sso hotline or visit sso for urgent financial assistance triage sso will advise what interim support is appropriate and what follow up steps are needed financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "comcare 临时援助 在评估更长期援助期间提供短期支持 通常由 sso 协助 紧急援助 临时补助 没钱 立即帮助 由 sso 协助办理 是否符合视个案评估而定 常用于 急需支援 同时正在评估更长期援助 的情形 如需紧急经济支援 可联系 comcare sso 热线或就近 sso sso 会根据情况安排适当的临时支援并告知后续步骤 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      }
+    },
+    {
+      "id": "assurance_package_overview",
+      "category": "financial_assistance",
+      "name_en": "Assurance Package (Overview)",
+      "name_zh": "Assurance Package（总览）",
+      "summary_en": "Government support package to help Singaporeans manage cost-of-living, delivered through multiple components.",
+      "summary_zh": "政府生活费支持配套，包含多种组成部分。",
+      "keywords_en": [
+        "cost of living",
+        "assurance package",
+        "cash payouts",
+        "rebates"
+      ],
+      "keywords_zh": [
+        "生活费",
+        "补贴",
+        "Assurance Package",
+        "现金发放"
+      ],
+      "eligibility_en": [
+        "Eligibility differs by component; check the GovBenefits portal for the latest criteria and your status."
+      ],
+      "eligibility_zh": [
+        "不同组成部分条件不同；请以 GovBenefits 门户最新规则与个人查询结果为准。"
+      ],
+      "how_to_apply_en": [
+        "Most components are auto-assessed; use GovBenefits to check eligibility and payout information."
+      ],
+      "how_to_apply_zh": [
+        "多数项目为自动评估发放；可在 GovBenefits 查询资格与发放信息。"
+      ],
+      "official_links": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "sources": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "domain_id": "financial",
+      "sections": {
+        "overview": {
+          "en": "Government support package to help Singaporeans manage cost-of-living, delivered through multiple components.",
+          "zh": "政府生活费支持配套，包含多种组成部分。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility differs by component; check the GovBenefits portal for the latest criteria and your status."
+          ],
+          "zh": [
+            "不同组成部分条件不同；请以 GovBenefits 门户最新规则与个人查询结果为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Most components are auto-assessed; use GovBenefits to check eligibility and payout information."
+          ],
+          "zh": [
+            "多数项目为自动评估发放；可在 GovBenefits 查询资格与发放信息。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "financial",
+        "category": "financial_assistance",
+        "aliases_en": [
+          "Assurance Package (Overview)",
+          "cost of living",
+          "assurance package",
+          "cash payouts",
+          "rebates"
+        ],
+        "aliases_zh": [
+          "Assurance Package（总览）",
+          "生活费",
+          "补贴",
+          "Assurance Package",
+          "现金发放"
+        ],
+        "broader_terms_en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "broader_terms_zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ],
+        "search_text_en": "assurance package overview government support package to help singaporeans manage cost of living delivered through multiple components cost of living assurance package cash payouts rebates eligibility differs by component check the govbenefits portal for the latest criteria and your status most components are auto assessed use govbenefits to check eligibility and payout information financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "assurance package 总览 政府生活费支持配套 包含多种组成部分 生活费 补贴 assurance package 现金发放 不同组成部分条件不同 请以 govbenefits 门户最新规则与个人查询结果为准 多数项目为自动评估发放 可在 govbenefits 查询资格与发放信息 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      }
+    },
+    {
+      "id": "gstv_overview",
+      "category": "financial_assistance",
+      "name_en": "GST Voucher (GSTV) – Overview",
+      "name_zh": "GST Voucher（GSTV）— 总览",
+      "summary_en": "Support package for lower- and middle-income Singaporeans to manage cost-of-living (different components).",
+      "summary_zh": "帮助中低收入人群应对生活成本的支持计划（含不同组成部分）。",
+      "keywords_en": [
+        "gst voucher",
+        "gstv",
+        "cash",
+        "u-save",
+        "s&cc"
+      ],
+      "keywords_zh": [
+        "GSTV",
+        "消费税补贴",
+        "现金",
+        "U-Save",
+        "S&CC"
+      ],
+      "eligibility_en": [
+        "Eligibility differs by component; check GovBenefits for the latest criteria."
+      ],
+      "eligibility_zh": [
+        "不同组成部分条件不同；以 GovBenefits 最新说明为准。"
+      ],
+      "how_to_apply_en": [
+        "Many components are credited automatically if eligible; verify via GovBenefits."
+      ],
+      "how_to_apply_zh": [
+        "部分项目自动入账/发放；建议在 GovBenefits 核对。"
+      ],
+      "official_links": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "sources": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "domain_id": "financial",
+      "sections": {
+        "overview": {
+          "en": "Support package for lower- and middle-income Singaporeans to manage cost-of-living (different components).",
+          "zh": "帮助中低收入人群应对生活成本的支持计划（含不同组成部分）。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility differs by component; check GovBenefits for the latest criteria."
+          ],
+          "zh": [
+            "不同组成部分条件不同；以 GovBenefits 最新说明为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Many components are credited automatically if eligible; verify via GovBenefits."
+          ],
+          "zh": [
+            "部分项目自动入账/发放；建议在 GovBenefits 核对。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "financial",
+        "category": "financial_assistance",
+        "aliases_en": [
+          "GST Voucher (GSTV) – Overview",
+          "gst voucher",
+          "gstv",
+          "cash",
+          "u-save",
+          "s&cc"
+        ],
+        "aliases_zh": [
+          "GST Voucher（GSTV）— 总览",
+          "GSTV",
+          "消费税补贴",
+          "现金",
+          "U-Save",
+          "S&CC"
+        ],
+        "broader_terms_en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "broader_terms_zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ],
+        "search_text_en": "gst voucher gstv overview support package for lower and middle income singaporeans to manage cost of living different components gst voucher gstv cash u save s cc eligibility differs by component check govbenefits for the latest criteria many components are credited automatically if eligible verify via govbenefits financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "gst voucher gstv 总览 帮助中低收入人群应对生活成本的支持计划 含不同组成部分 gstv 消费税补贴 现金 u save s cc 不同组成部分条件不同 以 govbenefits 最新说明为准 部分项目自动入账 发放 建议在 govbenefits 核对 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      }
+    },
+    {
+      "id": "gstv_cash",
+      "category": "financial_assistance",
+      "name_en": "GSTV – Cash",
+      "name_zh": "GSTV — 现金发放",
+      "summary_en": "Cash payouts for eligible Singaporeans to help with cost-of-living.",
+      "summary_zh": "为符合条件者提供现金补助以缓解生活成本压力。",
+      "keywords_en": [
+        "gstv cash",
+        "cash payout",
+        "cost of living"
+      ],
+      "keywords_zh": [
+        "现金补助",
+        "现金发放",
+        "GSTV 现金"
+      ],
+      "eligibility_en": [
+        "Check your eligibility on GovBenefits (criteria vary over time)."
+      ],
+      "eligibility_zh": [
+        "通过 GovBenefits 查询资格（条件会随政策调整）。"
+      ],
+      "how_to_apply_en": [
+        "Typically auto-assessed; check payout details on GovBenefits."
+      ],
+      "how_to_apply_zh": [
+        "通常自动评估发放；在 GovBenefits 查看发放信息。"
+      ],
+      "official_links": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "sources": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "domain_id": "financial",
+      "sections": {
+        "overview": {
+          "en": "Cash payouts for eligible Singaporeans to help with cost-of-living.",
+          "zh": "为符合条件者提供现金补助以缓解生活成本压力。"
+        },
+        "eligibility": {
+          "en": [
+            "Check your eligibility on GovBenefits (criteria vary over time)."
+          ],
+          "zh": [
+            "通过 GovBenefits 查询资格（条件会随政策调整）。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Typically auto-assessed; check payout details on GovBenefits."
+          ],
+          "zh": [
+            "通常自动评估发放；在 GovBenefits 查看发放信息。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "financial",
+        "category": "financial_assistance",
+        "aliases_en": [
+          "GSTV – Cash",
+          "gstv cash",
+          "cash payout",
+          "cost of living"
+        ],
+        "aliases_zh": [
+          "GSTV — 现金发放",
+          "现金补助",
+          "现金发放",
+          "GSTV 现金"
+        ],
+        "broader_terms_en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "broader_terms_zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ],
+        "search_text_en": "gstv cash cash payouts for eligible singaporeans to help with cost of living gstv cash cash payout cost of living check your eligibility on govbenefits criteria vary over time typically auto assessed check payout details on govbenefits financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "gstv 现金发放 为符合条件者提供现金补助以缓解生活成本压力 现金补助 现金发放 gstv 现金 通过 govbenefits 查询资格 条件会随政策调整 通常自动评估发放 在 govbenefits 查看发放信息 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      }
+    },
+    {
+      "id": "gstv_usave",
+      "category": "financial_assistance",
+      "name_en": "GSTV – U-Save Rebates",
+      "name_zh": "GSTV — U-Save 水电费回扣",
+      "summary_en": "Utilities rebates to help households offset utilities bills.",
+      "summary_zh": "水电费回扣，帮助家庭减轻公用事业账单负担。",
+      "keywords_en": [
+        "u-save",
+        "utilities rebate",
+        "electricity bill",
+        "water bill"
+      ],
+      "keywords_zh": [
+        "U-Save",
+        "水电费",
+        "回扣",
+        "公用事业"
+      ],
+      "eligibility_en": [
+        "Depends on household/housing type; verify via GovBenefits."
+      ],
+      "eligibility_zh": [
+        "与住房/家庭条件有关；以 GovBenefits 为准。"
+      ],
+      "how_to_apply_en": [
+        "Generally credited automatically if eligible."
+      ],
+      "how_to_apply_zh": [
+        "一般自动入账/抵扣。"
+      ],
+      "official_links": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "sources": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "domain_id": "financial",
+      "sections": {
+        "overview": {
+          "en": "Utilities rebates to help households offset utilities bills.",
+          "zh": "水电费回扣，帮助家庭减轻公用事业账单负担。"
+        },
+        "eligibility": {
+          "en": [
+            "Depends on household/housing type; verify via GovBenefits."
+          ],
+          "zh": [
+            "与住房/家庭条件有关；以 GovBenefits 为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Generally credited automatically if eligible."
+          ],
+          "zh": [
+            "一般自动入账/抵扣。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "financial",
+        "category": "financial_assistance",
+        "aliases_en": [
+          "GSTV – U-Save Rebates",
+          "u-save",
+          "utilities rebate",
+          "electricity bill",
+          "water bill"
+        ],
+        "aliases_zh": [
+          "GSTV — U-Save 水电费回扣",
+          "U-Save",
+          "水电费",
+          "回扣",
+          "公用事业"
+        ],
+        "broader_terms_en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "broader_terms_zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ],
+        "search_text_en": "gstv u save rebates utilities rebates to help households offset utilities bills u save utilities rebate electricity bill water bill depends on household housing type verify via govbenefits generally credited automatically if eligible financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "gstv u save 水电费回扣 水电费回扣 帮助家庭减轻公用事业账单负担 u save 水电费 回扣 公用事业 与住房 家庭条件有关 以 govbenefits 为准 一般自动入账 抵扣 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      }
+    },
+    {
+      "id": "gstv_scc_rebate",
+      "category": "financial_assistance",
+      "name_en": "GSTV – S&CC Rebates",
+      "name_zh": "GSTV — S&CC 杂费回扣",
+      "summary_en": "Service & Conservancy Charges (S&CC) rebates for eligible HDB households.",
+      "summary_zh": "为符合条件的组屋家庭提供 S&CC（杂费）回扣。",
+      "keywords_en": [
+        "s&cc rebate",
+        "conservancy charges",
+        "town council rebate"
+      ],
+      "keywords_zh": [
+        "S&CC",
+        "杂费",
+        "市镇会",
+        "回扣"
+      ],
+      "eligibility_en": [
+        "Eligibility rules vary; check GovBenefits for details."
+      ],
+      "eligibility_zh": [
+        "条件可能变动；以 GovBenefits 为准。"
+      ],
+      "how_to_apply_en": [
+        "Typically automatic for eligible households."
+      ],
+      "how_to_apply_zh": [
+        "通常自动发放/抵扣。"
+      ],
+      "official_links": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "sources": [
+        "https://govbenefits.gov.sg/"
+      ],
+      "domain_id": "financial",
+      "sections": {
+        "overview": {
+          "en": "Service & Conservancy Charges (S&CC) rebates for eligible HDB households.",
+          "zh": "为符合条件的组屋家庭提供 S&CC（杂费）回扣。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility rules vary; check GovBenefits for details."
+          ],
+          "zh": [
+            "条件可能变动；以 GovBenefits 为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Typically automatic for eligible households."
+          ],
+          "zh": [
+            "通常自动发放/抵扣。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "financial",
+        "category": "financial_assistance",
+        "aliases_en": [
+          "GSTV – S&CC Rebates",
+          "s&cc rebate",
+          "conservancy charges",
+          "town council rebate"
+        ],
+        "aliases_zh": [
+          "GSTV — S&CC 杂费回扣",
+          "S&CC",
+          "杂费",
+          "市镇会",
+          "回扣"
+        ],
+        "broader_terms_en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "broader_terms_zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ],
+        "search_text_en": "gstv s cc rebates service conservancy charges s cc rebates for eligible hdb households s cc rebate conservancy charges town council rebate eligibility rules vary check govbenefits for details typically automatic for eligible households financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "gstv s cc 杂费回扣 为符合条件的组屋家庭提供 s cc 杂费 回扣 s cc 杂费 市镇会 回扣 条件可能变动 以 govbenefits 为准 通常自动发放 抵扣 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      }
+    },
+    {
+      "id": "cdc_vouchers",
+      "category": "financial_assistance",
+      "name_en": "CDC Vouchers Scheme",
+      "name_zh": "CDC 购物券计划",
+      "summary_en": "Vouchers for Singaporean households to help with daily expenses at participating merchants/hawkers/supermarkets.",
+      "summary_zh": "为新加坡家庭提供用于日常消费的购物券，可在指定商户/小贩中心/超市使用。",
+      "keywords_en": [
+        "cdc vouchers",
+        "vouchers",
+        "hawker",
+        "supermarket"
+      ],
+      "keywords_zh": [
+        "CDC 购物券",
+        "消费券",
+        "小贩中心",
+        "超市"
+      ],
+      "eligibility_en": [
+        "Generally targeted at Singaporean households; each tranche may have specific rules—check the official site."
+      ],
+      "eligibility_zh": [
+        "一般面向新加坡家庭；不同批次规则以官网为准。"
+      ],
+      "how_to_apply_en": [
+        "Go to the official CDC Vouchers site.",
+        "Log in (Singpass) and follow on-screen steps to claim.",
+        "You can usually share voucher links/QR with household members according to site guidance.",
+        "Use at participating hawkers/merchants/supermarkets as indicated on the site."
+      ],
+      "how_to_apply_zh": [
+        "进入 CDC Vouchers 官网。",
+        "使用 Singpass 登录并按页面步骤领取。",
+        "可按官网指引将券分享给家庭成员（如适用）。",
+        "在参与计划的商户/小贩/超市使用（以官网列表为准）。"
+      ],
+      "official_links": [
+        "https://vouchers.cdc.gov.sg/"
+      ],
+      "sources": [
+        "https://vouchers.cdc.gov.sg/"
+      ],
+      "domain_id": "financial",
+      "sections": {
+        "overview": {
+          "en": "Vouchers for Singaporean households to help with daily expenses at participating merchants/hawkers/supermarkets.",
+          "zh": "为新加坡家庭提供用于日常消费的购物券，可在指定商户/小贩中心/超市使用。"
+        },
+        "eligibility": {
+          "en": [
+            "Generally targeted at Singaporean households; each tranche may have specific rules—check the official site."
+          ],
+          "zh": [
+            "一般面向新加坡家庭；不同批次规则以官网为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Go to the official CDC Vouchers site.",
+            "Log in (Singpass) and follow on-screen steps to claim.",
+            "You can usually share voucher links/QR with household members according to site guidance.",
+            "Use at participating hawkers/merchants/supermarkets as indicated on the site."
+          ],
+          "zh": [
+            "进入 CDC Vouchers 官网。",
+            "使用 Singpass 登录并按页面步骤领取。",
+            "可按官网指引将券分享给家庭成员（如适用）。",
+            "在参与计划的商户/小贩/超市使用（以官网列表为准）。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "financial",
+        "category": "financial_assistance",
+        "aliases_en": [
+          "CDC Vouchers Scheme",
+          "cdc vouchers",
+          "vouchers",
+          "hawker",
+          "supermarket"
+        ],
+        "aliases_zh": [
+          "CDC 购物券计划",
+          "CDC 购物券",
+          "消费券",
+          "小贩中心",
+          "超市"
+        ],
+        "broader_terms_en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "broader_terms_zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ],
+        "search_text_en": "cdc vouchers scheme vouchers for singaporean households to help with daily expenses at participating merchants hawkers supermarkets cdc vouchers vouchers hawker supermarket generally targeted at singaporean households each tranche may have specific rules check the official site go to the official cdc vouchers site log in singpass and follow on screen steps to claim you can usually share voucher links qr with household members according to site guidance use at participating hawkers merchants supermarkets as indicated on the site financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "cdc 购物券计划 为新加坡家庭提供用于日常消费的购物券 可在指定商户 小贩中心 超市使用 cdc 购物券 消费券 小贩中心 超市 一般面向新加坡家庭 不同批次规则以官网为准 进入 cdc vouchers 官网 使用 singpass 登录并按页面步骤领取 可按官网指引将券分享给家庭成员 如适用 在参与计划的商户 小贩 超市使用 以官网列表为准 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      }
+    },
+    {
+      "id": "wis",
+      "category": "financial_assistance",
+      "name_en": "Workfare Income Supplement (WIS)",
+      "name_zh": "Workfare 收入补助（WIS）",
+      "summary_en": "Income supplement for eligible lower-wage workers to boost take-home pay and retirement savings.",
+      "summary_zh": "为符合条件的低薪员工提供收入补助，提升现有收入并支持退休储蓄。",
+      "keywords_en": [
+        "workfare",
+        "wis",
+        "low wage",
+        "income supplement"
+      ],
+      "keywords_zh": [
+        "Workfare",
+        "WIS",
+        "低薪",
+        "收入补助"
+      ],
+      "eligibility_en": [
+        "Singapore Citizen (WIS rules differ by employment type—employee/self-employed/platform worker).",
+        "Must meet age and income criteria set by CPF/MOM (varies by work year).",
+        "Generally auto-assessed based on CPF contributions and/or declarations, depending on worker type."
+      ],
+      "eligibility_zh": [
+        "通常要求为新加坡公民（不同就业类型：雇员/自雇/平台工作者规则会不同）。",
+        "需满足 CPF/MOM 规定的年龄与收入条件（会随年度调整）。",
+        "一般会按 CPF 缴交/申报记录自动评估（视就业类型）。"
+      ],
+      "how_to_apply_en": [
+        "Most eligible employees are auto-assessed based on CPF contributions (no separate application).",
+        "Use CPF/GovBenefits e-services to check eligibility and payment info."
+      ],
+      "how_to_apply_zh": [
+        "符合条件的雇员多为自动评估（通常无需另行申请）。",
+        "可在 CPF / GovBenefits 电子服务查询资格与发放信息。"
+      ],
+      "official_links": [
+        "https://www.cpf.gov.sg/member/growing-your-savings/government-support/workfare-income-supplement",
+        "https://www.mom.gov.sg/employment-practices/schemes-for-employers-and-employees/workfare",
+        "https://govbenefits.gov.sg/about-us/wis/"
+      ],
+      "sources": [
+        "https://www.cpf.gov.sg/member/growing-your-savings/government-support/workfare-income-supplement",
+        "https://www.mom.gov.sg/employment-practices/schemes-for-employers-and-employees/workfare",
+        "https://govbenefits.gov.sg/about-us/wis/"
+      ],
+      "domain_id": "financial",
+      "sections": {
+        "overview": {
+          "en": "Income supplement for eligible lower-wage workers to boost take-home pay and retirement savings.",
+          "zh": "为符合条件的低薪员工提供收入补助，提升现有收入并支持退休储蓄。"
+        },
+        "eligibility": {
+          "en": [
+            "Singapore Citizen (WIS rules differ by employment type—employee/self-employed/platform worker).",
+            "Must meet age and income criteria set by CPF/MOM (varies by work year).",
+            "Generally auto-assessed based on CPF contributions and/or declarations, depending on worker type."
+          ],
+          "zh": [
+            "通常要求为新加坡公民（不同就业类型：雇员/自雇/平台工作者规则会不同）。",
+            "需满足 CPF/MOM 规定的年龄与收入条件（会随年度调整）。",
+            "一般会按 CPF 缴交/申报记录自动评估（视就业类型）。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Most eligible employees are auto-assessed based on CPF contributions (no separate application).",
+            "Use CPF/GovBenefits e-services to check eligibility and payment info."
+          ],
+          "zh": [
+            "符合条件的雇员多为自动评估（通常无需另行申请）。",
+            "可在 CPF / GovBenefits 电子服务查询资格与发放信息。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "financial",
+        "category": "financial_assistance",
+        "aliases_en": [
+          "Workfare Income Supplement (WIS)",
+          "workfare",
+          "wis",
+          "low wage",
+          "income supplement"
+        ],
+        "aliases_zh": [
+          "Workfare 收入补助（WIS）",
+          "Workfare",
+          "WIS",
+          "低薪",
+          "收入补助"
+        ],
+        "broader_terms_en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "broader_terms_zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ],
+        "search_text_en": "workfare income supplement wis income supplement for eligible lower wage workers to boost take home pay and retirement savings workfare wis low wage income supplement singapore citizen wis rules differ by employment type employee self employed platform worker must meet age and income criteria set by cpf mom varies by work year generally auto assessed based on cpf contributions and or declarations depending on worker type most eligible employees are auto assessed based on cpf contributions no separate application use cpf govbenefits e services to check eligibility and payment info financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "workfare 收入补助 wis 为符合条件的低薪员工提供收入补助 提升现有收入并支持退休储蓄 workfare wis 低薪 收入补助 通常要求为新加坡公民 不同就业类型 雇员 自雇 平台工作者规则会不同 需满足 cpf mom 规定的年龄与收入条件 会随年度调整 一般会按 cpf 缴交 申报记录自动评估 视就业类型 符合条件的雇员多为自动评估 通常无需另行申请 可在 cpf govbenefits 电子服务查询资格与发放信息 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      }
+    },
+    {
+      "id": "silver_support",
+      "category": "elderly_support",
+      "name_en": "Silver Support Scheme",
+      "name_zh": "Silver Support 长者补助计划",
+      "summary_en": "Quarterly cash payouts for eligible low-income elderly; auto-assessed.",
+      "summary_zh": "为符合条件的低收入长者提供按季度发放现金补助；自动评估。",
+      "keywords_en": [
+        "silver support",
+        "senior cash payout",
+        "elderly low income"
+      ],
+      "keywords_zh": [
+        "Silver Support",
+        "长者补助",
+        "低收入长者"
+      ],
+      "eligibility_en": [
+        "Singapore Citizen aged 65 and above.",
+        "Eligibility is auto-assessed based on factors like lifetime wages (CPF contributions), housing type, and household income per person.",
+        "Seniors on ComCare Long-Term Assistance receive Silver Support at a fixed quarterly amount (per CPF guidance)."
+      ],
+      "eligibility_zh": [
+        "65 岁及以上新加坡公民。",
+        "一般自动评估，常见考量包括：工作期间收入/CPF 贡献、住房类型、家庭人均收入等。",
+        "若为 ComCare Long-Term Assistance 受助者，Silver Support 发放规则以 CPF 说明为准。"
+      ],
+      "how_to_apply_en": [
+        "No application needed (auto-assessed).",
+        "You can check eligibility via CPF/GovBenefits e-services."
+      ],
+      "how_to_apply_zh": [
+        "无需申请（自动评估）。",
+        "可通过 CPF / GovBenefits 电子服务查询资格。"
+      ],
+      "official_links": [
+        "https://www.cpf.gov.sg/member/retirement-income/government-support/silver-support-scheme",
+        "https://supportgowhere.life.gov.sg/schemes/SILVERSUPPORT/silver-support-scheme",
+        "https://govbenefits.gov.sg/about-us/sss/"
+      ],
+      "sources": [
+        "https://www.cpf.gov.sg/member/retirement-income/government-support/silver-support-scheme",
+        "https://www.cpf.gov.sg/service/article/do-i-qualify-for-the-silver-support-scheme",
+        "https://supportgowhere.life.gov.sg/schemes/SILVERSUPPORT/silver-support-scheme",
+        "https://govbenefits.gov.sg/about-us/sss/"
+      ],
+      "domain_id": "seniors",
+      "sections": {
+        "overview": {
+          "en": "Quarterly cash payouts for eligible low-income elderly; auto-assessed.",
+          "zh": "为符合条件的低收入长者提供按季度发放现金补助；自动评估。"
+        },
+        "eligibility": {
+          "en": [
+            "Singapore Citizen aged 65 and above.",
+            "Eligibility is auto-assessed based on factors like lifetime wages (CPF contributions), housing type, and household income per person.",
+            "Seniors on ComCare Long-Term Assistance receive Silver Support at a fixed quarterly amount (per CPF guidance)."
+          ],
+          "zh": [
+            "65 岁及以上新加坡公民。",
+            "一般自动评估，常见考量包括：工作期间收入/CPF 贡献、住房类型、家庭人均收入等。",
+            "若为 ComCare Long-Term Assistance 受助者，Silver Support 发放规则以 CPF 说明为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "No application needed (auto-assessed).",
+            "You can check eligibility via CPF/GovBenefits e-services."
+          ],
+          "zh": [
+            "无需申请（自动评估）。",
+            "可通过 CPF / GovBenefits 电子服务查询资格。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "seniors",
+        "category": "elderly_support",
+        "aliases_en": [
+          "Silver Support Scheme",
+          "silver support",
+          "senior cash payout",
+          "elderly low income"
+        ],
+        "aliases_zh": [
+          "Silver Support 长者补助计划",
+          "Silver Support",
+          "长者补助",
+          "低收入长者"
+        ],
+        "broader_terms_en": [
+          "elderly",
+          "caregiver",
+          "home care",
+          "day care"
+        ],
+        "broader_terms_zh": [
+          "长者",
+          "老人",
+          "看护者",
+          "居家照护",
+          "日间照护"
+        ],
+        "search_text_en": "silver support scheme quarterly cash payouts for eligible low income elderly auto assessed silver support senior cash payout elderly low income singapore citizen aged 65 and above eligibility is auto assessed based on factors like lifetime wages cpf contributions housing type and household income per person seniors on comcare long term assistance receive silver support at a fixed quarterly amount per cpf guidance no application needed auto assessed you can check eligibility via cpf govbenefits e services elderly caregiver home care day care elderly_support seniors",
+        "search_text_zh": "silver support 长者补助计划 为符合条件的低收入长者提供按季度发放现金补助 自动评估 silver support 长者补助 低收入长者 65 岁及以上新加坡公民 一般自动评估 常见考量包括 工作期间收入 cpf 贡献 住房类型 家庭人均收入等 若为 comcare long term assistance 受助者 silver support 发放规则以 cpf 说明为准 无需申请 自动评估 可通过 cpf govbenefits 电子服务查询资格 长者 老人 看护者 居家照护 日间照护 elderly_support seniors"
+      }
+    },
+    {
+      "id": "comlink_plus",
+      "category": "family_support",
+      "name_en": "ComLink+",
+      "name_zh": "ComLink+（家庭长期支持）",
+      "summary_en": "Longer-term support for lower-income families with children to work towards stability and self-reliance.",
+      "summary_zh": "为有孩子的低收入家庭提供更长期支持，协助迈向稳定与自立。",
+      "keywords_en": [
+        "comlink",
+        "rental flat families",
+        "family support",
+        "action plan"
+      ],
+      "keywords_zh": [
+        "ComLink+",
+        "租赁组屋家庭",
+        "家庭支持",
+        "长期协助"
+      ],
+      "eligibility_en": [
+        "Typically targeted at lower-income families with children; exact criteria and support plans vary by case."
+      ],
+      "eligibility_zh": [
+        "一般面向有孩子的低收入家庭；具体条件与支持方案视个案而定。"
+      ],
+      "how_to_apply_en": [
+        "Start via SSO / MSF channels; you may be assessed and guided to the appropriate support plan."
+      ],
+      "how_to_apply_zh": [
+        "可通过 SSO / MSF 渠道起步，后续将评估并引导进入相应支持计划。"
+      ],
+      "official_links": [
+        "https://www.msf.gov.sg/what-we-do/volunteer/find-causes/comlink"
+      ],
+      "sources": [
+        "https://www.msf.gov.sg/what-we-do/volunteer/find-causes/comlink"
+      ],
+      "domain_id": null,
+      "sections": {
+        "overview": {
+          "en": "Longer-term support for lower-income families with children to work towards stability and self-reliance.",
+          "zh": "为有孩子的低收入家庭提供更长期支持，协助迈向稳定与自立。"
+        },
+        "eligibility": {
+          "en": [
+            "Typically targeted at lower-income families with children; exact criteria and support plans vary by case."
+          ],
+          "zh": [
+            "一般面向有孩子的低收入家庭；具体条件与支持方案视个案而定。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Start via SSO / MSF channels; you may be assessed and guided to the appropriate support plan."
+          ],
+          "zh": [
+            "可通过 SSO / MSF 渠道起步，后续将评估并引导进入相应支持计划。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": null,
+        "category": "family_support",
+        "aliases_en": [
+          "ComLink+",
+          "comlink",
+          "rental flat families",
+          "family support",
+          "action plan"
+        ],
+        "aliases_zh": [
+          "ComLink+（家庭长期支持）",
+          "ComLink+",
+          "租赁组屋家庭",
+          "家庭支持",
+          "长期协助"
+        ],
+        "broader_terms_en": [],
+        "broader_terms_zh": [],
+        "search_text_en": "comlink longer term support for lower income families with children to work towards stability and self reliance comlink rental flat families family support action plan typically targeted at lower income families with children exact criteria and support plans vary by case start via sso msf channels you may be assessed and guided to the appropriate support plan family_support",
+        "search_text_zh": "comlink 家庭长期支持 为有孩子的低收入家庭提供更长期支持 协助迈向稳定与自立 comlink 租赁组屋家庭 家庭支持 长期协助 一般面向有孩子的低收入家庭 具体条件与支持方案视个案而定 可通过 sso msf 渠道起步 后续将评估并引导进入相应支持计划 family_support"
+      }
+    },
+    {
+      "id": "skillsfuture_credit",
+      "category": "employment_support",
+      "name_en": "SkillsFuture Credit",
+      "name_zh": "SkillsFuture Credit（技能未来学分）",
+      "summary_en": "Credits for eligible Singapore Citizens to offset out-of-pocket course fees for approved courses.",
+      "summary_zh": "为符合条件的新加坡公民提供课程学分，用于抵扣认可课程自付费用。",
+      "keywords_en": [
+        "skillsfuture credit",
+        "training subsidy",
+        "course fee",
+        "upskill"
+      ],
+      "keywords_zh": [
+        "技能未来",
+        "学分",
+        "培训补贴",
+        "提升技能"
+      ],
+      "eligibility_en": [
+        "Singapore Citizens aged 25+ (subject to current policy)."
+      ],
+      "eligibility_zh": [
+        "通常为 25+ 新加坡公民（以现行政策为准）。"
+      ],
+      "how_to_apply_en": [
+        "Log in to MySkillsFuture and select an approved course.",
+        "Use SkillsFuture Credit at checkout / claim flow as guided by the portal."
+      ],
+      "how_to_apply_zh": [
+        "登录 MySkillsFuture 选择认可课程。",
+        "按门户流程在支付/申领时使用 SkillsFuture Credit。"
+      ],
+      "official_links": [
+        "https://www.myskillsfuture.gov.sg/"
+      ],
+      "sources": [
+        "https://www.myskillsfuture.gov.sg/"
+      ],
+      "domain_id": "employment",
+      "sections": {
+        "overview": {
+          "en": "Credits for eligible Singapore Citizens to offset out-of-pocket course fees for approved courses.",
+          "zh": "为符合条件的新加坡公民提供课程学分，用于抵扣认可课程自付费用。"
+        },
+        "eligibility": {
+          "en": [
+            "Singapore Citizens aged 25+ (subject to current policy)."
+          ],
+          "zh": [
+            "通常为 25+ 新加坡公民（以现行政策为准）。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Log in to MySkillsFuture and select an approved course.",
+            "Use SkillsFuture Credit at checkout / claim flow as guided by the portal."
+          ],
+          "zh": [
+            "登录 MySkillsFuture 选择认可课程。",
+            "按门户流程在支付/申领时使用 SkillsFuture Credit。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "employment",
+        "category": "employment_support",
+        "aliases_en": [
+          "SkillsFuture Credit",
+          "skillsfuture credit",
+          "training subsidy",
+          "course fee",
+          "upskill"
+        ],
+        "aliases_zh": [
+          "SkillsFuture Credit（技能未来学分）",
+          "技能未来",
+          "学分",
+          "培训补贴",
+          "提升技能"
+        ],
+        "broader_terms_en": [
+          "job search",
+          "unemployment",
+          "training",
+          "upskilling",
+          "career"
+        ],
+        "broader_terms_zh": [
+          "就业",
+          "找工作",
+          "失业",
+          "培训",
+          "技能提升",
+          "职业"
+        ],
+        "search_text_en": "skillsfuture credit credits for eligible singapore citizens to offset out of pocket course fees for approved courses skillsfuture credit training subsidy course fee upskill singapore citizens aged 25 subject to current policy log in to myskillsfuture and select an approved course use skillsfuture credit at checkout claim flow as guided by the portal job search unemployment training upskilling career employment_support employment",
+        "search_text_zh": "skillsfuture credit 技能未来学分 为符合条件的新加坡公民提供课程学分 用于抵扣认可课程自付费用 技能未来 学分 培训补贴 提升技能 通常为 25 新加坡公民 以现行政策为准 登录 myskillsfuture 选择认可课程 按门户流程在支付 申领时使用 skillsfuture credit 就业 找工作 失业 培训 技能提升 职业 employment_support employment"
+      }
+    },
+    {
+      "id": "hdb_public_rental",
+      "category": "housing_assistance",
+      "name_en": "HDB Public Rental Scheme",
+      "name_zh": "HDB 公共租赁计划",
+      "summary_en": "Subsidised public rental housing for eligible lower-income households.",
+      "summary_zh": "为符合条件的低收入家庭提供补贴性质公共租赁住房。",
+      "keywords_en": [
+        "public rental",
+        "hdb rental",
+        "low income housing"
+      ],
+      "keywords_zh": [
+        "公共租赁",
+        "组屋租房",
+        "低收入住房"
+      ],
+      "eligibility_en": [
+        "Eligibility depends on HDB rules (e.g., household profile and income). Check the official scheme page for the latest criteria."
+      ],
+      "eligibility_zh": [
+        "需符合 HDB 规定（如家庭情况、收入等）；以官网最新条件为准。"
+      ],
+      "how_to_apply_en": [
+        "Apply via the official HDB route (e.g., HDB e-services / designated application channel).",
+        "Prepare required household and income information as requested in the form."
+      ],
+      "how_to_apply_zh": [
+        "通过 HDB 官方渠道申请（如 HDB 电子服务/指定入口）。",
+        "按表格要求准备家庭与收入信息。"
+      ],
+      "official_links": [
+        "https://www.hdb.gov.sg/"
+      ],
+      "sources": [
+        "https://www.hdb.gov.sg/",
+        "https://supportgowhere.life.gov.sg/schemes/HDB-PRS/hdb-public-rental-scheme"
+      ],
+      "domain_id": "housing",
+      "sections": {
+        "overview": {
+          "en": "Subsidised public rental housing for eligible lower-income households.",
+          "zh": "为符合条件的低收入家庭提供补贴性质公共租赁住房。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility depends on HDB rules (e.g., household profile and income). Check the official scheme page for the latest criteria."
+          ],
+          "zh": [
+            "需符合 HDB 规定（如家庭情况、收入等）；以官网最新条件为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Apply via the official HDB route (e.g., HDB e-services / designated application channel).",
+            "Prepare required household and income information as requested in the form."
+          ],
+          "zh": [
+            "通过 HDB 官方渠道申请（如 HDB 电子服务/指定入口）。",
+            "按表格要求准备家庭与收入信息。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "housing",
+        "category": "housing_assistance",
+        "aliases_en": [
+          "HDB Public Rental Scheme",
+          "public rental",
+          "hdb rental",
+          "low income housing"
+        ],
+        "aliases_zh": [
+          "HDB 公共租赁计划",
+          "公共租赁",
+          "组屋租房",
+          "低收入住房"
+        ],
+        "broader_terms_en": [
+          "rent",
+          "rental",
+          "eviction",
+          "homeless",
+          "shelter",
+          "temporary accommodation"
+        ],
+        "broader_terms_zh": [
+          "房租",
+          "租房",
+          "驱逐",
+          "没地方住",
+          "收容",
+          "临时安置",
+          "过渡住房"
+        ],
+        "search_text_en": "hdb public rental scheme subsidised public rental housing for eligible lower income households public rental hdb rental low income housing eligibility depends on hdb rules e g household profile and income check the official scheme page for the latest criteria apply via the official hdb route e g hdb e services designated application channel prepare required household and income information as requested in the form rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "hdb 公共租赁计划 为符合条件的低收入家庭提供补贴性质公共租赁住房 公共租赁 组屋租房 低收入住房 需符合 hdb 规定 如家庭情况 收入等 以官网最新条件为准 通过 hdb 官方渠道申请 如 hdb 电子服务 指定入口 按表格要求准备家庭与收入信息 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      }
+    },
+    {
+      "id": "hdb_irh",
+      "category": "housing_assistance",
+      "name_en": "Interim Rental Housing (IRH)",
+      "name_zh": "Interim Rental Housing（IRH 临时租住房）",
+      "summary_en": "Temporary rental option for households awaiting their next housing arrangement (subject to criteria).",
+      "summary_zh": "为过渡期间的家庭提供临时租住房选择（需符合条件）。",
+      "keywords_en": [
+        "interim rental",
+        "irh",
+        "temporary rental housing"
+      ],
+      "keywords_zh": [
+        "临时租房",
+        "IRH",
+        "过渡住房"
+      ],
+      "eligibility_en": [
+        "Subject to HDB assessment and criteria; refer to official HDB guidance."
+      ],
+      "eligibility_zh": [
+        "需符合 HDB 评估与条件；以 HDB 官方说明为准。"
+      ],
+      "how_to_apply_en": [
+        "Check official HDB guidance for the latest application route and required documents."
+      ],
+      "how_to_apply_zh": [
+        "查看 HDB 官网最新申请入口与材料要求。"
+      ],
+      "official_links": [
+        "https://www.hdb.gov.sg/"
+      ],
+      "sources": [
+        "https://www.hdb.gov.sg/",
+        "https://www.mnd.gov.sg/newsroom/parliament-matters/q-as/view/interim-rental-housing"
+      ],
+      "domain_id": "housing",
+      "sections": {
+        "overview": {
+          "en": "Temporary rental option for households awaiting their next housing arrangement (subject to criteria).",
+          "zh": "为过渡期间的家庭提供临时租住房选择（需符合条件）。"
+        },
+        "eligibility": {
+          "en": [
+            "Subject to HDB assessment and criteria; refer to official HDB guidance."
+          ],
+          "zh": [
+            "需符合 HDB 评估与条件；以 HDB 官方说明为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Check official HDB guidance for the latest application route and required documents."
+          ],
+          "zh": [
+            "查看 HDB 官网最新申请入口与材料要求。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "housing",
+        "category": "housing_assistance",
+        "aliases_en": [
+          "Interim Rental Housing (IRH)",
+          "interim rental",
+          "irh",
+          "temporary rental housing"
+        ],
+        "aliases_zh": [
+          "Interim Rental Housing（IRH 临时租住房）",
+          "临时租房",
+          "IRH",
+          "过渡住房"
+        ],
+        "broader_terms_en": [
+          "rent",
+          "rental",
+          "eviction",
+          "homeless",
+          "shelter",
+          "temporary accommodation"
+        ],
+        "broader_terms_zh": [
+          "房租",
+          "租房",
+          "驱逐",
+          "没地方住",
+          "收容",
+          "临时安置",
+          "过渡住房"
+        ],
+        "search_text_en": "interim rental housing irh temporary rental option for households awaiting their next housing arrangement subject to criteria interim rental irh temporary rental housing subject to hdb assessment and criteria refer to official hdb guidance check official hdb guidance for the latest application route and required documents rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "interim rental housing irh 临时租住房 为过渡期间的家庭提供临时租住房选择 需符合条件 临时租房 irh 过渡住房 需符合 hdb 评估与条件 以 hdb 官方说明为准 查看 hdb 官网最新申请入口与材料要求 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      }
+    },
+    {
+      "id": "hdb_pphs",
+      "category": "housing_assistance",
+      "name_en": "Parenthood Provisional Housing Scheme (PPHS)",
+      "name_zh": "Parenthood Provisional Housing Scheme（PPHS）",
+      "summary_en": "Temporary housing support for eligible families awaiting their new home.",
+      "summary_zh": "为等待新房的符合条件家庭提供临时住房支持。",
+      "keywords_en": [
+        "pphs",
+        "temporary housing",
+        "waiting for flat",
+        "family"
+      ],
+      "keywords_zh": [
+        "PPHS",
+        "临时住房",
+        "等房",
+        "家庭"
+      ],
+      "eligibility_en": [
+        "Eligibility and quotas apply; confirm on HDB’s official PPHS information."
+      ],
+      "eligibility_zh": [
+        "需符合资格与配额安排；以 HDB PPHS 官方说明为准。"
+      ],
+      "how_to_apply_en": [
+        "Apply via HDB according to the published PPHS steps and required documents."
+      ],
+      "how_to_apply_zh": [
+        "按 HDB 公布步骤与材料要求申请。"
+      ],
+      "official_links": [
+        "https://www.hdb.gov.sg/"
+      ],
+      "sources": [
+        "https://www.hdb.gov.sg/",
+        "https://www.hdb.gov.sg/about-us/news-and-publications/publications/hdbspeaks/parenthood-provisional-housing-scheme-pphs"
+      ],
+      "domain_id": "housing",
+      "sections": {
+        "overview": {
+          "en": "Temporary housing support for eligible families awaiting their new home.",
+          "zh": "为等待新房的符合条件家庭提供临时住房支持。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility and quotas apply; confirm on HDB’s official PPHS information."
+          ],
+          "zh": [
+            "需符合资格与配额安排；以 HDB PPHS 官方说明为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Apply via HDB according to the published PPHS steps and required documents."
+          ],
+          "zh": [
+            "按 HDB 公布步骤与材料要求申请。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "housing",
+        "category": "housing_assistance",
+        "aliases_en": [
+          "Parenthood Provisional Housing Scheme (PPHS)",
+          "pphs",
+          "temporary housing",
+          "waiting for flat",
+          "family"
+        ],
+        "aliases_zh": [
+          "Parenthood Provisional Housing Scheme（PPHS）",
+          "PPHS",
+          "临时住房",
+          "等房",
+          "家庭"
+        ],
+        "broader_terms_en": [
+          "rent",
+          "rental",
+          "eviction",
+          "homeless",
+          "shelter",
+          "temporary accommodation"
+        ],
+        "broader_terms_zh": [
+          "房租",
+          "租房",
+          "驱逐",
+          "没地方住",
+          "收容",
+          "临时安置",
+          "过渡住房"
+        ],
+        "search_text_en": "parenthood provisional housing scheme pphs temporary housing support for eligible families awaiting their new home pphs temporary housing waiting for flat family eligibility and quotas apply confirm on hdb s official pphs information apply via hdb according to the published pphs steps and required documents rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "parenthood provisional housing scheme pphs 为等待新房的符合条件家庭提供临时住房支持 pphs 临时住房 等房 家庭 需符合资格与配额安排 以 hdb pphs 官方说明为准 按 hdb 公布步骤与材料要求申请 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      }
+    },
+    {
+      "id": "transitional_shelter",
+      "category": "housing_assistance",
+      "name_en": "Transitional Shelter (Temporary Accommodation)",
+      "name_zh": "Transitional Shelter（过渡性临时安置）",
+      "summary_en": "Temporary accommodation for homeless families who have exhausted other options.",
+      "summary_zh": "为已无其他住宿选择的无家可归家庭提供临时安置。",
+      "keywords_en": [
+        "homeless",
+        "no place to stay",
+        "shelter",
+        "eviction"
+      ],
+      "keywords_zh": [
+        "无家可归",
+        "没地方住",
+        "收容所",
+        "被驱逐"
+      ],
+      "eligibility_en": [
+        "Requires assessment/referral by service providers; availability and criteria vary."
+      ],
+      "eligibility_zh": [
+        "通常需要服务机构评估/转介；名额与条件视情况而定。"
+      ],
+      "how_to_apply_en": [
+        "Start from SupportGoWhere listings for the latest contact/referral route.",
+        "If urgent, contact SSO for triage and referral guidance."
+      ],
+      "how_to_apply_zh": [
+        "通过 SupportGoWhere 查询最新联系/转介方式。",
+        "如为紧急情况，可联系 SSO 进行初步评估与转介。"
+      ],
+      "official_links": [
+        "https://supportgowhere.life.gov.sg/"
+      ],
+      "sources": [
+        "https://supportgowhere.life.gov.sg/"
+      ],
+      "domain_id": "housing",
+      "sections": {
+        "overview": {
+          "en": "Temporary accommodation for homeless families who have exhausted other options.",
+          "zh": "为已无其他住宿选择的无家可归家庭提供临时安置。"
+        },
+        "eligibility": {
+          "en": [
+            "Requires assessment/referral by service providers; availability and criteria vary."
+          ],
+          "zh": [
+            "通常需要服务机构评估/转介；名额与条件视情况而定。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Start from SupportGoWhere listings for the latest contact/referral route.",
+            "If urgent, contact SSO for triage and referral guidance."
+          ],
+          "zh": [
+            "通过 SupportGoWhere 查询最新联系/转介方式。",
+            "如为紧急情况，可联系 SSO 进行初步评估与转介。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "housing",
+        "category": "housing_assistance",
+        "aliases_en": [
+          "Transitional Shelter (Temporary Accommodation)",
+          "homeless",
+          "no place to stay",
+          "shelter",
+          "eviction"
+        ],
+        "aliases_zh": [
+          "Transitional Shelter（过渡性临时安置）",
+          "无家可归",
+          "没地方住",
+          "收容所",
+          "被驱逐"
+        ],
+        "broader_terms_en": [
+          "rent",
+          "rental",
+          "eviction",
+          "homeless",
+          "shelter",
+          "temporary accommodation"
+        ],
+        "broader_terms_zh": [
+          "房租",
+          "租房",
+          "驱逐",
+          "没地方住",
+          "收容",
+          "临时安置",
+          "过渡住房"
+        ],
+        "search_text_en": "transitional shelter temporary accommodation temporary accommodation for homeless families who have exhausted other options homeless no place to stay shelter eviction requires assessment referral by service providers availability and criteria vary start from supportgowhere listings for the latest contact referral route if urgent contact sso for triage and referral guidance rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "transitional shelter 过渡性临时安置 为已无其他住宿选择的无家可归家庭提供临时安置 无家可归 没地方住 收容所 被驱逐 通常需要服务机构评估 转介 名额与条件视情况而定 通过 supportgowhere 查询最新联系 转介方式 如为紧急情况 可联系 sso 进行初步评估与转介 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      }
+    },
+    {
+      "id": "transit_point_margaret_drive",
+      "category": "housing_assistance",
+      "name_en": "Transit Point @ Margaret Drive",
+      "name_zh": "Transit Point @ Margaret Drive（临时过渡点）",
+      "summary_en": "Temporary stay option for individuals/families in housing crisis (subject to referral/assessment).",
+      "summary_zh": "为住房危机个案提供临时住宿选择（通常需转介/评估）。",
+      "keywords_en": [
+        "transit point",
+        "emergency shelter",
+        "temporary stay"
+      ],
+      "keywords_zh": [
+        "过渡点",
+        "紧急住宿",
+        "临时住宿"
+      ],
+      "eligibility_en": [
+        "Referral/assessment required; check SupportGoWhere listing for latest access rules."
+      ],
+      "eligibility_zh": [
+        "通常需转介/评估；以 SupportGoWhere 列表最新说明为准。"
+      ],
+      "how_to_apply_en": [
+        "Use SupportGoWhere for the current contact and referral steps."
+      ],
+      "how_to_apply_zh": [
+        "通过 SupportGoWhere 查看最新联系与转介步骤。"
+      ],
+      "official_links": [
+        "https://supportgowhere.life.gov.sg/"
+      ],
+      "sources": [
+        "https://supportgowhere.life.gov.sg/"
+      ],
+      "domain_id": "housing",
+      "sections": {
+        "overview": {
+          "en": "Temporary stay option for individuals/families in housing crisis (subject to referral/assessment).",
+          "zh": "为住房危机个案提供临时住宿选择（通常需转介/评估）。"
+        },
+        "eligibility": {
+          "en": [
+            "Referral/assessment required; check SupportGoWhere listing for latest access rules."
+          ],
+          "zh": [
+            "通常需转介/评估；以 SupportGoWhere 列表最新说明为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Use SupportGoWhere for the current contact and referral steps."
+          ],
+          "zh": [
+            "通过 SupportGoWhere 查看最新联系与转介步骤。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "housing",
+        "category": "housing_assistance",
+        "aliases_en": [
+          "Transit Point @ Margaret Drive",
+          "transit point",
+          "emergency shelter",
+          "temporary stay"
+        ],
+        "aliases_zh": [
+          "Transit Point @ Margaret Drive（临时过渡点）",
+          "过渡点",
+          "紧急住宿",
+          "临时住宿"
+        ],
+        "broader_terms_en": [
+          "rent",
+          "rental",
+          "eviction",
+          "homeless",
+          "shelter",
+          "temporary accommodation"
+        ],
+        "broader_terms_zh": [
+          "房租",
+          "租房",
+          "驱逐",
+          "没地方住",
+          "收容",
+          "临时安置",
+          "过渡住房"
+        ],
+        "search_text_en": "transit point margaret drive temporary stay option for individuals families in housing crisis subject to referral assessment transit point emergency shelter temporary stay referral assessment required check supportgowhere listing for latest access rules use supportgowhere for the current contact and referral steps rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "transit point margaret drive 临时过渡点 为住房危机个案提供临时住宿选择 通常需转介 评估 过渡点 紧急住宿 临时住宿 通常需转介 评估 以 supportgowhere 列表最新说明为准 通过 supportgowhere 查看最新联系与转介步骤 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      }
+    },
+    {
+      "id": "chas",
+      "category": "healthcare_support",
+      "name_en": "CHAS (Community Health Assist Scheme)",
+      "name_zh": "CHAS（社区健康援助计划）",
+      "summary_en": "Subsidies for medical/dental care at participating clinics for Singapore Citizens (tiered).",
+      "summary_zh": "为新加坡公民在参与计划的诊所/牙科诊所提供分级补贴。",
+      "keywords_en": [
+        "chas",
+        "clinic subsidy",
+        "dental subsidy",
+        "medical subsidy"
+      ],
+      "keywords_zh": [
+        "CHAS",
+        "诊所补贴",
+        "牙科补贴",
+        "医疗补贴"
+      ],
+      "eligibility_en": [
+        "For Singapore Citizens; subsidy tier depends on eligibility criteria defined by MOH/CHAS."
+      ],
+      "eligibility_zh": [
+        "面向新加坡公民；补贴等级取决于 MOH/CHAS 规定条件。"
+      ],
+      "how_to_apply_en": [
+        "Apply via the CHAS portal as instructed (online application).",
+        "After approval, use CHAS at participating GP/dental clinics."
+      ],
+      "how_to_apply_zh": [
+        "按 CHAS 官网指引在线申请。",
+        "获批后在参与计划的诊所/牙科使用补贴。"
+      ],
+      "official_links": [
+        "https://chas.moh.gov.sg/"
+      ],
+      "sources": [
+        "https://chas.moh.gov.sg/"
+      ],
+      "domain_id": "healthcare",
+      "sections": {
+        "overview": {
+          "en": "Subsidies for medical/dental care at participating clinics for Singapore Citizens (tiered).",
+          "zh": "为新加坡公民在参与计划的诊所/牙科诊所提供分级补贴。"
+        },
+        "eligibility": {
+          "en": [
+            "For Singapore Citizens; subsidy tier depends on eligibility criteria defined by MOH/CHAS."
+          ],
+          "zh": [
+            "面向新加坡公民；补贴等级取决于 MOH/CHAS 规定条件。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Apply via the CHAS portal as instructed (online application).",
+            "After approval, use CHAS at participating GP/dental clinics."
+          ],
+          "zh": [
+            "按 CHAS 官网指引在线申请。",
+            "获批后在参与计划的诊所/牙科使用补贴。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "healthcare",
+        "category": "healthcare_support",
+        "aliases_en": [
+          "CHAS (Community Health Assist Scheme)",
+          "chas",
+          "clinic subsidy",
+          "dental subsidy",
+          "medical subsidy"
+        ],
+        "aliases_zh": [
+          "CHAS（社区健康援助计划）",
+          "CHAS",
+          "诊所补贴",
+          "牙科补贴",
+          "医疗补贴"
+        ],
+        "broader_terms_en": [
+          "medical",
+          "hospital bill",
+          "clinic subsidy",
+          "CHAS",
+          "Medifund",
+          "medication"
+        ],
+        "broader_terms_zh": [
+          "医疗",
+          "医院账单",
+          "诊所补贴",
+          "CHAS",
+          "Medifund",
+          "药费"
+        ],
+        "search_text_en": "chas community health assist scheme subsidies for medical dental care at participating clinics for singapore citizens tiered chas clinic subsidy dental subsidy medical subsidy for singapore citizens subsidy tier depends on eligibility criteria defined by moh chas apply via the chas portal as instructed online application after approval use chas at participating gp dental clinics medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
+        "search_text_zh": "chas 社区健康援助计划 为新加坡公民在参与计划的诊所 牙科诊所提供分级补贴 chas 诊所补贴 牙科补贴 医疗补贴 面向新加坡公民 补贴等级取决于 moh chas 规定条件 按 chas 官网指引在线申请 获批后在参与计划的诊所 牙科使用补贴 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
+      }
+    },
+    {
+      "id": "medifund",
+      "category": "healthcare_support",
+      "name_en": "MediFund",
+      "name_zh": "MediFund 医疗援助基金",
+      "summary_en": "Financial assistance for patients who have difficulty paying medical bills; usually via Medical Social Worker.",
+      "summary_zh": "为难以支付医疗账单的患者提供援助；通常通过医疗社工办理。",
+      "keywords_en": [
+        "medifund",
+        "medical bill",
+        "hospital social worker",
+        "cannot pay"
+      ],
+      "keywords_zh": [
+        "MediFund",
+        "医疗账单",
+        "医疗社工",
+        "付不起"
+      ],
+      "eligibility_en": [
+        "Assessed by the healthcare institution; typically for patients who still have difficulty paying after other means."
+      ],
+      "eligibility_zh": [
+        "由医疗机构评估；一般用于在其他方式后仍难以负担费用的患者。"
+      ],
+      "how_to_apply_en": [
+        "Ask the Medical Social Worker at your hospital/clinic for assessment and application guidance."
+      ],
+      "how_to_apply_zh": [
+        "联系就诊机构的医疗社工进行评估并按指引申请。"
+      ],
+      "official_links": [
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/"
+      ],
+      "sources": [
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/"
+      ],
+      "domain_id": "healthcare",
+      "sections": {
+        "overview": {
+          "en": "Financial assistance for patients who have difficulty paying medical bills; usually via Medical Social Worker.",
+          "zh": "为难以支付医疗账单的患者提供援助；通常通过医疗社工办理。"
+        },
+        "eligibility": {
+          "en": [
+            "Assessed by the healthcare institution; typically for patients who still have difficulty paying after other means."
+          ],
+          "zh": [
+            "由医疗机构评估；一般用于在其他方式后仍难以负担费用的患者。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Ask the Medical Social Worker at your hospital/clinic for assessment and application guidance."
+          ],
+          "zh": [
+            "联系就诊机构的医疗社工进行评估并按指引申请。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "healthcare",
+        "category": "healthcare_support",
+        "aliases_en": [
+          "MediFund",
+          "medifund",
+          "medical bill",
+          "hospital social worker",
+          "cannot pay"
+        ],
+        "aliases_zh": [
+          "MediFund 医疗援助基金",
+          "MediFund",
+          "医疗账单",
+          "医疗社工",
+          "付不起"
+        ],
+        "broader_terms_en": [
+          "medical",
+          "hospital bill",
+          "clinic subsidy",
+          "CHAS",
+          "Medifund",
+          "medication"
+        ],
+        "broader_terms_zh": [
+          "医疗",
+          "医院账单",
+          "诊所补贴",
+          "CHAS",
+          "Medifund",
+          "药费"
+        ],
+        "search_text_en": "medifund financial assistance for patients who have difficulty paying medical bills usually via medical social worker medifund medical bill hospital social worker cannot pay assessed by the healthcare institution typically for patients who still have difficulty paying after other means ask the medical social worker at your hospital clinic for assessment and application guidance medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
+        "search_text_zh": "medifund 医疗援助基金 为难以支付医疗账单的患者提供援助 通常通过医疗社工办理 medifund 医疗账单 医疗社工 付不起 由医疗机构评估 一般用于在其他方式后仍难以负担费用的患者 联系就诊机构的医疗社工进行评估并按指引申请 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
+      }
+    },
+    {
+      "id": "medisave",
+      "category": "healthcare_support",
+      "name_en": "MediSave",
+      "name_zh": "MediSave（保健储蓄）",
+      "summary_en": "National medical savings scheme to help pay for approved healthcare expenses.",
+      "summary_zh": "国家保健储蓄计划，可用于支付符合规定的医疗支出。",
+      "keywords_en": [
+        "medisave",
+        "health savings",
+        "approved claims"
+      ],
+      "keywords_zh": [
+        "MediSave",
+        "保健储蓄",
+        "医疗支出"
+      ],
+      "eligibility_en": [
+        "Use is subject to approved items and withdrawal limits depending on treatment/service."
+      ],
+      "eligibility_zh": [
+        "可使用范围与提取额度取决于医疗项目/服务类型（以官方规则为准）。"
+      ],
+      "how_to_apply_en": [
+        "Typically used at point of care; the institution will guide you based on applicable rules."
+      ],
+      "how_to_apply_zh": [
+        "一般在就医结算时按规定使用，由医疗机构按规则协助处理。"
+      ],
+      "official_links": [
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/",
+        "https://www.cpf.gov.sg/"
+      ],
+      "sources": [
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/",
+        "https://www.cpf.gov.sg/"
+      ],
+      "domain_id": "healthcare",
+      "sections": {
+        "overview": {
+          "en": "National medical savings scheme to help pay for approved healthcare expenses.",
+          "zh": "国家保健储蓄计划，可用于支付符合规定的医疗支出。"
+        },
+        "eligibility": {
+          "en": [
+            "Use is subject to approved items and withdrawal limits depending on treatment/service."
+          ],
+          "zh": [
+            "可使用范围与提取额度取决于医疗项目/服务类型（以官方规则为准）。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Typically used at point of care; the institution will guide you based on applicable rules."
+          ],
+          "zh": [
+            "一般在就医结算时按规定使用，由医疗机构按规则协助处理。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "healthcare",
+        "category": "healthcare_support",
+        "aliases_en": [
+          "MediSave",
+          "medisave",
+          "health savings",
+          "approved claims"
+        ],
+        "aliases_zh": [
+          "MediSave（保健储蓄）",
+          "MediSave",
+          "保健储蓄",
+          "医疗支出"
+        ],
+        "broader_terms_en": [
+          "medical",
+          "hospital bill",
+          "clinic subsidy",
+          "CHAS",
+          "Medifund",
+          "medication"
+        ],
+        "broader_terms_zh": [
+          "医疗",
+          "医院账单",
+          "诊所补贴",
+          "CHAS",
+          "Medifund",
+          "药费"
+        ],
+        "search_text_en": "medisave national medical savings scheme to help pay for approved healthcare expenses medisave health savings approved claims use is subject to approved items and withdrawal limits depending on treatment service typically used at point of care the institution will guide you based on applicable rules medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
+        "search_text_zh": "medisave 保健储蓄 国家保健储蓄计划 可用于支付符合规定的医疗支出 medisave 保健储蓄 医疗支出 可使用范围与提取额度取决于医疗项目 服务类型 以官方规则为准 一般在就医结算时按规定使用 由医疗机构按规则协助处理 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
+      }
+    },
+    {
+      "id": "medishield_life",
+      "category": "healthcare_support",
+      "name_en": "MediShield Life",
+      "name_zh": "MediShield Life（终身健保）",
+      "summary_en": "Basic national health insurance that helps pay for large hospital bills and select costly outpatient treatments.",
+      "summary_zh": "国家基础医疗保险，帮助支付较大住院费用及部分高额门诊治疗费用。",
+      "keywords_en": [
+        "medishield life",
+        "insurance",
+        "hospital bill",
+        "premium subsidy"
+      ],
+      "keywords_zh": [
+        "MediShield Life",
+        "保险",
+        "住院费用",
+        "保费补贴"
+      ],
+      "eligibility_en": [
+        "Coverage rules and subsidies follow MOH guidance; premium subsidies may apply."
+      ],
+      "eligibility_zh": [
+        "保障与补贴规则以 MOH 官方说明为准。"
+      ],
+      "how_to_apply_en": [
+        "Generally automatic coverage for Singaporeans/PRs; claims are made through the healthcare institution according to rules."
+      ],
+      "how_to_apply_zh": [
+        "通常为自动覆盖；理赔一般由医疗机构按规则处理。"
+      ],
+      "official_links": [
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/",
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-premiums-and-subsidies/"
+      ],
+      "sources": [
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/",
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-premiums-and-subsidies/"
+      ],
+      "domain_id": "healthcare",
+      "sections": {
+        "overview": {
+          "en": "Basic national health insurance that helps pay for large hospital bills and select costly outpatient treatments.",
+          "zh": "国家基础医疗保险，帮助支付较大住院费用及部分高额门诊治疗费用。"
+        },
+        "eligibility": {
+          "en": [
+            "Coverage rules and subsidies follow MOH guidance; premium subsidies may apply."
+          ],
+          "zh": [
+            "保障与补贴规则以 MOH 官方说明为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Generally automatic coverage for Singaporeans/PRs; claims are made through the healthcare institution according to rules."
+          ],
+          "zh": [
+            "通常为自动覆盖；理赔一般由医疗机构按规则处理。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "healthcare",
+        "category": "healthcare_support",
+        "aliases_en": [
+          "MediShield Life",
+          "medishield life",
+          "insurance",
+          "hospital bill",
+          "premium subsidy"
+        ],
+        "aliases_zh": [
+          "MediShield Life（终身健保）",
+          "MediShield Life",
+          "保险",
+          "住院费用",
+          "保费补贴"
+        ],
+        "broader_terms_en": [
+          "medical",
+          "hospital bill",
+          "clinic subsidy",
+          "CHAS",
+          "Medifund",
+          "medication"
+        ],
+        "broader_terms_zh": [
+          "医疗",
+          "医院账单",
+          "诊所补贴",
+          "CHAS",
+          "Medifund",
+          "药费"
+        ],
+        "search_text_en": "medishield life basic national health insurance that helps pay for large hospital bills and select costly outpatient treatments medishield life insurance hospital bill premium subsidy coverage rules and subsidies follow moh guidance premium subsidies may apply generally automatic coverage for singaporeans prs claims are made through the healthcare institution according to rules medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
+        "search_text_zh": "medishield life 终身健保 国家基础医疗保险 帮助支付较大住院费用及部分高额门诊治疗费用 medishield life 保险 住院费用 保费补贴 保障与补贴规则以 moh 官方说明为准 通常为自动覆盖 理赔一般由医疗机构按规则处理 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
+      }
+    },
+    {
+      "id": "pioneer_generation_package",
+      "category": "healthcare_support",
+      "name_en": "Pioneer Generation Package",
+      "name_zh": "Pioneer Generation Package（建国一代配套）",
+      "summary_en": "Healthcare support for eligible Pioneer Generation seniors, including premium subsidies and other benefits.",
+      "summary_zh": "为符合条件的建国一代长者提供医疗支持（含保费补贴等）。",
+      "keywords_en": [
+        "pioneer generation",
+        "senior healthcare support",
+        "premium subsidy"
+      ],
+      "keywords_zh": [
+        "建国一代",
+        "长者医疗支持",
+        "保费补贴"
+      ],
+      "eligibility_en": [
+        "Eligibility is based on official Pioneer Generation criteria; benefits are typically administered automatically."
+      ],
+      "eligibility_zh": [
+        "资格以官方“建国一代”条件为准；福利一般为自动评估发放/适用。"
+      ],
+      "how_to_apply_en": [
+        "Generally no application needed; verify on official pages if unsure."
+      ],
+      "how_to_apply_zh": [
+        "通常无需申请；如不确定可在官方页面核对。"
+      ],
+      "official_links": [
+        "https://supportgowhere.life.gov.sg/"
+      ],
+      "sources": [
+        "https://supportgowhere.life.gov.sg/",
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-premiums-and-subsidies/"
+      ],
+      "domain_id": "healthcare",
+      "sections": {
+        "overview": {
+          "en": "Healthcare support for eligible Pioneer Generation seniors, including premium subsidies and other benefits.",
+          "zh": "为符合条件的建国一代长者提供医疗支持（含保费补贴等）。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility is based on official Pioneer Generation criteria; benefits are typically administered automatically."
+          ],
+          "zh": [
+            "资格以官方“建国一代”条件为准；福利一般为自动评估发放/适用。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Generally no application needed; verify on official pages if unsure."
+          ],
+          "zh": [
+            "通常无需申请；如不确定可在官方页面核对。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "healthcare",
+        "category": "healthcare_support",
+        "aliases_en": [
+          "Pioneer Generation Package",
+          "pioneer generation",
+          "senior healthcare support",
+          "premium subsidy"
+        ],
+        "aliases_zh": [
+          "Pioneer Generation Package（建国一代配套）",
+          "建国一代",
+          "长者医疗支持",
+          "保费补贴"
+        ],
+        "broader_terms_en": [
+          "medical",
+          "hospital bill",
+          "clinic subsidy",
+          "CHAS",
+          "Medifund",
+          "medication"
+        ],
+        "broader_terms_zh": [
+          "医疗",
+          "医院账单",
+          "诊所补贴",
+          "CHAS",
+          "Medifund",
+          "药费"
+        ],
+        "search_text_en": "pioneer generation package healthcare support for eligible pioneer generation seniors including premium subsidies and other benefits pioneer generation senior healthcare support premium subsidy eligibility is based on official pioneer generation criteria benefits are typically administered automatically generally no application needed verify on official pages if unsure medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
+        "search_text_zh": "pioneer generation package 建国一代配套 为符合条件的建国一代长者提供医疗支持 含保费补贴等 建国一代 长者医疗支持 保费补贴 资格以官方 建国一代 条件为准 福利一般为自动评估发放 适用 通常无需申请 如不确定可在官方页面核对 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
+      }
+    },
+    {
+      "id": "merdeka_generation_package",
+      "category": "healthcare_support",
+      "name_en": "Merdeka Generation Package",
+      "name_zh": "Merdeka Generation Package（立国一代配套）",
+      "summary_en": "Healthcare benefits for eligible seniors, including additional outpatient subsidies and premium subsidies.",
+      "summary_zh": "为符合条件的长者提供医疗支持（含门诊补贴、保费补贴等）。",
+      "keywords_en": [
+        "merdeka generation",
+        "senior subsidies",
+        "outpatient subsidy"
+      ],
+      "keywords_zh": [
+        "立国一代",
+        "长者补贴",
+        "门诊补贴"
+      ],
+      "eligibility_en": [
+        "Eligibility follows official Merdeka Generation criteria; benefits are typically administered automatically."
+      ],
+      "eligibility_zh": [
+        "资格以官方“立国一代”条件为准；福利一般自动适用/发放。"
+      ],
+      "how_to_apply_en": [
+        "Generally no application needed; verify on official pages if unsure."
+      ],
+      "how_to_apply_zh": [
+        "通常无需申请；如不确定可在官方页面核对。"
+      ],
+      "official_links": [
+        "https://supportgowhere.life.gov.sg/schemes/lceYNjsb/merdeka-generation-package"
+      ],
+      "sources": [
+        "https://supportgowhere.life.gov.sg/schemes/lceYNjsb/merdeka-generation-package",
+        "https://www.moh.gov.sg/managing-expenses/schemes-and-subsidies/medishield-life/medishield-life-premiums-and-subsidies/"
+      ],
+      "domain_id": "healthcare",
+      "sections": {
+        "overview": {
+          "en": "Healthcare benefits for eligible seniors, including additional outpatient subsidies and premium subsidies.",
+          "zh": "为符合条件的长者提供医疗支持（含门诊补贴、保费补贴等）。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility follows official Merdeka Generation criteria; benefits are typically administered automatically."
+          ],
+          "zh": [
+            "资格以官方“立国一代”条件为准；福利一般自动适用/发放。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Generally no application needed; verify on official pages if unsure."
+          ],
+          "zh": [
+            "通常无需申请；如不确定可在官方页面核对。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "healthcare",
+        "category": "healthcare_support",
+        "aliases_en": [
+          "Merdeka Generation Package",
+          "merdeka generation",
+          "senior subsidies",
+          "outpatient subsidy"
+        ],
+        "aliases_zh": [
+          "Merdeka Generation Package（立国一代配套）",
+          "立国一代",
+          "长者补贴",
+          "门诊补贴"
+        ],
+        "broader_terms_en": [
+          "medical",
+          "hospital bill",
+          "clinic subsidy",
+          "CHAS",
+          "Medifund",
+          "medication"
+        ],
+        "broader_terms_zh": [
+          "医疗",
+          "医院账单",
+          "诊所补贴",
+          "CHAS",
+          "Medifund",
+          "药费"
+        ],
+        "search_text_en": "merdeka generation package healthcare benefits for eligible seniors including additional outpatient subsidies and premium subsidies merdeka generation senior subsidies outpatient subsidy eligibility follows official merdeka generation criteria benefits are typically administered automatically generally no application needed verify on official pages if unsure medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
+        "search_text_zh": "merdeka generation package 立国一代配套 为符合条件的长者提供医疗支持 含门诊补贴 保费补贴等 立国一代 长者补贴 门诊补贴 资格以官方 立国一代 条件为准 福利一般自动适用 发放 通常无需申请 如不确定可在官方页面核对 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
+      }
+    },
+    {
+      "id": "careshield_life",
+      "category": "healthcare_support",
+      "name_en": "CareShield Life",
+      "name_zh": "CareShield Life（长期护理险）",
+      "summary_en": "Long-term care insurance scheme that provides monthly payouts if an insured develops severe disability.",
+      "summary_zh": "长期护理保险；若发生严重失能，可获得月度现金给付。",
+      "keywords_en": [
+        "careshield life",
+        "long-term care",
+        "severe disability payout"
+      ],
+      "keywords_zh": [
+        "CareShield Life",
+        "长期护理",
+        "严重失能",
+        "月度给付"
+      ],
+      "eligibility_en": [
+        "Payout claims require meeting the programme’s severe disability definition and assessment process, per official guidance."
+      ],
+      "eligibility_zh": [
+        "申请给付需符合官方“严重失能”定义与评估流程。"
+      ],
+      "how_to_apply_en": [
+        "Follow official claim guidance and submit required documents/assessment as instructed."
+      ],
+      "how_to_apply_zh": [
+        "按官方理赔指引提交评估与材料。"
+      ],
+      "official_links": [
+        "https://www.careshieldlife.gov.sg/claims/",
+        "https://www.cpf.gov.sg/member/healthcare-financing/careshield-life"
+      ],
+      "sources": [
+        "https://www.careshieldlife.gov.sg/claims/",
+        "https://www.cpf.gov.sg/service/article/how-can-i-qualify-for-careshield-life-claims"
+      ],
+      "domain_id": "healthcare",
+      "sections": {
+        "overview": {
+          "en": "Long-term care insurance scheme that provides monthly payouts if an insured develops severe disability.",
+          "zh": "长期护理保险；若发生严重失能，可获得月度现金给付。"
+        },
+        "eligibility": {
+          "en": [
+            "Payout claims require meeting the programme’s severe disability definition and assessment process, per official guidance."
+          ],
+          "zh": [
+            "申请给付需符合官方“严重失能”定义与评估流程。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Follow official claim guidance and submit required documents/assessment as instructed."
+          ],
+          "zh": [
+            "按官方理赔指引提交评估与材料。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "healthcare",
+        "category": "healthcare_support",
+        "aliases_en": [
+          "CareShield Life",
+          "careshield life",
+          "long-term care",
+          "severe disability payout"
+        ],
+        "aliases_zh": [
+          "CareShield Life（长期护理险）",
+          "CareShield Life",
+          "长期护理",
+          "严重失能",
+          "月度给付"
+        ],
+        "broader_terms_en": [
+          "medical",
+          "hospital bill",
+          "clinic subsidy",
+          "CHAS",
+          "Medifund",
+          "medication"
+        ],
+        "broader_terms_zh": [
+          "医疗",
+          "医院账单",
+          "诊所补贴",
+          "CHAS",
+          "Medifund",
+          "药费"
+        ],
+        "search_text_en": "careshield life long term care insurance scheme that provides monthly payouts if an insured develops severe disability careshield life long term care severe disability payout payout claims require meeting the programme s severe disability definition and assessment process per official guidance follow official claim guidance and submit required documents assessment as instructed medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
+        "search_text_zh": "careshield life 长期护理险 长期护理保险 若发生严重失能 可获得月度现金给付 careshield life 长期护理 严重失能 月度给付 申请给付需符合官方 严重失能 定义与评估流程 按官方理赔指引提交评估与材料 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
+      }
+    },
+    {
+      "id": "healthier_sg",
+      "category": "healthcare_support",
+      "name_en": "Healthier SG",
+      "name_zh": "Healthier SG（健康促进计划）",
+      "summary_en": "National preventive health initiative; enrol with a family doctor and receive structured support for healthier living.",
+      "summary_zh": "国家预防与健康促进计划；与家庭医生建立长期健康管理支持。",
+      "keywords_en": [
+        "healthier sg",
+        "preventive health",
+        "screening",
+        "family doctor"
+      ],
+      "keywords_zh": [
+        "Healthier SG",
+        "预防保健",
+        "体检筛查",
+        "家庭医生"
+      ],
+      "eligibility_en": [
+        "MOH progressively invites Singapore Citizens and PRs aged 40 and above; enrolment rules can change over time—check official FAQ."
+      ],
+      "eligibility_zh": [
+        "MOH 会逐步邀请 40 岁及以上的新加坡公民与永久居民；具体报名规则以官方 FAQ 为准。"
+      ],
+      "how_to_apply_en": [
+        "Follow the official enrolment guidance; choose an enrolled clinic/polyclinic as instructed."
+      ],
+      "how_to_apply_zh": [
+        "按官方报名指引选择并登记参与诊所/综合诊疗所。"
+      ],
+      "official_links": [
+        "https://www.healthiersg.gov.sg/"
+      ],
+      "sources": [
+        "https://ask.gov.sg/healthiersg/questions/clkrnuwrh0000l40gtsrz3di7",
+        "https://www.healthiersg.gov.sg/enrolment/benefits/"
+      ],
+      "domain_id": "healthcare",
+      "sections": {
+        "overview": {
+          "en": "National preventive health initiative; enrol with a family doctor and receive structured support for healthier living.",
+          "zh": "国家预防与健康促进计划；与家庭医生建立长期健康管理支持。"
+        },
+        "eligibility": {
+          "en": [
+            "MOH progressively invites Singapore Citizens and PRs aged 40 and above; enrolment rules can change over time—check official FAQ."
+          ],
+          "zh": [
+            "MOH 会逐步邀请 40 岁及以上的新加坡公民与永久居民；具体报名规则以官方 FAQ 为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Follow the official enrolment guidance; choose an enrolled clinic/polyclinic as instructed."
+          ],
+          "zh": [
+            "按官方报名指引选择并登记参与诊所/综合诊疗所。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "healthcare",
+        "category": "healthcare_support",
+        "aliases_en": [
+          "Healthier SG",
+          "healthier sg",
+          "preventive health",
+          "screening",
+          "family doctor"
+        ],
+        "aliases_zh": [
+          "Healthier SG（健康促进计划）",
+          "Healthier SG",
+          "预防保健",
+          "体检筛查",
+          "家庭医生"
+        ],
+        "broader_terms_en": [
+          "medical",
+          "hospital bill",
+          "clinic subsidy",
+          "CHAS",
+          "Medifund",
+          "medication"
+        ],
+        "broader_terms_zh": [
+          "医疗",
+          "医院账单",
+          "诊所补贴",
+          "CHAS",
+          "Medifund",
+          "药费"
+        ],
+        "search_text_en": "healthier sg national preventive health initiative enrol with a family doctor and receive structured support for healthier living healthier sg preventive health screening family doctor moh progressively invites singapore citizens and prs aged 40 and above enrolment rules can change over time check official faq follow the official enrolment guidance choose an enrolled clinic polyclinic as instructed medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
+        "search_text_zh": "healthier sg 健康促进计划 国家预防与健康促进计划 与家庭医生建立长期健康管理支持 healthier sg 预防保健 体检筛查 家庭医生 moh 会逐步邀请 40 岁及以上的新加坡公民与永久居民 具体报名规则以官方 faq 为准 按官方报名指引选择并登记参与诊所 综合诊疗所 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
+      }
+    },
+    {
+      "id": "aic_services",
+      "category": "elderly_support",
+      "name_en": "AIC Care Services (Eldercare & Caregiver Support)",
+      "name_zh": "AIC 照护服务（长者与照护者支持）",
+      "summary_en": "One-stop portal for community care services and caregiver resources.",
+      "summary_zh": "提供社区照护服务与照护者资源的一站式平台。",
+      "keywords_en": [
+        "aic",
+        "caregiver",
+        "eldercare",
+        "home care",
+        "day care"
+      ],
+      "keywords_zh": [
+        "AIC",
+        "照护者",
+        "长者照护",
+        "居家照护",
+        "日间照护"
+      ],
+      "eligibility_en": [
+        "Depends on service type and assessment."
+      ],
+      "eligibility_zh": [
+        "取决于服务类型与评估。"
+      ],
+      "how_to_apply_en": [
+        "Browse the relevant care service on AIC.sg.",
+        "Common route: talk to your doctor (hospital/polyclinic) for referral/application, or visit an AIC Link for assistance (service-dependent)."
+      ],
+      "how_to_apply_zh": [
+        "在 AIC.sg 查询对应照护服务。",
+        "常见路径：由医院/综合诊疗所医生协助转介/申请，或到 AIC Link 获取协助（视服务而定）。"
+      ],
+      "official_links": [
+        "https://www.aic.sg/"
+      ],
+      "sources": [
+        "https://www.aic.sg/care-services/",
+        "https://www.aic.sg/care-services/home-personal-care/"
+      ],
+      "domain_id": "seniors",
+      "sections": {
+        "overview": {
+          "en": "One-stop portal for community care services and caregiver resources.",
+          "zh": "提供社区照护服务与照护者资源的一站式平台。"
+        },
+        "eligibility": {
+          "en": [
+            "Depends on service type and assessment."
+          ],
+          "zh": [
+            "取决于服务类型与评估。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Browse the relevant care service on AIC.sg.",
+            "Common route: talk to your doctor (hospital/polyclinic) for referral/application, or visit an AIC Link for assistance (service-dependent)."
+          ],
+          "zh": [
+            "在 AIC.sg 查询对应照护服务。",
+            "常见路径：由医院/综合诊疗所医生协助转介/申请，或到 AIC Link 获取协助（视服务而定）。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "seniors",
+        "category": "elderly_support",
+        "aliases_en": [
+          "AIC Care Services (Eldercare & Caregiver Support)",
+          "aic",
+          "caregiver",
+          "eldercare",
+          "home care",
+          "day care"
+        ],
+        "aliases_zh": [
+          "AIC 照护服务（长者与照护者支持）",
+          "AIC",
+          "照护者",
+          "长者照护",
+          "居家照护",
+          "日间照护"
+        ],
+        "broader_terms_en": [
+          "elderly",
+          "caregiver",
+          "home care",
+          "day care"
+        ],
+        "broader_terms_zh": [
+          "长者",
+          "老人",
+          "看护者",
+          "居家照护",
+          "日间照护"
+        ],
+        "search_text_en": "aic care services eldercare caregiver support one stop portal for community care services and caregiver resources aic caregiver eldercare home care day care depends on service type and assessment browse the relevant care service on aic sg common route talk to your doctor hospital polyclinic for referral application or visit an aic link for assistance service dependent elderly caregiver home care day care elderly_support seniors",
+        "search_text_zh": "aic 照护服务 长者与照护者支持 提供社区照护服务与照护者资源的一站式平台 aic 照护者 长者照护 居家照护 日间照护 取决于服务类型与评估 在 aic sg 查询对应照护服务 常见路径 由医院 综合诊疗所医生协助转介 申请 或到 aic link 获取协助 视服务而定 长者 老人 看护者 居家照护 日间照护 elderly_support seniors"
+      }
+    },
+    {
+      "id": "atf_sgenable",
+      "category": "disability_support",
+      "name_en": "Assistive Technology Fund (ATF)",
+      "name_zh": "辅助科技基金（ATF）",
+      "summary_en": "Subsidies for assistive technology devices for eligible persons with disabilities (assessment required).",
+      "summary_zh": "为符合条件的残障人士提供辅助科技器材补贴（需评估）。",
+      "keywords_en": [
+        "assistive technology",
+        "wheelchair",
+        "hearing aid",
+        "sgenable",
+        "disability"
+      ],
+      "keywords_zh": [
+        "辅助器材",
+        "轮椅",
+        "助听器",
+        "SG Enable",
+        "残障"
+      ],
+      "eligibility_en": [
+        "Eligibility and assessment apply; see SG Enable guidance."
+      ],
+      "eligibility_zh": [
+        "需符合条件并完成评估；以 SG Enable 指引为准。"
+      ],
+      "how_to_apply_en": [
+        "Apply via SG Enable / approved assessors as required by the programme."
+      ],
+      "how_to_apply_zh": [
+        "按 SG Enable 指引通过评估机构/渠道申请。"
+      ],
+      "official_links": [
+        "https://www.sgenable.sg/"
+      ],
+      "sources": [
+        "https://www.sgenable.sg/"
+      ],
+      "domain_id": "disability",
+      "sections": {
+        "overview": {
+          "en": "Subsidies for assistive technology devices for eligible persons with disabilities (assessment required).",
+          "zh": "为符合条件的残障人士提供辅助科技器材补贴（需评估）。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility and assessment apply; see SG Enable guidance."
+          ],
+          "zh": [
+            "需符合条件并完成评估；以 SG Enable 指引为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Apply via SG Enable / approved assessors as required by the programme."
+          ],
+          "zh": [
+            "按 SG Enable 指引通过评估机构/渠道申请。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "disability",
+        "category": "disability_support",
+        "aliases_en": [
+          "Assistive Technology Fund (ATF)",
+          "assistive technology",
+          "wheelchair",
+          "hearing aid",
+          "sgenable",
+          "disability"
+        ],
+        "aliases_zh": [
+          "辅助科技基金（ATF）",
+          "辅助器材",
+          "轮椅",
+          "助听器",
+          "SG Enable",
+          "残障"
+        ],
+        "broader_terms_en": [
+          "PWD",
+          "assistive devices",
+          "care services",
+          "employment support"
+        ],
+        "broader_terms_zh": [
+          "残障",
+          "残疾",
+          "辅助器材",
+          "照护服务",
+          "就业支持"
+        ],
+        "search_text_en": "assistive technology fund atf subsidies for assistive technology devices for eligible persons with disabilities assessment required assistive technology wheelchair hearing aid sgenable disability eligibility and assessment apply see sg enable guidance apply via sg enable approved assessors as required by the programme pwd assistive devices care services employment support disability_support disability",
+        "search_text_zh": "辅助科技基金 atf 为符合条件的残障人士提供辅助科技器材补贴 需评估 辅助器材 轮椅 助听器 sg enable 残障 需符合条件并完成评估 以 sg enable 指引为准 按 sg enable 指引通过评估机构 渠道申请 残障 残疾 辅助器材 照护服务 就业支持 disability_support disability"
+      }
+    },
+    {
+      "id": "open_door_programme_odp",
+      "category": "disability_support",
+      "name_en": "Open Door Programme (ODP)",
+      "name_zh": "Open Door Programme（ODP 就业支持）",
+      "summary_en": "Grants and employment support to help employers hire and integrate persons with disabilities.",
+      "summary_zh": "通过补助与就业支持，帮助雇主聘用并融入残障人士。",
+      "keywords_en": [
+        "odp",
+        "hire persons with disabilities",
+        "job redesign grant",
+        "sgenable"
+      ],
+      "keywords_zh": [
+        "ODP",
+        "残障就业",
+        "岗位改造",
+        "SG Enable"
+      ],
+      "eligibility_en": [
+        "Programme is employer-facing; details and grant components are on SG Enable."
+      ],
+      "eligibility_zh": [
+        "通常面向雇主；具体补助与条件以 SG Enable 说明为准。"
+      ],
+      "how_to_apply_en": [
+        "Employers contact SG Enable and follow ODP application steps."
+      ],
+      "how_to_apply_zh": [
+        "雇主联系 SG Enable 并按 ODP 流程申请。"
+      ],
+      "official_links": [
+        "https://www.sgenable.sg/your-first-stop/hiring-employment/employers/employ"
+      ],
+      "sources": [
+        "https://www.sgenable.sg/your-first-stop/hiring-employment/employers/employ"
+      ],
+      "domain_id": "disability",
+      "sections": {
+        "overview": {
+          "en": "Grants and employment support to help employers hire and integrate persons with disabilities.",
+          "zh": "通过补助与就业支持，帮助雇主聘用并融入残障人士。"
+        },
+        "eligibility": {
+          "en": [
+            "Programme is employer-facing; details and grant components are on SG Enable."
+          ],
+          "zh": [
+            "通常面向雇主；具体补助与条件以 SG Enable 说明为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Employers contact SG Enable and follow ODP application steps."
+          ],
+          "zh": [
+            "雇主联系 SG Enable 并按 ODP 流程申请。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "disability",
+        "category": "disability_support",
+        "aliases_en": [
+          "Open Door Programme (ODP)",
+          "odp",
+          "hire persons with disabilities",
+          "job redesign grant",
+          "sgenable"
+        ],
+        "aliases_zh": [
+          "Open Door Programme（ODP 就业支持）",
+          "ODP",
+          "残障就业",
+          "岗位改造",
+          "SG Enable"
+        ],
+        "broader_terms_en": [
+          "PWD",
+          "assistive devices",
+          "care services",
+          "employment support"
+        ],
+        "broader_terms_zh": [
+          "残障",
+          "残疾",
+          "辅助器材",
+          "照护服务",
+          "就业支持"
+        ],
+        "search_text_en": "open door programme odp grants and employment support to help employers hire and integrate persons with disabilities odp hire persons with disabilities job redesign grant sgenable programme is employer facing details and grant components are on sg enable employers contact sg enable and follow odp application steps pwd assistive devices care services employment support disability_support disability",
+        "search_text_zh": "open door programme odp 就业支持 通过补助与就业支持 帮助雇主聘用并融入残障人士 odp 残障就业 岗位改造 sg enable 通常面向雇主 具体补助与条件以 sg enable 说明为准 雇主联系 sg enable 并按 odp 流程申请 残障 残疾 辅助器材 照护服务 就业支持 disability_support disability"
+      }
+    },
+    {
+      "id": "enabling_employment_credit_eec",
+      "category": "disability_support",
+      "name_en": "Enabling Employment Credit (EEC)",
+      "name_zh": "Enabling Employment Credit（EEC 工资抵扣）",
+      "summary_en": "Wage offsets for employers hiring persons with disabilities (auto-assessed via CPF contributions).",
+      "summary_zh": "雇主聘用残障人士可获得工资抵扣（通常根据 CPF 自动评估发放）。",
+      "keywords_en": [
+        "eec",
+        "wage offset",
+        "employer support",
+        "pwd employment"
+      ],
+      "keywords_zh": [
+        "EEC",
+        "工资抵扣",
+        "雇主补贴",
+        "残障就业"
+      ],
+      "eligibility_en": [
+        "Eligibility and payout rules are defined by IRAS; generally computed from CPF contributions."
+      ],
+      "eligibility_zh": [
+        "资格与发放规则以 IRAS 为准；通常基于 CPF 缴交记录计算。"
+      ],
+      "how_to_apply_en": [
+        "Generally no application needed if eligible; follow IRAS guidance."
+      ],
+      "how_to_apply_zh": [
+        "多数情况下无需申请；以 IRAS 指引为准。"
+      ],
+      "official_links": [
+        "https://www.iras.gov.sg/schemes/disbursement-schemes/senior-employment-credit-%28sec%29-cpf-transition-offset-%28cto%29-and-enabling-employment-credit-%28eec%29"
+      ],
+      "sources": [
+        "https://www.iras.gov.sg/schemes/disbursement-schemes/senior-employment-credit-%28sec%29-cpf-transition-offset-%28cto%29-and-enabling-employment-credit-%28eec%29"
+      ],
+      "domain_id": "disability",
+      "sections": {
+        "overview": {
+          "en": "Wage offsets for employers hiring persons with disabilities (auto-assessed via CPF contributions).",
+          "zh": "雇主聘用残障人士可获得工资抵扣（通常根据 CPF 自动评估发放）。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility and payout rules are defined by IRAS; generally computed from CPF contributions."
+          ],
+          "zh": [
+            "资格与发放规则以 IRAS 为准；通常基于 CPF 缴交记录计算。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Generally no application needed if eligible; follow IRAS guidance."
+          ],
+          "zh": [
+            "多数情况下无需申请；以 IRAS 指引为准。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "disability",
+        "category": "disability_support",
+        "aliases_en": [
+          "Enabling Employment Credit (EEC)",
+          "eec",
+          "wage offset",
+          "employer support",
+          "pwd employment"
+        ],
+        "aliases_zh": [
+          "Enabling Employment Credit（EEC 工资抵扣）",
+          "EEC",
+          "工资抵扣",
+          "雇主补贴",
+          "残障就业"
+        ],
+        "broader_terms_en": [
+          "PWD",
+          "assistive devices",
+          "care services",
+          "employment support"
+        ],
+        "broader_terms_zh": [
+          "残障",
+          "残疾",
+          "辅助器材",
+          "照护服务",
+          "就业支持"
+        ],
+        "search_text_en": "enabling employment credit eec wage offsets for employers hiring persons with disabilities auto assessed via cpf contributions eec wage offset employer support pwd employment eligibility and payout rules are defined by iras generally computed from cpf contributions generally no application needed if eligible follow iras guidance pwd assistive devices care services employment support disability_support disability",
+        "search_text_zh": "enabling employment credit eec 工资抵扣 雇主聘用残障人士可获得工资抵扣 通常根据 cpf 自动评估发放 eec 工资抵扣 雇主补贴 残障就业 资格与发放规则以 iras 为准 通常基于 cpf 缴交记录计算 多数情况下无需申请 以 iras 指引为准 残障 残疾 辅助器材 照护服务 就业支持 disability_support disability"
+      }
+    },
+    {
+      "id": "moe_fas",
+      "category": "education_support",
+      "name_en": "MOE Financial Assistance Scheme (FAS)",
+      "name_zh": "教育部助学金（FAS）",
+      "summary_en": "Financial assistance for eligible students (school-based; details vary).",
+      "summary_zh": "为符合条件学生提供助学支持（通常以学校流程为主）。",
+      "keywords_en": [
+        "school fees assistance",
+        "fas",
+        "textbook subsidy",
+        "uniform subsidy"
+      ],
+      "keywords_zh": [
+        "助学金",
+        "学费减免",
+        "课本补贴",
+        "校服补贴"
+      ],
+      "eligibility_en": [
+        "Eligibility and benefits vary by school level; apply via the school according to MOE guidance."
+      ],
+      "eligibility_zh": [
+        "资格与补助内容随学段/学校规定而异；通常按 MOE 指引由学校受理。"
+      ],
+      "how_to_apply_en": [
+        "Contact your child’s school; follow the school’s MOE FAS application process."
+      ],
+      "how_to_apply_zh": [
+        "联系学校并按学校的 MOE FAS 流程办理。"
+      ],
+      "official_links": [
+        "https://www.moe.gov.sg/"
+      ],
+      "sources": [
+        "https://www.moe.gov.sg/"
+      ],
+      "domain_id": "education",
+      "sections": {
+        "overview": {
+          "en": "Financial assistance for eligible students (school-based; details vary).",
+          "zh": "为符合条件学生提供助学支持（通常以学校流程为主）。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility and benefits vary by school level; apply via the school according to MOE guidance."
+          ],
+          "zh": [
+            "资格与补助内容随学段/学校规定而异；通常按 MOE 指引由学校受理。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Contact your child’s school; follow the school’s MOE FAS application process."
+          ],
+          "zh": [
+            "联系学校并按学校的 MOE FAS 流程办理。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "education",
+        "category": "education_support",
+        "aliases_en": [
+          "MOE Financial Assistance Scheme (FAS)",
+          "school fees assistance",
+          "fas",
+          "textbook subsidy",
+          "uniform subsidy"
+        ],
+        "aliases_zh": [
+          "教育部助学金（FAS）",
+          "助学金",
+          "学费减免",
+          "课本补贴",
+          "校服补贴"
+        ],
+        "broader_terms_en": [
+          "school fees",
+          "childcare",
+          "student care",
+          "preschool"
+        ],
+        "broader_terms_zh": [
+          "学费",
+          "托儿",
+          "课后托管",
+          "幼儿园",
+          "教育"
+        ],
+        "search_text_en": "moe financial assistance scheme fas financial assistance for eligible students school based details vary school fees assistance fas textbook subsidy uniform subsidy eligibility and benefits vary by school level apply via the school according to moe guidance contact your child s school follow the school s moe fas application process school fees childcare student care preschool education_support education",
+        "search_text_zh": "教育部助学金 fas 为符合条件学生提供助学支持 通常以学校流程为主 助学金 学费减免 课本补贴 校服补贴 资格与补助内容随学段 学校规定而异 通常按 moe 指引由学校受理 联系学校并按学校的 moe fas 流程办理 学费 托儿 课后托管 幼儿园 教育 education_support education"
+      }
+    },
+    {
+      "id": "kifas",
+      "category": "education_support",
+      "name_en": "Kindergarten Fee Assistance Scheme (KiFAS)",
+      "name_zh": "幼儿园学费援助（KiFAS）",
+      "summary_en": "Fee assistance for eligible children in participating kindergartens.",
+      "summary_zh": "为符合条件儿童提供幼儿园学费援助（限参与机构）。",
+      "keywords_en": [
+        "kifas",
+        "kindergarten fee",
+        "preschool assistance"
+      ],
+      "keywords_zh": [
+        "KiFAS",
+        "幼儿园",
+        "学费援助",
+        "学前教育"
+      ],
+      "eligibility_en": [
+        "Criteria apply; refer to MSF/official guidance and participating kindergarten rules."
+      ],
+      "eligibility_zh": [
+        "需符合条件；以 MSF/官方说明与参与幼儿园规则为准。"
+      ],
+      "how_to_apply_en": [
+        "Apply through the participating kindergarten as guided."
+      ],
+      "how_to_apply_zh": [
+        "按参与幼儿园指引申请。"
+      ],
+      "official_links": [
+        "https://www.msf.gov.sg/"
+      ],
+      "sources": [
+        "https://www.msf.gov.sg/"
+      ],
+      "domain_id": "education",
+      "sections": {
+        "overview": {
+          "en": "Fee assistance for eligible children in participating kindergartens.",
+          "zh": "为符合条件儿童提供幼儿园学费援助（限参与机构）。"
+        },
+        "eligibility": {
+          "en": [
+            "Criteria apply; refer to MSF/official guidance and participating kindergarten rules."
+          ],
+          "zh": [
+            "需符合条件；以 MSF/官方说明与参与幼儿园规则为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Apply through the participating kindergarten as guided."
+          ],
+          "zh": [
+            "按参与幼儿园指引申请。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "education",
+        "category": "education_support",
+        "aliases_en": [
+          "Kindergarten Fee Assistance Scheme (KiFAS)",
+          "kifas",
+          "kindergarten fee",
+          "preschool assistance"
+        ],
+        "aliases_zh": [
+          "幼儿园学费援助（KiFAS）",
+          "KiFAS",
+          "幼儿园",
+          "学费援助",
+          "学前教育"
+        ],
+        "broader_terms_en": [
+          "school fees",
+          "childcare",
+          "student care",
+          "preschool"
+        ],
+        "broader_terms_zh": [
+          "学费",
+          "托儿",
+          "课后托管",
+          "幼儿园",
+          "教育"
+        ],
+        "search_text_en": "kindergarten fee assistance scheme kifas fee assistance for eligible children in participating kindergartens kifas kindergarten fee preschool assistance criteria apply refer to msf official guidance and participating kindergarten rules apply through the participating kindergarten as guided school fees childcare student care preschool education_support education",
+        "search_text_zh": "幼儿园学费援助 kifas 为符合条件儿童提供幼儿园学费援助 限参与机构 kifas 幼儿园 学费援助 学前教育 需符合条件 以 msf 官方说明与参与幼儿园规则为准 按参与幼儿园指引申请 学费 托儿 课后托管 幼儿园 教育 education_support education"
+      }
+    },
+    {
+      "id": "ecda_childcare_subsidy",
+      "category": "education_support",
+      "name_en": "Childcare Subsidies (Basic & Additional)",
+      "name_zh": "托儿补贴（基础补贴与额外补贴）",
+      "summary_en": "Subsidies to reduce childcare fees at licensed centres (subject to criteria).",
+      "summary_zh": "为在持牌中心就读的儿童提供托儿费用补贴（需符合条件）。",
+      "keywords_en": [
+        "childcare subsidy",
+        "infant care",
+        "preschool subsidy",
+        "ecda"
+      ],
+      "keywords_zh": [
+        "托儿补贴",
+        "婴幼儿托育",
+        "学前补贴",
+        "ECDA"
+      ],
+      "eligibility_en": [
+        "Depends on citizenship and household factors; see ECDA guidance."
+      ],
+      "eligibility_zh": [
+        "与国籍/家庭条件相关；以 ECDA 指引为准。"
+      ],
+      "how_to_apply_en": [
+        "Typically arranged through the childcare centre; follow ECDA/centre instructions."
+      ],
+      "how_to_apply_zh": [
+        "通常通过托育中心办理；按 ECDA/中心指引执行。"
+      ],
+      "official_links": [
+        "https://www.ecda.gov.sg/"
+      ],
+      "sources": [
+        "https://www.ecda.gov.sg/"
+      ],
+      "domain_id": "education",
+      "sections": {
+        "overview": {
+          "en": "Subsidies to reduce childcare fees at licensed centres (subject to criteria).",
+          "zh": "为在持牌中心就读的儿童提供托儿费用补贴（需符合条件）。"
+        },
+        "eligibility": {
+          "en": [
+            "Depends on citizenship and household factors; see ECDA guidance."
+          ],
+          "zh": [
+            "与国籍/家庭条件相关；以 ECDA 指引为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Typically arranged through the childcare centre; follow ECDA/centre instructions."
+          ],
+          "zh": [
+            "通常通过托育中心办理；按 ECDA/中心指引执行。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "education",
+        "category": "education_support",
+        "aliases_en": [
+          "Childcare Subsidies (Basic & Additional)",
+          "childcare subsidy",
+          "infant care",
+          "preschool subsidy",
+          "ecda"
+        ],
+        "aliases_zh": [
+          "托儿补贴（基础补贴与额外补贴）",
+          "托儿补贴",
+          "婴幼儿托育",
+          "学前补贴",
+          "ECDA"
+        ],
+        "broader_terms_en": [
+          "school fees",
+          "childcare",
+          "student care",
+          "preschool"
+        ],
+        "broader_terms_zh": [
+          "学费",
+          "托儿",
+          "课后托管",
+          "幼儿园",
+          "教育"
+        ],
+        "search_text_en": "childcare subsidies basic additional subsidies to reduce childcare fees at licensed centres subject to criteria childcare subsidy infant care preschool subsidy ecda depends on citizenship and household factors see ecda guidance typically arranged through the childcare centre follow ecda centre instructions school fees childcare student care preschool education_support education",
+        "search_text_zh": "托儿补贴 基础补贴与额外补贴 为在持牌中心就读的儿童提供托儿费用补贴 需符合条件 托儿补贴 婴幼儿托育 学前补贴 ecda 与国籍 家庭条件相关 以 ecda 指引为准 通常通过托育中心办理 按 ecda 中心指引执行 学费 托儿 课后托管 幼儿园 教育 education_support education"
+      }
+    },
+    {
+      "id": "student_care_fee_assistance",
+      "category": "education_support",
+      "name_en": "Student Care Fee Assistance (SCFA)",
+      "name_zh": "学生托管费用援助（SCFA）",
+      "summary_en": "Fee assistance for eligible primary school students attending student care centres.",
+      "summary_zh": "为符合条件的小学生托管（Student Care）提供费用援助。",
+      "keywords_en": [
+        "student care",
+        "after school care",
+        "scfa",
+        "fee assistance"
+      ],
+      "keywords_zh": [
+        "学生托管",
+        "课后照护",
+        "SCFA",
+        "费用援助"
+      ],
+      "eligibility_en": [
+        "Criteria apply; check MSF guidance."
+      ],
+      "eligibility_zh": [
+        "以 MSF 条件为准。"
+      ],
+      "how_to_apply_en": [
+        "Apply via the student care centre; follow MSF process."
+      ],
+      "how_to_apply_zh": [
+        "通过学生托管中心申请，按 MSF 流程办理。"
+      ],
+      "official_links": [
+        "https://www.msf.gov.sg/"
+      ],
+      "sources": [
+        "https://www.msf.gov.sg/"
+      ],
+      "domain_id": "education",
+      "sections": {
+        "overview": {
+          "en": "Fee assistance for eligible primary school students attending student care centres.",
+          "zh": "为符合条件的小学生托管（Student Care）提供费用援助。"
+        },
+        "eligibility": {
+          "en": [
+            "Criteria apply; check MSF guidance."
+          ],
+          "zh": [
+            "以 MSF 条件为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Apply via the student care centre; follow MSF process."
+          ],
+          "zh": [
+            "通过学生托管中心申请，按 MSF 流程办理。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "education",
+        "category": "education_support",
+        "aliases_en": [
+          "Student Care Fee Assistance (SCFA)",
+          "student care",
+          "after school care",
+          "scfa",
+          "fee assistance"
+        ],
+        "aliases_zh": [
+          "学生托管费用援助（SCFA）",
+          "学生托管",
+          "课后照护",
+          "SCFA",
+          "费用援助"
+        ],
+        "broader_terms_en": [
+          "school fees",
+          "childcare",
+          "student care",
+          "preschool"
+        ],
+        "broader_terms_zh": [
+          "学费",
+          "托儿",
+          "课后托管",
+          "幼儿园",
+          "教育"
+        ],
+        "search_text_en": "student care fee assistance scfa fee assistance for eligible primary school students attending student care centres student care after school care scfa fee assistance criteria apply check msf guidance apply via the student care centre follow msf process school fees childcare student care preschool education_support education",
+        "search_text_zh": "学生托管费用援助 scfa 为符合条件的小学生托管 student care 提供费用援助 学生托管 课后照护 scfa 费用援助 以 msf 条件为准 通过学生托管中心申请 按 msf 流程办理 学费 托儿 课后托管 幼儿园 教育 education_support education"
+      }
+    },
+    {
+      "id": "baby_bonus",
+      "category": "family_support",
+      "name_en": "Baby Bonus Scheme (incl. CDA)",
+      "name_zh": "Baby Bonus（含 CDA 儿童发展账户）",
+      "summary_en": "Support for families with children, including cash gift and Child Development Account benefits (per current policy).",
+      "summary_zh": "为育儿家庭提供支持（如现金礼与 CDA 儿童发展账户等，按现行政策）。",
+      "keywords_en": [
+        "baby bonus",
+        "cda",
+        "child development account",
+        "newborn support"
+      ],
+      "keywords_zh": [
+        "Baby Bonus",
+        "CDA",
+        "儿童发展账户",
+        "新生儿补贴"
+      ],
+      "eligibility_en": [
+        "Eligibility and benefits vary; check official policy pages."
+      ],
+      "eligibility_zh": [
+        "条件与金额以官网为准。"
+      ],
+      "how_to_apply_en": [
+        "Apply/activate via official channels as guided (e.g., LifeSG / government portal instructions)."
+      ],
+      "how_to_apply_zh": [
+        "按官方渠道指引（如 LifeSG/政府入口）申请/开通。"
+      ],
+      "official_links": [
+        "https://www.msf.gov.sg/"
+      ],
+      "sources": [
+        "https://www.msf.gov.sg/"
+      ],
+      "domain_id": null,
+      "sections": {
+        "overview": {
+          "en": "Support for families with children, including cash gift and Child Development Account benefits (per current policy).",
+          "zh": "为育儿家庭提供支持（如现金礼与 CDA 儿童发展账户等，按现行政策）。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility and benefits vary; check official policy pages."
+          ],
+          "zh": [
+            "条件与金额以官网为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Apply/activate via official channels as guided (e.g., LifeSG / government portal instructions)."
+          ],
+          "zh": [
+            "按官方渠道指引（如 LifeSG/政府入口）申请/开通。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": null,
+        "category": "family_support",
+        "aliases_en": [
+          "Baby Bonus Scheme (incl. CDA)",
+          "baby bonus",
+          "cda",
+          "child development account",
+          "newborn support"
+        ],
+        "aliases_zh": [
+          "Baby Bonus（含 CDA 儿童发展账户）",
+          "Baby Bonus",
+          "CDA",
+          "儿童发展账户",
+          "新生儿补贴"
+        ],
+        "broader_terms_en": [],
+        "broader_terms_zh": [],
+        "search_text_en": "baby bonus scheme incl cda support for families with children including cash gift and child development account benefits per current policy baby bonus cda child development account newborn support eligibility and benefits vary check official policy pages apply activate via official channels as guided e g lifesg government portal instructions family_support",
+        "search_text_zh": "baby bonus 含 cda 儿童发展账户 为育儿家庭提供支持 如现金礼与 cda 儿童发展账户等 按现行政策 baby bonus cda 儿童发展账户 新生儿补贴 条件与金额以官网为准 按官方渠道指引 如 lifesg 政府入口 申请 开通 family_support"
+      }
+    },
+    {
+      "id": "kidstart",
+      "category": "family_support",
+      "name_en": "KidSTART",
+      "name_zh": "KidSTART（儿童早期发展支持）",
+      "summary_en": "Early childhood support programme for eligible families to give children a good start.",
+      "summary_zh": "为符合条件家庭提供儿童早期发展支持，帮助孩子更好起步。",
+      "keywords_en": [
+        "kidstart",
+        "early childhood",
+        "family support",
+        "preschool"
+      ],
+      "keywords_zh": [
+        "KidSTART",
+        "早期发展",
+        "家庭支持",
+        "学前"
+      ],
+      "eligibility_en": [
+        "Eligibility criteria apply; see official info."
+      ],
+      "eligibility_zh": [
+        "以官方条件为准。"
+      ],
+      "how_to_apply_en": [
+        "Check official channels / referral routes on SupportGoWhere or MSF."
+      ],
+      "how_to_apply_zh": [
+        "通过 SupportGoWhere/MSF 查看官方入口或转介流程。"
+      ],
+      "official_links": [
+        "https://supportgowhere.life.gov.sg/"
+      ],
+      "sources": [
+        "https://supportgowhere.life.gov.sg/"
+      ],
+      "domain_id": null,
+      "sections": {
+        "overview": {
+          "en": "Early childhood support programme for eligible families to give children a good start.",
+          "zh": "为符合条件家庭提供儿童早期发展支持，帮助孩子更好起步。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility criteria apply; see official info."
+          ],
+          "zh": [
+            "以官方条件为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Check official channels / referral routes on SupportGoWhere or MSF."
+          ],
+          "zh": [
+            "通过 SupportGoWhere/MSF 查看官方入口或转介流程。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": null,
+        "category": "family_support",
+        "aliases_en": [
+          "KidSTART",
+          "kidstart",
+          "early childhood",
+          "family support",
+          "preschool"
+        ],
+        "aliases_zh": [
+          "KidSTART（儿童早期发展支持）",
+          "KidSTART",
+          "早期发展",
+          "家庭支持",
+          "学前"
+        ],
+        "broader_terms_en": [],
+        "broader_terms_zh": [],
+        "search_text_en": "kidstart early childhood support programme for eligible families to give children a good start kidstart early childhood family support preschool eligibility criteria apply see official info check official channels referral routes on supportgowhere or msf family_support",
+        "search_text_zh": "kidstart 儿童早期发展支持 为符合条件家庭提供儿童早期发展支持 帮助孩子更好起步 kidstart 早期发展 家庭支持 学前 以官方条件为准 通过 supportgowhere msf 查看官方入口或转介流程 family_support"
+      }
+    },
+    {
+      "id": "mindline_1771_service",
+      "category": "mental_health_support",
+      "name_en": "national mindline 1771 (24/7 mental health support)",
+      "name_zh": "national mindline 1771（24/7 心理支持）",
+      "summary_en": "24/7 mental health helpline/textline and webchat for support and guidance.",
+      "summary_zh": "提供 24/7 心理支持热线/文字服务与网页聊天，协助获得帮助与转介。",
+      "keywords_en": [
+        "mental health",
+        "anxiety",
+        "depression",
+        "counselling",
+        "1771"
+      ],
+      "keywords_zh": [
+        "心理健康",
+        "焦虑",
+        "抑郁",
+        "咨询",
+        "1771"
+      ],
+      "eligibility_en": [
+        "Open access; use hotline/text/webchat options per mindline.sg."
+      ],
+      "eligibility_zh": [
+        "一般可直接使用；按 mindline.sg 指引选择热线/网页聊天等方式。"
+      ],
+      "how_to_apply_en": [
+        "Call 1771 or use mindline.sg webchat; follow on-screen steps."
+      ],
+      "how_to_apply_zh": [
+        "拨打 1771 或使用 mindline.sg 网页聊天并按页面步骤操作。"
+      ],
+      "official_links": [
+        "https://www.mindline.sg/"
+      ],
+      "sources": [
+        "https://www.mindline.sg/"
+      ],
+      "domain_id": "mental",
+      "sections": {
+        "overview": {
+          "en": "24/7 mental health helpline/textline and webchat for support and guidance.",
+          "zh": "提供 24/7 心理支持热线/文字服务与网页聊天，协助获得帮助与转介。"
+        },
+        "eligibility": {
+          "en": [
+            "Open access; use hotline/text/webchat options per mindline.sg."
+          ],
+          "zh": [
+            "一般可直接使用；按 mindline.sg 指引选择热线/网页聊天等方式。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Call 1771 or use mindline.sg webchat; follow on-screen steps."
+          ],
+          "zh": [
+            "拨打 1771 或使用 mindline.sg 网页聊天并按页面步骤操作。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "mental",
+        "category": "mental_health_support",
+        "aliases_en": [
+          "national mindline 1771 (24/7 mental health support)",
+          "mental health",
+          "anxiety",
+          "depression",
+          "counselling",
+          "1771"
+        ],
+        "aliases_zh": [
+          "national mindline 1771（24/7 心理支持）",
+          "心理健康",
+          "焦虑",
+          "抑郁",
+          "咨询",
+          "1771"
+        ],
+        "broader_terms_en": [
+          "stress",
+          "anxiety",
+          "depression",
+          "helpline",
+          "counselling"
+        ],
+        "broader_terms_zh": [
+          "压力",
+          "焦虑",
+          "抑郁",
+          "热线",
+          "心理辅导",
+          "倾诉"
+        ],
+        "search_text_en": "national mindline 1771 24 7 mental health support 24 7 mental health helpline textline and webchat for support and guidance mental health anxiety depression counselling 1771 open access use hotline text webchat options per mindline sg call 1771 or use mindline sg webchat follow on screen steps stress anxiety depression helpline counselling mental_health_support mental",
+        "search_text_zh": "national mindline 1771 24 7 心理支持 提供 24 7 心理支持热线 文字服务与网页聊天 协助获得帮助与转介 心理健康 焦虑 抑郁 咨询 1771 一般可直接使用 按 mindline sg 指引选择热线 网页聊天等方式 拨打 1771 或使用 mindline sg 网页聊天并按页面步骤操作 压力 焦虑 抑郁 热线 心理辅导 倾诉 mental_health_support mental"
+      }
+    },
+    {
+      "id": "fsc_supportgowhere",
+      "category": "family_support",
+      "name_en": "Family Service Centres (FSCs)",
+      "name_zh": "家庭服务中心（FSC）",
+      "summary_en": "Community-based support for individuals/families (information, referral, casework).",
+      "summary_zh": "社区家庭支持（信息与转介、个案工作等）。",
+      "keywords_en": [
+        "family service centre",
+        "fsc",
+        "counselling",
+        "social worker"
+      ],
+      "keywords_zh": [
+        "家庭服务中心",
+        "FSC",
+        "社工",
+        "辅导"
+      ],
+      "eligibility_en": [
+        "Services are generally open-access; actual support depends on needs and centre capacity."
+      ],
+      "eligibility_zh": [
+        "一般可直接求助；具体服务视需求与中心安排而定。"
+      ],
+      "how_to_apply_en": [
+        "Find your nearest FSC via SupportGoWhere and contact the centre."
+      ],
+      "how_to_apply_zh": [
+        "通过 SupportGoWhere 查询就近 FSC 并联系中心。"
+      ],
+      "official_links": [
+        "https://supportgowhere.life.gov.sg/services/SVC-FSCF/family-service-centre-fsc",
+        "https://www.msf.gov.sg/our-services/directories"
+      ],
+      "sources": [
+        "https://supportgowhere.life.gov.sg/services/SVC-FSCF/family-service-centre-fsc",
+        "https://www.msf.gov.sg/our-services/directories"
+      ],
+      "domain_id": null,
+      "sections": {
+        "overview": {
+          "en": "Community-based support for individuals/families (information, referral, casework).",
+          "zh": "社区家庭支持（信息与转介、个案工作等）。"
+        },
+        "eligibility": {
+          "en": [
+            "Services are generally open-access; actual support depends on needs and centre capacity."
+          ],
+          "zh": [
+            "一般可直接求助；具体服务视需求与中心安排而定。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Find your nearest FSC via SupportGoWhere and contact the centre."
+          ],
+          "zh": [
+            "通过 SupportGoWhere 查询就近 FSC 并联系中心。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": null,
+        "category": "family_support",
+        "aliases_en": [
+          "Family Service Centres (FSCs)",
+          "family service centre",
+          "fsc",
+          "counselling",
+          "social worker"
+        ],
+        "aliases_zh": [
+          "家庭服务中心（FSC）",
+          "家庭服务中心",
+          "FSC",
+          "社工",
+          "辅导"
+        ],
+        "broader_terms_en": [],
+        "broader_terms_zh": [],
+        "search_text_en": "family service centres fscs community based support for individuals families information referral casework family service centre fsc counselling social worker services are generally open access actual support depends on needs and centre capacity find your nearest fsc via supportgowhere and contact the centre family_support",
+        "search_text_zh": "家庭服务中心 fsc 社区家庭支持 信息与转介 个案工作等 家庭服务中心 fsc 社工 辅导 一般可直接求助 具体服务视需求与中心安排而定 通过 supportgowhere 查询就近 fsc 并联系中心 family_support"
+      }
+    },
+    {
+      "id": "fam_strengthening_families",
+      "category": "family_support",
+      "name_en": "Strengthening Families Programme (FAM)",
+      "name_zh": "Strengthening Families Programme（FAM 家庭强化计划）",
+      "summary_en": "Family counselling and support services for families facing challenges (centre-based).",
+      "summary_zh": "为面临多重挑战的家庭提供辅导与支持服务（中心服务）。",
+      "keywords_en": [
+        "family counselling",
+        "marriage support",
+        "divorce support",
+        "fam"
+      ],
+      "keywords_zh": [
+        "家庭辅导",
+        "婚姻支持",
+        "离婚支持",
+        "FAM"
+      ],
+      "eligibility_en": [
+        "Service access depends on centre arrangements; check the SupportGoWhere listing."
+      ],
+      "eligibility_zh": [
+        "以服务中心安排为准；参考 SupportGoWhere 列表说明。"
+      ],
+      "how_to_apply_en": [
+        "Check the SupportGoWhere listing and contact the centre for appointment/intake."
+      ],
+      "how_to_apply_zh": [
+        "在 SupportGoWhere 查看服务点并联系中心预约/登记。"
+      ],
+      "official_links": [
+        "https://supportgowhere.life.gov.sg/services/SVC-SFPFFF/strengthening-families-programme-fam"
+      ],
+      "sources": [
+        "https://supportgowhere.life.gov.sg/services/SVC-SFPFFF/strengthening-families-programme-fam"
+      ],
+      "domain_id": null,
+      "sections": {
+        "overview": {
+          "en": "Family counselling and support services for families facing challenges (centre-based).",
+          "zh": "为面临多重挑战的家庭提供辅导与支持服务（中心服务）。"
+        },
+        "eligibility": {
+          "en": [
+            "Service access depends on centre arrangements; check the SupportGoWhere listing."
+          ],
+          "zh": [
+            "以服务中心安排为准；参考 SupportGoWhere 列表说明。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Check the SupportGoWhere listing and contact the centre for appointment/intake."
+          ],
+          "zh": [
+            "在 SupportGoWhere 查看服务点并联系中心预约/登记。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": null,
+        "category": "family_support",
+        "aliases_en": [
+          "Strengthening Families Programme (FAM)",
+          "family counselling",
+          "marriage support",
+          "divorce support",
+          "fam"
+        ],
+        "aliases_zh": [
+          "Strengthening Families Programme（FAM 家庭强化计划）",
+          "家庭辅导",
+          "婚姻支持",
+          "离婚支持",
+          "FAM"
+        ],
+        "broader_terms_en": [],
+        "broader_terms_zh": [],
+        "search_text_en": "strengthening families programme fam family counselling and support services for families facing challenges centre based family counselling marriage support divorce support fam service access depends on centre arrangements check the supportgowhere listing check the supportgowhere listing and contact the centre for appointment intake family_support",
+        "search_text_zh": "strengthening families programme fam 家庭强化计划 为面临多重挑战的家庭提供辅导与支持服务 中心服务 家庭辅导 婚姻支持 离婚支持 fam 以服务中心安排为准 参考 supportgowhere 列表说明 在 supportgowhere 查看服务点并联系中心预约 登记 family_support"
+      }
+    },
+    {
+      "id": "legal_aid_bureau",
+      "category": "legal_support",
+      "name_en": "Legal Aid Bureau (LAB)",
+      "name_zh": "法律援助局（LAB）",
+      "summary_en": "Legal aid for eligible applicants; application via the LAB portal and processes.",
+      "summary_zh": "为符合条件者提供法律援助；可通过 LAB 入口申请并按流程办理。",
+      "keywords_en": [
+        "legal aid",
+        "divorce",
+        "family law",
+        "lab",
+        "court"
+      ],
+      "keywords_zh": [
+        "法律援助",
+        "离婚",
+        "家庭法律",
+        "LAB",
+        "诉讼"
+      ],
+      "eligibility_en": [
+        "Eligibility is subject to LAB’s criteria (commonly includes means/merits considerations depending on case type). Check official LAB guidance."
+      ],
+      "eligibility_zh": [
+        "需符合 LAB 的资格要求（常见会涉及经济状况/案件条件等，视案件类型而定）；以官网说明为准。"
+      ],
+      "how_to_apply_en": [
+        "Apply via the LAB portal and follow the stated steps for forms and supporting documents."
+      ],
+      "how_to_apply_zh": [
+        "通过 LAB 门户按步骤在线申请并提交表格与材料。"
+      ],
+      "official_links": [
+        "https://lab.mlaw.gov.sg/",
+        "https://lab.mlaw.gov.sg/legal-services/how-do-i-apply-for-legal-aid/"
+      ],
+      "sources": [
+        "https://lab.mlaw.gov.sg/",
+        "https://lab.mlaw.gov.sg/legal-services/how-do-i-apply-for-legal-aid/"
+      ],
+      "domain_id": "legal",
+      "sections": {
+        "overview": {
+          "en": "Legal aid for eligible applicants; application via the LAB portal and processes.",
+          "zh": "为符合条件者提供法律援助；可通过 LAB 入口申请并按流程办理。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility is subject to LAB’s criteria (commonly includes means/merits considerations depending on case type). Check official LAB guidance."
+          ],
+          "zh": [
+            "需符合 LAB 的资格要求（常见会涉及经济状况/案件条件等，视案件类型而定）；以官网说明为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Apply via the LAB portal and follow the stated steps for forms and supporting documents."
+          ],
+          "zh": [
+            "通过 LAB 门户按步骤在线申请并提交表格与材料。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "legal",
+        "category": "legal_support",
+        "aliases_en": [
+          "Legal Aid Bureau (LAB)",
+          "legal aid",
+          "divorce",
+          "family law",
+          "lab",
+          "court"
+        ],
+        "aliases_zh": [
+          "法律援助局（LAB）",
+          "法律援助",
+          "离婚",
+          "家庭法律",
+          "LAB",
+          "诉讼"
+        ],
+        "broader_terms_en": [
+          "legal aid",
+          "lawyer",
+          "divorce",
+          "court",
+          "dispute"
+        ],
+        "broader_terms_zh": [
+          "法律援助",
+          "律师",
+          "离婚",
+          "法庭",
+          "纠纷"
+        ],
+        "search_text_en": "legal aid bureau lab legal aid for eligible applicants application via the lab portal and processes legal aid divorce family law lab court eligibility is subject to lab s criteria commonly includes means merits considerations depending on case type check official lab guidance apply via the lab portal and follow the stated steps for forms and supporting documents legal aid lawyer divorce court dispute legal_support legal",
+        "search_text_zh": "法律援助局 lab 为符合条件者提供法律援助 可通过 lab 入口申请并按流程办理 法律援助 离婚 家庭法律 lab 诉讼 需符合 lab 的资格要求 常见会涉及经济状况 案件条件等 视案件类型而定 以官网说明为准 通过 lab 门户按步骤在线申请并提交表格与材料 法律援助 律师 离婚 法庭 纠纷 legal_support legal"
+      }
+    },
+    {
+      "id": "uec",
+      "category": "employment_support",
+      "name_en": "Uplifting Employment Credit (UEC)",
+      "name_zh": "Uplifting Employment Credit（UEC 雇主工资抵扣）",
+      "summary_en": "Wage offset for employers hiring eligible ex-offenders (time-limited support; rules apply).",
+      "summary_zh": "为雇主聘用符合条件的更生人士提供工资抵扣（期限与规则以官方为准）。",
+      "keywords_en": [
+        "uec",
+        "ex-offender",
+        "wage offset",
+        "yellow ribbon"
+      ],
+      "keywords_zh": [
+        "UEC",
+        "更生人士",
+        "工资抵扣",
+        "黄丝带"
+      ],
+      "eligibility_en": [
+        "Eligibility and payout rules are defined by IRAS; see official scheme page."
+      ],
+      "eligibility_zh": [
+        "资格与发放规则以 IRAS 为准；参见官方页面。"
+      ],
+      "how_to_apply_en": [
+        "Refer to IRAS guidance; typically computed from CPF contributions if eligible."
+      ],
+      "how_to_apply_zh": [
+        "按 IRAS 指引执行；通常基于 CPF 缴交记录计算发放。"
+      ],
+      "official_links": [
+        "https://www.iras.gov.sg/schemes/disbursement-schemes/uplifting-employment-credit"
+      ],
+      "sources": [
+        "https://www.iras.gov.sg/schemes/disbursement-schemes/uplifting-employment-credit"
+      ],
+      "domain_id": "employment",
+      "sections": {
+        "overview": {
+          "en": "Wage offset for employers hiring eligible ex-offenders (time-limited support; rules apply).",
+          "zh": "为雇主聘用符合条件的更生人士提供工资抵扣（期限与规则以官方为准）。"
+        },
+        "eligibility": {
+          "en": [
+            "Eligibility and payout rules are defined by IRAS; see official scheme page."
+          ],
+          "zh": [
+            "资格与发放规则以 IRAS 为准；参见官方页面。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Refer to IRAS guidance; typically computed from CPF contributions if eligible."
+          ],
+          "zh": [
+            "按 IRAS 指引执行；通常基于 CPF 缴交记录计算发放。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "employment",
+        "category": "employment_support",
+        "aliases_en": [
+          "Uplifting Employment Credit (UEC)",
+          "uec",
+          "ex-offender",
+          "wage offset",
+          "yellow ribbon"
+        ],
+        "aliases_zh": [
+          "Uplifting Employment Credit（UEC 雇主工资抵扣）",
+          "UEC",
+          "更生人士",
+          "工资抵扣",
+          "黄丝带"
+        ],
+        "broader_terms_en": [
+          "job search",
+          "unemployment",
+          "training",
+          "upskilling",
+          "career"
+        ],
+        "broader_terms_zh": [
+          "就业",
+          "找工作",
+          "失业",
+          "培训",
+          "技能提升",
+          "职业"
+        ],
+        "search_text_en": "uplifting employment credit uec wage offset for employers hiring eligible ex offenders time limited support rules apply uec ex offender wage offset yellow ribbon eligibility and payout rules are defined by iras see official scheme page refer to iras guidance typically computed from cpf contributions if eligible job search unemployment training upskilling career employment_support employment",
+        "search_text_zh": "uplifting employment credit uec 雇主工资抵扣 为雇主聘用符合条件的更生人士提供工资抵扣 期限与规则以官方为准 uec 更生人士 工资抵扣 黄丝带 资格与发放规则以 iras 为准 参见官方页面 按 iras 指引执行 通常基于 cpf 缴交记录计算发放 就业 找工作 失业 培训 技能提升 职业 employment_support employment"
+      }
+    },
+    {
+      "id": "pwcs",
+      "category": "employment_support",
+      "name_en": "Progressive Wage Credit Scheme (PWCS)",
+      "name_zh": "Progressive Wage Credit Scheme（PWCS）",
+      "summary_en": "Support for employers to adjust to mandatory wage increases and uplift lower-wage workers (rules apply).",
+      "summary_zh": "支持雇主应对低薪员工工资提升要求并促进加薪（以官方规则为准）。",
+      "keywords_en": [
+        "pwcs",
+        "wage credit",
+        "lower-wage workers",
+        "employer support"
+      ],
+      "keywords_zh": [
+        "PWCS",
+        "工资补贴",
+        "低薪员工",
+        "雇主支持"
+      ],
+      "eligibility_en": [
+        "Check IRAS for eligibility and payout details."
+      ],
+      "eligibility_zh": [
+        "以 IRAS 说明为准。"
+      ],
+      "how_to_apply_en": [
+        "Refer to IRAS guidance; digital services may apply."
+      ],
+      "how_to_apply_zh": [
+        "按 IRAS 指引；可使用相关电子服务。"
+      ],
+      "official_links": [
+        "https://www.iras.gov.sg/schemes/disbursement-schemes/progressive-wage-credit-scheme"
+      ],
+      "sources": [
+        "https://www.iras.gov.sg/schemes/disbursement-schemes/progressive-wage-credit-scheme"
+      ],
+      "domain_id": "employment",
+      "sections": {
+        "overview": {
+          "en": "Support for employers to adjust to mandatory wage increases and uplift lower-wage workers (rules apply).",
+          "zh": "支持雇主应对低薪员工工资提升要求并促进加薪（以官方规则为准）。"
+        },
+        "eligibility": {
+          "en": [
+            "Check IRAS for eligibility and payout details."
+          ],
+          "zh": [
+            "以 IRAS 说明为准。"
+          ]
+        },
+        "steps": {
+          "en": [
+            "Refer to IRAS guidance; digital services may apply."
+          ],
+          "zh": [
+            "按 IRAS 指引；可使用相关电子服务。"
+          ]
+        }
+      },
+      "search": {
+        "domain_id": "employment",
+        "category": "employment_support",
+        "aliases_en": [
+          "Progressive Wage Credit Scheme (PWCS)",
+          "pwcs",
+          "wage credit",
+          "lower-wage workers",
+          "employer support"
+        ],
+        "aliases_zh": [
+          "Progressive Wage Credit Scheme（PWCS）",
+          "PWCS",
+          "工资补贴",
+          "低薪员工",
+          "雇主支持"
+        ],
+        "broader_terms_en": [
+          "job search",
+          "unemployment",
+          "training",
+          "upskilling",
+          "career"
+        ],
+        "broader_terms_zh": [
+          "就业",
+          "找工作",
+          "失业",
+          "培训",
+          "技能提升",
+          "职业"
+        ],
+        "search_text_en": "progressive wage credit scheme pwcs support for employers to adjust to mandatory wage increases and uplift lower wage workers rules apply pwcs wage credit lower wage workers employer support check iras for eligibility and payout details refer to iras guidance digital services may apply job search unemployment training upskilling career employment_support employment",
+        "search_text_zh": "progressive wage credit scheme pwcs 支持雇主应对低薪员工工资提升要求并促进加薪 以官方规则为准 pwcs 工资补贴 低薪员工 雇主支持 以 iras 说明为准 按 iras 指引 可使用相关电子服务 就业 找工作 失业 培训 技能提升 职业 employment_support employment"
+      }
+    }
+  ],
+  "taxonomy": {
+    "domains": [
+      {
+        "id": "financial",
+        "name_en": "Money",
+        "name_zh": "钱"
+      },
+      {
+        "id": "housing",
+        "name_en": "Home",
+        "name_zh": "住房"
+      },
+      {
+        "id": "healthcare",
+        "name_en": "Health",
+        "name_zh": "医疗"
+      },
+      {
+        "id": "employment",
+        "name_en": "Jobs",
+        "name_zh": "就业"
+      },
+      {
+        "id": "education",
+        "name_en": "School",
+        "name_zh": "教育"
+      },
+      {
+        "id": "seniors",
+        "name_en": "Seniors",
+        "name_zh": "长者"
+      },
+      {
+        "id": "disability",
+        "name_en": "Disability",
+        "name_zh": "残障"
+      },
+      {
+        "id": "legal",
+        "name_en": "Legal",
+        "name_zh": "法律"
+      },
+      {
+        "id": "mental",
+        "name_en": "Mental",
+        "name_zh": "心理"
+      }
+    ],
+    "category_to_domain": {
+      "financial_assistance": "financial",
+      "housing_assistance": "housing",
+      "healthcare_support": "healthcare",
+      "employment_support": "employment",
+      "education_support": "education",
+      "elderly_support": "seniors",
+      "disability_support": "disability",
+      "legal_support": "legal",
+      "mental_health_support": "mental"
+    },
+    "domain_synonyms": {
+      "financial": {
+        "en": [
+          "financial aid",
+          "cash assistance",
+          "low income",
+          "bills",
+          "debt",
+          "cost of living"
+        ],
+        "zh": [
+          "经济援助",
+          "现金补助",
+          "低收入",
+          "账单",
+          "欠费",
+          "生活费",
+          "债务"
+        ]
+      },
+      "housing": {
+        "en": [
+          "rent",
+          "rental",
+          "eviction",
+          "homeless",
+          "shelter",
+          "temporary accommodation"
+        ],
+        "zh": [
+          "房租",
+          "租房",
+          "驱逐",
+          "没地方住",
+          "收容",
+          "临时安置",
+          "过渡住房"
+        ]
+      },
+      "healthcare": {
+        "en": [
+          "medical",
+          "hospital bill",
+          "clinic subsidy",
+          "CHAS",
+          "Medifund",
+          "medication"
+        ],
+        "zh": [
+          "医疗",
+          "医院账单",
+          "诊所补贴",
+          "CHAS",
+          "Medifund",
+          "药费"
+        ]
+      },
+      "employment": {
+        "en": [
+          "job search",
+          "unemployment",
+          "training",
+          "upskilling",
+          "career"
+        ],
+        "zh": [
+          "就业",
+          "找工作",
+          "失业",
+          "培训",
+          "技能提升",
+          "职业"
+        ]
+      },
+      "education": {
+        "en": [
+          "school fees",
+          "childcare",
+          "student care",
+          "preschool"
+        ],
+        "zh": [
+          "学费",
+          "托儿",
+          "课后托管",
+          "幼儿园",
+          "教育"
+        ]
+      },
+      "seniors": {
+        "en": [
+          "elderly",
+          "caregiver",
+          "home care",
+          "day care"
+        ],
+        "zh": [
+          "长者",
+          "老人",
+          "看护者",
+          "居家照护",
+          "日间照护"
+        ]
+      },
+      "disability": {
+        "en": [
+          "PWD",
+          "assistive devices",
+          "care services",
+          "employment support"
+        ],
+        "zh": [
+          "残障",
+          "残疾",
+          "辅助器材",
+          "照护服务",
+          "就业支持"
+        ]
+      },
+      "legal": {
+        "en": [
+          "legal aid",
+          "lawyer",
+          "divorce",
+          "court",
+          "dispute"
+        ],
+        "zh": [
+          "法律援助",
+          "律师",
+          "离婚",
+          "法庭",
+          "纠纷"
+        ]
+      },
+      "mental": {
+        "en": [
+          "stress",
+          "anxiety",
+          "depression",
+          "helpline",
+          "counselling"
+        ],
+        "zh": [
+          "压力",
+          "焦虑",
+          "抑郁",
+          "热线",
+          "心理辅导",
+          "倾诉"
+        ]
+      }
+    }
+  },
+  "search_config": {
+    "page_size_default": 3,
+    "max_matches_cap": 60,
+    "upsearch": {
+      "description_en": "If no scheme matches a specific query, broaden to the parent domain terms, then fall back to official entry points.",
+      "description_zh": "当具体关键词匹配不到项目时，先上卷到同一主题的更宽泛词，再给出官方入口以便转介/查询。",
+      "steps": [
+        {
+          "level": 0,
+          "type": "exact_or_alias"
+        },
+        {
+          "level": 1,
+          "type": "domain_broaden"
+        },
+        {
+          "level": 2,
+          "type": "entry_points_fallback"
+        }
+      ]
+    }
+  }
+}
