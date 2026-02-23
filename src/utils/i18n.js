@@ -58,7 +58,6 @@ export const UI = {
         highContrast: "高对比",
         standardContrast: "标准对比",
 
-        // ✅ dynamic system messages (fix language switching)
         welcome:
             "你好！你可以输入简单关键词，比如：经济援助、住房补助、医疗补贴、长者支持。我会问几个问题，然后给你简化的申请指引，并在需要时建议转人工。",
         resetHint:
