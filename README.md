@@ -24,7 +24,7 @@ Vulnerable populations often struggle to access timely and accurate information 
 An AI-powered conversational chatbot that:
 
 1. Accepts **simple keywords** without requiring users to know official program names
-2. Uses **guided follow-up questions** to clarify intent (needs, situation, next steps)
+2. Uses **guided follow-up questions** to clarify intent 
 3. Provides **plain-language**, step-by-step explanations of relevant schemes
 4. Supports **multilingual responses** (English / Chinese) to reduce language barriers
 5. Redirects users to **official portals and verified resources**
