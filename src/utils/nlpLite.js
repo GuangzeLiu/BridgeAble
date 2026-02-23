@@ -1,10 +1,10 @@
 // src/utils/nlpLite.js
 
-// ========== helpers ==========
+//helpers
 function normalize(s) {
     return (s || "")
         .toLowerCase()
-        .replace(/[\uFF01-\uFF5E]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) - 0xFEE0)) // 全角转半角
+        .replace(/[\uFF01-\uFF5E]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) - 0xFEE0))
         .replace(/\s+/g, " ")
         .trim();
 }
@@ -13,9 +13,7 @@ function hasCJK(s) {
     return /[\u4e00-\u9fff]/.test(s || "");
 }
 
-// very light tokenization:
-// - EN: split by space/punct
-// - ZH: split by punctuation into chunks; then keep meaningful short phrases too
+
 function tokenize(text, lang) {
     const s = normalize(text);
     const parts = s.split(/[ ,，。！？；:()\[\]{}"'“”‘’/\\\n\t]+/).filter(Boolean);
@@ -26,7 +24,7 @@ function tokenize(text, lang) {
     for (const p of parts) {
         if (!p) continue;
         tokens.add(p);
-        // add small ngrams for robust matching (同类词/相关词会更容易命中)
+        // add small ngrams for robust matching 
         const maxLen = Math.min(p.length, 6);
         for (let L = 2; L <= maxLen; L++) {
             for (let i = 0; i + L <= p.length; i++) {
@@ -37,7 +35,7 @@ function tokenize(text, lang) {
     return Array.from(tokens);
 }
 
-// ========== synonym/related expansion ==========
+//synonym/related expansion
 const SYN = {
     zh: {
         // financial
@@ -84,7 +82,7 @@ const INTENT_PATTERNS = [
     { id: "overview",    zh: ["是什么", "有哪些", "推荐", "介绍", "想了解"], en: ["what is", "options", "recommend", "overview", "tell me about"] }
 ];
 
-// ========== scoring ==========
+// scoring
 function countMatches(hayTokens, needles) {
     let c = 0;
     for (const n of needles) if (hayTokens.has(n)) c++;
