@@ -1,7 +1,7 @@
 # Social Good Assistant (Prototype)
 
 A lightweight, **AI-inspired conversational assistant** for Singapore social support discovery.  
-Users can type simple keywords (e.g., “financial aid”, “housing grant”), and the assistant guides them with follow-up questions, returns **plain-language** and **multilingual** (EN/中文) scheme summaries, and redirects them to **verified agencies / portals / hotlines**.  
+Users can type simple keywords (e.g., “financial aid”, “housing grant”), and the assistant guides them with follow-up questions, returns **plain-language** and **multilingual** scheme summaries, and redirects them to **verified agencies / portals / hotlines**.  
 This prototype is designed as a **guidance tool** (not an eligibility decision-maker) and supports **human agents** for complex or sensitive cases.
 
 > **Area:** Social Good  
@@ -26,7 +26,7 @@ An AI-powered conversational chatbot that:
 1. Accepts **simple keywords** without requiring users to know official program names
 2. Uses **guided follow-up questions** to clarify intent (needs, situation, next steps)
 3. Provides **plain-language**, step-by-step explanations of relevant schemes
-4. Supports **multilingual responses** (English / 中文) to reduce language barriers
+4. Supports **multilingual responses** (English / Chinese) to reduce language barriers
 5. Redirects users to **official portals and verified resources**
 6. **Escalates** complex / sensitive cases to human caseworkers (rather than “auto-handling”)
 
@@ -41,7 +41,7 @@ An AI-powered conversational chatbot that:
   Policy-style eligibility and procedures are summarized into user-friendly steps and checklists.
 
 - **Multilingual support**  
-  Key scheme fields and guidance are returned in EN/中文.
+  Key scheme fields and guidance are returned in EN/CN.
 
 - **Guided navigation without automated decisions**  
   The assistant asks clarifying questions and offers “next step” guidance, but avoids declaring “you are eligible / not eligible”.
@@ -68,11 +68,11 @@ Core characteristics:
 
 ## Key features (current)
 
-- ✅ Keyword-based entry (users don’t need official scheme names)
-- ✅ Guided clarification via follow-up questions / quick replies
-- ✅ Plain-language summaries & step-by-step guidance
-- ✅ Multilingual outputs (EN/中文)
-- ✅ Human agents support for urgent/sensitive scenarios (hotlines / service offices)
+- Keyword-based entry (users don’t need official scheme names)
+- Guided clarification via follow-up questions / quick replies
+- Plain-language summaries & step-by-step guidance
+- Multilingual outputs (EN/CN)
+- Human agents support for urgent/sensitive scenarios (hotlines / service offices)
 
 ---
 
