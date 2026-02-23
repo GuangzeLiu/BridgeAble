@@ -151,7 +151,7 @@ export default function App() {
 
     const [input, setInput] = useState("");
     const bottomRef = useRef(null);
-    const inputRef = useRef(null); // NEW: for focusing when returning from Human Agent
+    const inputRef = useRef(null); // for focusing when returning from Human Agent
 
     const lastAssistant = useMemo(() => {
         for (let i = messages.length - 1; i >= 0; i--) {
@@ -248,7 +248,7 @@ export default function App() {
         pushAssistantMessage(message);
     }
 
-    // NEW: Human Agent -> return to main chatbot
+    // Human Agent -> return to main chatbot
     // autoSend=true: close panel and immediately send the text as a user message
     // autoSend=false: just fill input box and focus
     function onAskChatbotFromHumanAgent(text, autoSend = true, meta = null) {
