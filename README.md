@@ -37,9 +37,6 @@ An AI-powered conversational chatbot that:
 - **Intent recognition from minimal input**  
   Users can start with vague terms (“help”, “money”, “rent”, “caregiver”) and the assistant narrows the topic through structured prompts.
 
-- **Plain-language rephrasing**  
-  Policy-style eligibility and procedures are summarized into user-friendly steps and checklists.
-
 - **Multilingual support**  
   Key scheme fields and guidance are returned in EN/CN.
 
