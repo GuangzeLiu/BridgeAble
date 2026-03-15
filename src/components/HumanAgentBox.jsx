@@ -38,7 +38,6 @@ const QUICK_FILL = {
     }
 };
 
-
 function looksChinese(s) {
     return /[\u4e00-\u9fff]/.test(s || "");
 }
@@ -85,7 +84,6 @@ const UI = {
     urgentYes: { zh: "紧急", en: "Urgent" },
 
     connectBtn: { zh: "连接人工", en: "Connect" },
-    askBotBtn: { zh: "去问聊天机器人", en: "Ask chatbot" },
 
     note: {
         zh: "提醒：请不要在这里输入身份证号、银行卡号等敏感信息。",
@@ -111,9 +109,9 @@ function txt(agentLang, key) {
     return agentLang === "zh" ? zh : en;
 }
 
-export default function HumanAgentBox({ open, onClose, onAskChatbot }) {
+export default function HumanAgentBox({ open, onClose }) {
     const [step, setStep] = useState("intake"); // intake | connecting
-    const [agentLang, setAgentLang] = useState("zh"); // "zh" | "en"
+    const [agentLang, setAgentLang] = useState("en"); // "zh" | "en"
 
     const [desc, setDesc] = useState("");
     const [isPrivate, setIsPrivate] = useState(null);
@@ -175,7 +173,6 @@ export default function HumanAgentBox({ open, onClose, onAskChatbot }) {
         });
     }
 
-
     async function onSubmitIntake() {
         setError("");
         const d = (desc || "").trim();
@@ -231,18 +228,6 @@ export default function HumanAgentBox({ open, onClose, onAskChatbot }) {
         setVoiceStatus("queued");
 
         setMessages((prev) => [...prev, { role: "system", text: txt(agentLang, "voiceSystem") }]);
-    }
-
-    function goAskChatbot(autoSend = true) {
-        let q = (desc || "").trim();
-        if (!q) return;
-
-        const nlp = analyzeUserIssue(q, agentLang);
-
-        onAskChatbot?.(q, autoSend, {
-            preferred_agent_language: agentLang,
-            nlp
-        });
     }
 
     if (!open) return null;
@@ -374,16 +359,6 @@ export default function HumanAgentBox({ open, onClose, onAskChatbot }) {
                             onClick={onSubmitIntake}
                         >
                             {txt(agentLang, "connectBtn")}
-                        </button>
-
-                        <button
-                            className="humanBtn"
-                            type="button"
-                            disabled={!(desc || "").trim()}
-                            onClick={() => goAskChatbot(true)}
-                            title={agentLang === "zh" ? "回到聊天机器人继续问" : "Return to chatbot"}
-                        >
-                            {txt(agentLang, "askBotBtn")}
                         </button>
                     </div>
 

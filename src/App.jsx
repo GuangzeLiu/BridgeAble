@@ -79,8 +79,8 @@ function SchemeCard({ card, lang }) {
                     <div className="cardBlock">
                         <div className="cardBlockTitle">{lang === "zh" ? "资格要点" : "Eligibility"}</div>
                         <ul>
-                            {card.eligibility.slice(0, 4).map((x, i) => (
-                                <li key={i}>{x}</li>
+                            {card.eligibility.map((x, i) => (
+                                <li key={`elig-${i}`}>{x}</li>
                             ))}
                         </ul>
                     </div>
@@ -92,10 +92,23 @@ function SchemeCard({ card, lang }) {
                     <div className="cardBlock">
                         <div className="cardBlockTitle">{lang === "zh" ? "申请步骤" : "How to apply"}</div>
                         <ol>
-                            {card.steps.slice(0, 4).map((x, i) => (
-                                <li key={i}>{x}</li>
+                            {card.steps.map((x, i) => (
+                                <li key={`step-${i}`}>{x}</li>
                             ))}
                         </ol>
+                    </div>
+                ) : null
+            ) : null}
+
+            {!isEntry && (focus === "overview" || focus === "steps") ? (
+                card.docs?.length ? (
+                    <div className="cardBlock">
+                        <div className="cardBlockTitle">{lang === "zh" ? "所需材料" : "Documents to Prepare"}</div>
+                        <ul>
+                            {card.docs.map((x, i) => (
+                                <li key={`doc-${i}`}>{x}</li>
+                            ))}
+                        </ul>
                     </div>
                 ) : null
             ) : null}
@@ -151,7 +164,7 @@ export default function App() {
 
     const [input, setInput] = useState("");
     const bottomRef = useRef(null);
-    const inputRef = useRef(null); // for focusing when returning from Human Agent
+    const inputRef = useRef(null); // NEW: for focusing when returning from Human Agent
 
     const lastAssistant = useMemo(() => {
         for (let i = messages.length - 1; i >= 0; i--) {
@@ -234,21 +247,8 @@ export default function App() {
         if (message) pushAssistantMessage(message);
     }
 
-    function doRestart() {
-        pushUserMessage(lang === "zh" ? "重新开始" : "Restart");
-        const { state: nextState, message } = handleAction(dlg, { type: "RESTART" });
-        setDlg(nextState);
-        pushAssistantMessage(message);
-    }
 
-    function doUrgent() {
-        pushUserMessage(lang === "zh" ? "我现在很紧急" : "This is urgent");
-        const { state: nextState, message } = handleAction(dlg, { type: "URGENT" });
-        setDlg(nextState);
-        pushAssistantMessage(message);
-    }
-
-    // Human Agent -> return to main chatbot
+    // NEW: Human Agent -> return to main chatbot
     // autoSend=true: close panel and immediately send the text as a user message
     // autoSend=false: just fill input box and focus
     function onAskChatbotFromHumanAgent(text, autoSend = true, meta = null) {
@@ -290,9 +290,7 @@ export default function App() {
                 </div>
 
                 <div className="actions">
-                    <button className="btn ghost" onClick={doUrgent} type="button">
-                        {t(lang, "urgent")}
-                    </button>
+
 
                     {/* Human Agent button */}
                     <button
@@ -337,10 +335,6 @@ export default function App() {
                             </option>
                         ))}
                     </select>
-
-                    <button className="btn" onClick={doRestart} type="button">
-                        {t(lang, "reset")}
-                    </button>
                 </div>
             </header>
 

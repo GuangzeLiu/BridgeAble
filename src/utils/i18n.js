@@ -1,6 +1,6 @@
 export const UI = {
     en: {
-        title: "Social Good Assistant (Singapore)",
+        title: "BridgeAble",
         placeholder:
             'Type a keyword (e.g., "financial aid", "housing grant", "medical help")...',
         send: "Send",
@@ -19,7 +19,6 @@ export const UI = {
         ticketCreated: "Ticket created. A caseworker will follow up.",
         emptyPanel: "Recommendations will appear here after the guided questions.",
         reset: "Reset",
-        urgent: "Urgent help",
         // accessibility toggles
         largeText: "Large text",
         normalText: "Normal text",
@@ -34,7 +33,7 @@ export const UI = {
     },
 
     zh: {
-        title: "社会公益对话助手（新加坡）",
+        title: "BridgeAble",
         placeholder: "输入关键词（例如：经济援助 / 住房补助 / 医疗补贴）…",
         send: "发送",
         language: "语言",
@@ -51,7 +50,6 @@ export const UI = {
         ticketCreated: "工单已创建，工作人员将联系你。",
         emptyPanel: "完成引导问题后，这里会显示推荐结果。",
         reset: "重置",
-        urgent: "紧急求助",
         // accessibility toggles
         largeText: "大字体",
         normalText: "标准字体",

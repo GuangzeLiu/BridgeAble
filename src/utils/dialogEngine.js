@@ -98,18 +98,18 @@ function makeQuickReplies(items) {
   return (items || []).filter(Boolean);
 }
 
-function backQuickReply(lang) {
-  return { id: "back", label: lang === "zh" ? "返回" : "Back", action: { type: "BACK" } };
-}
-
 function restartQuickReply(lang) {
   return { id: "restart", label: lang === "zh" ? "重新开始" : "Restart", action: { type: "RESTART" } };
 }
 
-function baseNavQuickReplies(lang, { includeBack = true, includeRestart = true } = {}) {
+function escalateQuickReply(lang) {
+  return { id: "escalate", label: lang === "zh" ? "转人工" : "Human Agent", action: { type: "ESCALATE" } };
+}
+
+function baseNavQuickReplies(lang, { includeRestart = true, includeEscalate = true} = {}) {
   const arr = [];
-  if (includeBack) arr.push(backQuickReply(lang));
   if (includeRestart) arr.push(restartQuickReply(lang));
+  if (includeEscalate) arr.push(escalateQuickReply(lang));
   return arr;
 }
 
@@ -132,7 +132,7 @@ function domainChoiceQuickReplies(domainIds, lang) {
       action: { type: "SET_DOMAIN", domainId: id }
     };
   });
-  return makeQuickReplies([...picks, ...baseNavQuickReplies(lang, { includeBack: true, includeRestart: true })]);
+  return makeQuickReplies([...picks, ...baseNavQuickReplies(lang)]);
 }
 
 function scenarioPresets(domainId, lang) {
@@ -236,7 +236,7 @@ function scenarioPresets(domainId, lang) {
     action: { type: "SET_QUERY", text: t }
   }));
 
-  return makeQuickReplies([...chips, ...baseNavQuickReplies(lang, { includeBack: true, includeRestart: true })]);
+  return makeQuickReplies([...chips, ...baseNavQuickReplies(lang, { includeRestart: true, includeEscalate: false })]);
 }
 
 function piiWarningMessage(lang) {
@@ -244,7 +244,7 @@ function piiWarningMessage(lang) {
   const text = zh
       ? "我可以帮你找官方信息，但请不要输入身份证号、银行卡号、地址或验证码等隐私信息。你可以点下方选项继续。"
       : "I can help, but please don’t share personal data (ID/bank/address/OTP). You can tap options below to continue.";
-  return { role: "assistant", text, cards: [], quickReplies: baseNavQuickReplies(lang, { includeBack: true, includeRestart: true }) };
+  return { role: "assistant", text, cards: [],...baseNavQuickReplies(lang) };
 }
 
 function sensitiveMessage(lang) {
@@ -258,7 +258,7 @@ function sensitiveMessage(lang) {
     cards: [],
     quickReplies: makeQuickReplies([
       { id: "topic_mental", label: zh ? "心理" : "Mental", action: { type: "SET_DOMAIN", domainId: "mental" } },
-      ...baseNavQuickReplies(lang, { includeBack: true, includeRestart: true })
+      ...baseNavQuickReplies(lang)
     ])
   };
 }
@@ -268,7 +268,7 @@ function urgentMessage(lang) {
   const text = zh
       ? "收到。你可以直接点一个主题或场景，我会优先给你可联系的官方入口/热线。"
       : "Got it. Tap a topic or a scenario and I’ll prioritize official entry points / contacts.";
-  return { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang, { includeBack: false, includeRestart: true })]) };
+  return { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)]) };
 }
 
 function outOfScopeMessage(lang) {
@@ -276,7 +276,7 @@ function outOfScopeMessage(lang) {
   const text = zh
       ? "我目前主要协助：新加坡社会服务相关的官方项目导航（钱、住房、医疗、就业、教育、长者、残障、法律、心理）。你可以点一个主题开始。"
       : "Right now I focus on Singapore social-service guidance (Money, Home, Health, Jobs, School, Seniors, Disability, Legal, Mental). Tap a topic to start.";
-  return { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang, { includeBack: false, includeRestart: true })]) };
+  return { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)]) };
 }
 
 function empathyStart(primary, lang, secondary = null) {
@@ -484,37 +484,47 @@ function entryPointsCards(lang) {
   }));
 }
 
-/**
- * Card output format (single card contains all info):
- * {
- *   title,
- *   summary,
- *   blocks: [
- *     { title: "Eligibility", list: [...] },
- *     { title: "Steps", list: [...] }
- *   ],
- *   links: [...]
- * }
- */
 function formatSchemeToCardFull(s, lang) {
-  const title = langPick(lang, s.name_en, s.name_zh);
+  const zh = lang === "zh";
+  const title = zh ? (s.name_zh || s.name_en) : (s.name_en || s.name_zh);
+
   const sec = s?.sections || {};
-  const overview = lang === "zh" ? (sec?.overview?.zh || "") : (sec?.overview?.en || "");
-  const eligibility = lang === "zh" ? (sec?.eligibility?.zh || []) : (sec?.eligibility?.en || []);
-  const steps = lang === "zh" ? (sec?.steps?.zh || []) : (sec?.steps?.en || []);
-  const links = (s.official_links || s.links || []).filter(Boolean).slice(0, 6);
+
+  const overview = zh
+      ? (s.summary_zh || sec?.overview?.zh || "")
+      : (s.summary_en || sec?.overview?.en || "");
+
+  const eligibility = zh
+      ? (s.eligibility_zh || sec?.eligibility?.zh || [])
+      : (s.eligibility_en || sec?.eligibility?.en || []);
+
+  const steps = zh
+      ? (s.how_to_apply_zh || sec?.steps?.zh || [])
+      : (s.how_to_apply_en || sec?.steps?.en || []);
+
+  const docs = zh
+      ? (s.docs_to_prepare_zh || [])
+      : (s.docs_to_prepare_en || []);
+
+  const links = (s.official_links || s.links || []).filter(Boolean);
 
   const blocks = [];
   if (Array.isArray(eligibility) && eligibility.length) {
-    blocks.push({ title: lang === "zh" ? "Eligibility（资格）" : "Eligibility", list: eligibility });
+    blocks.push({ title: zh ? "资格要点" : "Eligibility", list: eligibility });
   }
   if (Array.isArray(steps) && steps.length) {
-    blocks.push({ title: lang === "zh" ? "Steps（步骤）" : "Steps", list: steps });
+    blocks.push({ title: zh ? "申请步骤" : "Steps", list: steps });
+  }
+  if (Array.isArray(docs) && docs.length) {
+    blocks.push({ title: zh ? "所需材料" : "Documents to Prepare", list: docs });
   }
 
   return {
     title,
     summary: overview || "",
+    eligibility,
+    steps,
+    docs,
     blocks,
     links
   };
@@ -554,7 +564,7 @@ function buildResultsMessage({ lang, domainId, query, offset, pageSize }) {
   if (hasMore) quick.push({ id: "more", label: zh ? "更多" : "More", action: { type: "MORE" } });
   else quick.push({ id: "no_more", label: zh ? "没有更多" : "No more", action: { type: "NO_MORE" } });
 
-  quick.push(...baseNavQuickReplies(lang, { includeBack: true, includeRestart: true }));
+  quick.push(...baseNavQuickReplies(lang));
 
   return { role: "assistant", text, cards, quickReplies: makeQuickReplies(quick) };
 }
@@ -636,7 +646,7 @@ export function getInitialAssistantMessage(lang = "en") {
     role: "assistant",
     text,
     cards: [],
-    quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang, { includeBack: false, includeRestart: true })])
+    quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang, { includeRestart: false, includeEscalate: false })])
   };
 }
 
@@ -652,7 +662,7 @@ export function handleUserText(state, userText) {
 
   if (!raw) {
     const text = zh ? "你可以点一个主题开始。" : "Please tap a topic to start.";
-    return { state, message: { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang, { includeBack: false, includeRestart: true })]) } };
+    return { state, message: { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)]) } };
   }
 
   if (containsAny(raw, PII_TRIGGERS)) return { state, message: piiWarningMessage(lang) };
@@ -787,7 +797,7 @@ export function handleAction(state, action) {
       const msg = zh
           ? "没有更多匹配结果了。你可以返回并换一个场景，或者换一个主题。"
           : "No more matched results. You can go back and try another scenario, or switch topic.";
-      return { state, message: { role: "assistant", text: msg, cards: [], quickReplies: baseNavQuickReplies(lang, { includeBack: true, includeRestart: true }) } };
+      return { state, message: { role: "assistant", text: msg, cards: [], quickReplies: baseNavQuickReplies(lang) } };
     }
 
     default:

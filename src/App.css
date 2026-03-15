@@ -1,30 +1,37 @@
-/* ----------------------------
-   Accessible theme variables
-   ---------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+/* Accessible theme variables */
 .page {
-  /* palette (standard) */
-  --bg: #f6f8fc;
+  --bg: #f8fafc;
   --panel: #ffffff;
-  --text: #142037;
-  --muted: #42546f;
-  --border: #d6deea;
-  --soft: #eef3fb;
+  --text: #1e293b;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --soft: #f1f5f9;
 
-  --primary: #111827; /* strong dark */
+  --primary: #3b82f6;
   --primaryText: #ffffff;
-  --link: #1d4ed8;
+  --link: #2563eb;
 
-  /* typography + spacing */
   --fs-title: 18px;
   --fs-body: 14px;
   --fs-small: 12px;
   --lh: 1.55;
 
-  /* tap targets */
   --btn-h: 44px;
   --chip-h: 44px;
-  --radius: 14px;
+  --radius: 16px;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background: var(--bg);
+  color: var(--text);
+
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   min-height: 100vh;
   display: flex;
@@ -34,7 +41,10 @@
   color: var(--text);
 }
 
-/* Large text mode (senior-friendly) */
+input, button, select, textarea {
+  font-family: inherit;
+}
+
 .page.senior {
   --fs-title: 22px;
   --fs-body: 18px;
@@ -59,16 +69,12 @@
   --link: #0b4bff;
 }
 
-/* ----------------------------
-   Layout
-   ---------------------------- */
-
 .topbar {
   position: sticky;
   top: 0;
   z-index: 10;
   background: var(--panel);
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1px solid var(--border);
   padding: 14px 18px;
   display: flex;
   gap: 16px;
@@ -105,24 +111,24 @@
 .chat {
   width: 100%;
   max-width: 980px;
-  border: 2px solid var(--border);
-  border-radius: calc(var(--radius) + 2px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
   background: var(--panel);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(20, 32, 55, 0.06);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 .page.contrast .chat {
-  box-shadow: none; /* reduce visual noise */
+  box-shadow: none;
 }
 
 .chatBody {
   flex: 1;
   padding: 18px;
   overflow: auto;
-  background: color-mix(in srgb, var(--bg) 70%, #ffffff 30%);
+  background: #f8fafc;
 }
 
 .page.contrast .chatBody {
@@ -131,13 +137,10 @@
 
 .chatFooter {
   padding: 12px 12px 14px;
-  border-top: 2px solid var(--border);
+  border-top: 1px solid var(--border);
   background: var(--panel);
 }
 
-/* ----------------------------
-   Buttons / inputs
-   ---------------------------- */
 
 .btn {
   height: var(--btn-h);
@@ -154,7 +157,7 @@
 .btn.ghost {
   background: var(--panel);
   color: var(--text);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
 }
 
 .btn:hover {
@@ -182,7 +185,7 @@
   flex: 1;
   height: var(--btn-h);
   border-radius: 14px;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   padding: 0 12px;
   outline: none;
   background: var(--panel);
@@ -203,10 +206,6 @@ a:focus-visible {
   outline: 3px solid var(--link);
   outline-offset: 2px;
 }
-
-/* ----------------------------
-   Chat bubbles
-   ---------------------------- */
 
 .bubbleRow {
   display: flex;
@@ -246,9 +245,6 @@ a:focus-visible {
   opacity: 0.75;
 }
 
-/* ----------------------------
-   Quick replies (single row area)
-   ---------------------------- */
 
 .quickReplies {
   display: flex;
@@ -257,7 +253,7 @@ a:focus-visible {
 }
 
 .chip {
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   background: var(--soft);
   color: var(--text);
   height: var(--chip-h);
@@ -272,9 +268,6 @@ a:focus-visible {
   background: color-mix(in srgb, var(--soft) 60%, #ffffff 40%);
 }
 
-/* ----------------------------
-   Cards
-   ---------------------------- */
 
 .cardList {
   display: grid;
@@ -336,7 +329,7 @@ a:focus-visible {
 
 .links a {
   color: var(--link);
-  text-decoration: underline; /* not color-only */
+  text-decoration: underline;
   text-underline-offset: 2px;
 }
 
@@ -347,10 +340,6 @@ a:focus-visible {
 .kv .v {
   color: var(--text);
 }
-
-/* ----------------------------
-   Responsive
-   ---------------------------- */
 
 @media (max-width: 720px) {
   .main {
@@ -372,9 +361,7 @@ a:focus-visible {
   cursor: pointer;
 }
 
-/* ===== Human Agent Panel: scoped fix (colors + buttons only) ===== */
-
-/* 关键：避免任何子元素宽度溢出导致横向滚动 */
+/* Human Agent Panel: scoped fix (colors + buttons only) */
 .humanPanel, .humanPanel * {
   box-sizing: border-box;
 }
@@ -387,210 +374,229 @@ a:focus-visible {
   max-width: calc(100vw - 32px);
   height: calc(100vh - 96px);
 
-  /* stronger contrast, still dark */
-  background: rgba(15, 17, 21, 0.98);
-  border: 1px solid rgba(255,255,255,0.14);
-  border-radius: 16px;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.40);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15), 0 0 20px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   z-index: 999;
 
-  color: rgba(255,255,255,0.92);
+  color: #1e293b;
 }
 
 .humanPanelHeader {
-  padding: 14px 14px 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.12);
+  padding: 16px 16px 14px;
+  background: #f0fdf4;
+  border-bottom: 1px solid #e2e8f0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.humanTitle {
+@keyframes gentlePulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15) rotate(-3deg); }
+  100% { transform: scale(1); }
+}
+
+.agentIcon {
+  display: inline-block;
+  animation: gentlePulse 2.5s infinite ease-in-out;
+  margin-right: 6px;
   font-size: 22px;
+}
+
+.humanTitle {
+  font-size: 20px;
   font-weight: 800;
-  line-height: 1.1;
-  color: #ffffff;
+  line-height: 1.2;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
 }
 
 .humanSub {
   margin-top: 4px;
   font-size: 13px;
-  color: rgba(255,255,255,0.72);
+  color: #64748b;
+  padding-left: 32px;
 }
 
 .humanClose {
-  border: 1px solid transparent;
-  background: transparent;
-  color: rgba(255,255,255,0.88);
-  font-size: 22px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #64748b;
+  font-size: 18px;
   cursor: pointer;
-  padding: 6px 10px;
-  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  transition: all 0.2s;
 }
 .humanClose:hover {
-  background: rgba(255,255,255,0.10);
-}
-.humanClose:focus-visible {
-  outline: 3px solid rgba(59,130,246,0.55);
-  outline-offset: 2px;
+  background: #f8fafc;
+  color: #0f172a;
 }
 
-/* body: 只允许纵向滚动，禁止横向滚动 */
 .humanBody {
-  padding: 14px;
+  padding: 16px;
   overflow-y: auto;
   overflow-x: hidden;
+  background: #ffffff;
 }
 
 .humanLabel {
   font-size: 14px;
   font-weight: 800;
-  color: rgba(255,255,255,0.92);
+  color: #334155;
   margin: 12px 0 8px;
 }
 
 .humanTextarea {
   width: 100%;
-  min-height: 120px;
+  min-height: 100px;
   resize: vertical;
   padding: 12px;
   border-radius: 14px;
-
-  /* clearer field boundary */
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.08);
-
-  color: #ffffff;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #0f172a;
   outline: none;
-  line-height: 1.45;
+  line-height: 1.5;
+  font-size: 14px;
+  transition: border 0.2s;
 }
 .humanTextarea::placeholder {
-  color: rgba(255,255,255,0.50);
+  color: #94a3b8;
 }
 .humanTextarea:focus-visible {
-  outline: 3px solid rgba(59,130,246,0.55);
-  outline-offset: 2px;
-  border-color: rgba(59,130,246,0.55);
+  border-color: #3b82f6;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
 }
 
 .humanQuickFill {
-  margin-top: 12px;
-  padding: 12px;
+  margin-top: 14px;
+  padding: 14px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.05);
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
 }
 
 .humanHint {
   font-size: 12px;
-  color: rgba(255,255,255,0.75);
+  color: #64748b;
   margin-bottom: 10px;
 }
 
 .humanChipRow {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
-/* chip：未选中与 hover */
 .humanPanel .chip {
   border-radius: 999px;
-  padding: 10px 14px;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.92);
+  padding: 8px 14px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
   cursor: pointer;
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.2s;
 }
 .humanPanel .chip:hover {
-  background: rgba(255,255,255,0.12);
+  background: #f1f5f9;
+  color: #0f172a;
 }
 
-/* chip：选中态（支持 .active 或 aria-pressed） */
 .humanPanel .chip.active,
-.humanPanel .chip[aria-pressed="true"] {
-  background: rgba(59,130,246,0.22);
-  border-color: rgba(59,130,246,0.65);
-  box-shadow: 0 0 0 2px rgba(59,130,246,0.22);
-}
-.humanPanel .chip:focus-visible {
-  outline: 3px solid rgba(59,130,246,0.55);
-  outline-offset: 2px;
+.humanPanel .chip[aria-pressed="true"],
+.humanBtn.active,
+.humanBtn[aria-pressed="true"] {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+  box-shadow: 0 0 0 1px #3b82f6 inset;
 }
 
-/* yes/no 按钮组：布局不改，只增强状态对比 */
 .humanActions {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.humanBtnPrimary {
-  flex: 1 1 160px;
-}
-
 .humanBtn {
   flex: 1 1 140px;
-
-  /* make buttons readable even when not active */
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.92);
-  font-weight: 900;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+  font-weight: 800;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
-
-/* hover */
 .humanBtn:hover {
-  background: rgba(255,255,255,0.12);
+  background: #f1f5f9;
 }
 
-/* active: MUST look clearly selected (not just a faint outline) */
-.humanBtn.active,
-.humanBtn[aria-pressed="true"] {
-  border-color: rgba(59,130,246,0.80);
-  background: rgba(59,130,246,0.30);
-  box-shadow: 0 0 0 2px rgba(59,130,246,0.22);
+.humanBtnPrimary {
+  flex: 1 1 160px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #3b82f6;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
-
-/* focus-visible distinct from active */
-.humanBtn:focus-visible {
-  outline: 3px solid rgba(59,130,246,0.55);
-  outline-offset: 2px;
+.humanBtnPrimary:hover:not(:disabled) {
+  background: #2563eb;
 }
-
 .humanBtnPrimary:disabled {
-  opacity: 0.50;
+  background: #cbd5e1;
+  color: #f8fafc;
   cursor: not-allowed;
 }
 
 .humanError {
   margin-top: 10px;
-  font-size: 12px;
-  color: #ffb4b4;
+  font-size: 13px;
+  color: #ef4444;
+  background: #fef2f2;
+  padding: 8px 12px;
+  border-radius: 8px;
 }
 
 .humanNote {
-  margin-top: 10px;
+  margin-top: 14px;
   font-size: 12px;
-  color: rgba(255,255,255,0.70);
-  line-height: 1.45;
+  color: #64748b;
+  line-height: 1.5;
 }
 
-/* ===== Connecting chat step ===== */
 .humanChat {
   display: flex;
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+  background: #ffffff;
 }
 
 .humanChatList {
   flex: 1;
-  padding: 14px;
+  padding: 16px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -603,36 +609,45 @@ a:focus-visible {
 .humanMsg.system, .humanMsg.agent { justify-content: flex-start; }
 
 .humanBubble {
-  max-width: 82%;
-  padding: 10px 12px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.94);
-  white-space: pre-wrap;
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.humanMsg.system .humanBubble,
+.humanMsg.agent .humanBubble {
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #334155;
+  border-bottom-left-radius: 4px;
+}
+.humanMsg.user .humanBubble {
+  background: #3b82f6;
+  color: #ffffff;
+  border-bottom-right-radius: 4px;
 }
 
 .humanChatInput {
-  padding: 12px 14px;
-  border-top: 1px solid rgba(255,255,255,0.12);
+  padding: 14px;
+  border-top: 1px solid #e2e8f0;
   display: flex;
   gap: 10px;
+  background: #ffffff;
 }
 
 .humanInput {
   flex: 1;
-  padding: 10px 12px;
+  padding: 10px 14px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.08);
-  color: #fff;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #0f172a;
   outline: none;
-}
-.humanInput::placeholder {
-  color: rgba(255,255,255,0.50);
+  font-size: 14px;
 }
 .humanInput:focus-visible {
-  outline: 3px solid rgba(59,130,246,0.55);
-  outline-offset: 2px;
-  border-color: rgba(59,130,246,0.55);
+  border-color: #3b82f6;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
 }

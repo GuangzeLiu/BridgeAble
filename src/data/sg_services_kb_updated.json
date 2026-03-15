@@ -190,8 +190,8 @@
           "生活费",
           "债务"
         ],
-        "search_text_en": "comcare short to medium term assistance smta temporary financial support for individuals families facing difficulties assessed holistically by ssos financial aid cash assistance low income comcare sso applicant must be a singapore citizen or permanent resident pr if pr at least one immediate family member in the same household must be a singapore citizen eligibility is decided by sso via holistic assessment e g household income savings and availability of family support smta is typically granted for 3 6 months initially renewals depend on continued need online apply anytime via supportgowhere comcare smta in person visit your nearest social service office sso and apply if you need help completing the online form contact the comcare hotline or email ask_sso msf gov sg basic identification details for household members information needed for assessment e g income employment situation household circumstances financial aid cash assistance low income bills debt cost of living financial_assistance financial",
-        "search_text_zh": "comcare 短至中期援助 smta 为面临短期经济困难的个人 家庭提供支持 由 sso 进行整体评估 经济援助 现金补助 低收入 comcare sso 申请人须为新加坡公民或永久居民 pr 若为 pr 同住家庭成员中至少一名直系亲属须为新加坡公民 是否符合由 sso 进行整体评估 例如家庭收入 储蓄 家庭支持情况等 一般首次批复为 3 6 个月 是否续批视后续需要而定 线上 通过 supportgowhere 随时提交 comcare smta 申请 线下 前往就近的社会服务办公室 sso 办理 如需协助填写线上表格 可致电 comcare 热线或邮件联系 ask_sso msf gov sg 家庭成员的基本身份信息 用于评估所需信息 如收入 就业情况 家庭困难状况等 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+        "search_text_en": "ComCare Short-to-Medium-Term Assistance (SMTA) Temporary financial support for individuals/families facing difficulties; assessed holistically by SSOs. financial aid cash assistance low income comcare sso Applicant must be a Singapore Citizen or Permanent Resident (PR); if PR, at least one immediate family member in the same household must be a Singapore Citizen. Eligibility is decided by SSO via holistic assessment (e.g., household income, savings, and availability of family support). SMTA is typically granted for 3–6 months initially; renewals depend on continued need. Online: apply anytime via SupportGoWhere (ComCare SMTA). In-person: visit your nearest Social Service Office (SSO) and apply. If you need help completing the online form, contact the ComCare hotline or email Ask_SSO@msf.gov.sg. Basic identification details for household members. Information needed for assessment (e.g., income/employment situation, household circumstances). financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "ComCare 短至中期援助（SMTA） 为面临短期经济困难的个人/家庭提供支持；由 SSO 进行整体评估。 经济援助 现金补助 低收入 ComCare SSO 申请人须为新加坡公民或永久居民（PR）；若为 PR，同住家庭成员中至少一名直系亲属须为新加坡公民。 是否符合由 SSO 进行整体评估（例如家庭收入、储蓄、家庭支持情况等）。 一般首次批复为 3–6 个月，是否续批视后续需要而定。 线上：通过 SupportGoWhere 随时提交 ComCare SMTA 申请。 线下：前往就近的社会服务办公室（SSO）办理。 如需协助填写线上表格，可致电 ComCare 热线或邮件联系 Ask_SSO@msf.gov.sg。 家庭成员的基本身份信息。 用于评估所需信息（如收入/就业情况、家庭困难状况等）。 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
       }
     },
     {
@@ -297,9 +297,21 @@
           "生活费",
           "债务"
         ],
-        "search_text_en": "comcare interim assistance short term support while longer term assistance is being assessed administered via ssos urgent cash immediate help comcare interim no money administered via ssos assessment depends on the household s situation generally used when immediate help is needed while longer term support is being assessed contact comcare sso hotline or visit sso for urgent financial assistance triage sso will advise what interim support is appropriate and what follow up steps are needed financial aid cash assistance low income bills debt cost of living financial_assistance financial",
-        "search_text_zh": "comcare 临时援助 在评估更长期援助期间提供短期支持 通常由 sso 协助 紧急援助 临时补助 没钱 立即帮助 由 sso 协助办理 是否符合视个案评估而定 常用于 急需支援 同时正在评估更长期援助 的情形 如需紧急经济支援 可联系 comcare sso 热线或就近 sso sso 会根据情况安排适当的临时支援并告知后续步骤 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
-      }
+        "search_text_en": "ComCare Interim Assistance Short-term support while longer-term assistance is being assessed (administered via SSOs). urgent cash immediate help comcare interim no money Administered via SSOs; assessment depends on the household’s situation. Generally used when immediate help is needed while longer-term support is being assessed. Contact ComCare/SSO (hotline or visit SSO) for urgent financial assistance triage. SSO will advise what interim support is appropriate and what follow-up steps are needed. Identification details for the applicant and household members. Recent income or employment information, where relevant. Banking or payout-related details if requested by the official process. Any supporting documents requested on the scheme portal or by the agency. financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "ComCare 临时援助 在评估更长期援助期间提供短期支持（通常由 SSO 协助）。 紧急援助 临时补助 没钱 立即帮助 由 SSO 协助办理，是否符合视个案评估而定。 常用于“急需支援、同时正在评估更长期援助”的情形。 如需紧急经济支援，可联系 ComCare/SSO（热线或就近 SSO）。 SSO 会根据情况安排适当的临时支援并告知后续步骤。 申请人及家庭成员的身份资料。 如适用，近期收入或就业信息。 如官方流程要求，准备银行收款相关资料。 按计划官网或负责机构要求提供其他补充文件。 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the applicant and household members.",
+        "Recent income or employment information, where relevant.",
+        "Banking or payout-related details if requested by the official process.",
+        "Any supporting documents requested on the scheme portal or by the agency."
+      ],
+      "docs_to_prepare_zh": [
+        "申请人及家庭成员的身份资料。",
+        "如适用，近期收入或就业信息。",
+        "如官方流程要求，准备银行收款相关资料。",
+        "按计划官网或负责机构要求提供其他补充文件。"
+      ]
     },
     {
       "id": "assurance_package_overview",
@@ -395,9 +407,21 @@
           "生活费",
           "债务"
         ],
-        "search_text_en": "assurance package overview government support package to help singaporeans manage cost of living delivered through multiple components cost of living assurance package cash payouts rebates eligibility differs by component check the govbenefits portal for the latest criteria and your status most components are auto assessed use govbenefits to check eligibility and payout information financial aid cash assistance low income bills debt cost of living financial_assistance financial",
-        "search_text_zh": "assurance package 总览 政府生活费支持配套 包含多种组成部分 生活费 补贴 assurance package 现金发放 不同组成部分条件不同 请以 govbenefits 门户最新规则与个人查询结果为准 多数项目为自动评估发放 可在 govbenefits 查询资格与发放信息 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
-      }
+        "search_text_en": "Assurance Package (Overview) Government support package to help Singaporeans manage cost-of-living, delivered through multiple components. cost of living assurance package cash payouts rebates Eligibility differs by component; check the GovBenefits portal for the latest criteria and your status. Most components are auto-assessed; use GovBenefits to check eligibility and payout information. Identification details for the applicant and household members. Recent income or employment information, where relevant. Banking or payout-related details if requested by the official process. Any supporting documents requested on the scheme portal or by the agency. financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "Assurance Package（总览） 政府生活费支持配套，包含多种组成部分。 生活费 补贴 Assurance Package 现金发放 不同组成部分条件不同；请以 GovBenefits 门户最新规则与个人查询结果为准。 多数项目为自动评估发放；可在 GovBenefits 查询资格与发放信息。 申请人及家庭成员的身份资料。 如适用，近期收入或就业信息。 如官方流程要求，准备银行收款相关资料。 按计划官网或负责机构要求提供其他补充文件。 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the applicant and household members.",
+        "Recent income or employment information, where relevant.",
+        "Banking or payout-related details if requested by the official process.",
+        "Any supporting documents requested on the scheme portal or by the agency."
+      ],
+      "docs_to_prepare_zh": [
+        "申请人及家庭成员的身份资料。",
+        "如适用，近期收入或就业信息。",
+        "如官方流程要求，准备银行收款相关资料。",
+        "按计划官网或负责机构要求提供其他补充文件。"
+      ]
     },
     {
       "id": "gstv_overview",
@@ -497,9 +521,21 @@
           "生活费",
           "债务"
         ],
-        "search_text_en": "gst voucher gstv overview support package for lower and middle income singaporeans to manage cost of living different components gst voucher gstv cash u save s cc eligibility differs by component check govbenefits for the latest criteria many components are credited automatically if eligible verify via govbenefits financial aid cash assistance low income bills debt cost of living financial_assistance financial",
-        "search_text_zh": "gst voucher gstv 总览 帮助中低收入人群应对生活成本的支持计划 含不同组成部分 gstv 消费税补贴 现金 u save s cc 不同组成部分条件不同 以 govbenefits 最新说明为准 部分项目自动入账 发放 建议在 govbenefits 核对 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
-      }
+        "search_text_en": "GST Voucher (GSTV) – Overview Support package for lower- and middle-income Singaporeans to manage cost-of-living (different components). gst voucher gstv cash u-save s&cc Eligibility differs by component; check GovBenefits for the latest criteria. Many components are credited automatically if eligible; verify via GovBenefits. Identification details for the applicant and household members. Recent income or employment information, where relevant. Banking or payout-related details if requested by the official process. Any supporting documents requested on the scheme portal or by the agency. financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "GST Voucher（GSTV）— 总览 帮助中低收入人群应对生活成本的支持计划（含不同组成部分）。 GSTV 消费税补贴 现金 U-Save S&CC 不同组成部分条件不同；以 GovBenefits 最新说明为准。 部分项目自动入账/发放；建议在 GovBenefits 核对。 申请人及家庭成员的身份资料。 如适用，近期收入或就业信息。 如官方流程要求，准备银行收款相关资料。 按计划官网或负责机构要求提供其他补充文件。 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the applicant and household members.",
+        "Recent income or employment information, where relevant.",
+        "Banking or payout-related details if requested by the official process.",
+        "Any supporting documents requested on the scheme portal or by the agency."
+      ],
+      "docs_to_prepare_zh": [
+        "申请人及家庭成员的身份资料。",
+        "如适用，近期收入或就业信息。",
+        "如官方流程要求，准备银行收款相关资料。",
+        "按计划官网或负责机构要求提供其他补充文件。"
+      ]
     },
     {
       "id": "gstv_cash",
@@ -591,9 +627,21 @@
           "生活费",
           "债务"
         ],
-        "search_text_en": "gstv cash cash payouts for eligible singaporeans to help with cost of living gstv cash cash payout cost of living check your eligibility on govbenefits criteria vary over time typically auto assessed check payout details on govbenefits financial aid cash assistance low income bills debt cost of living financial_assistance financial",
-        "search_text_zh": "gstv 现金发放 为符合条件者提供现金补助以缓解生活成本压力 现金补助 现金发放 gstv 现金 通过 govbenefits 查询资格 条件会随政策调整 通常自动评估发放 在 govbenefits 查看发放信息 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
-      }
+        "search_text_en": "GSTV – Cash Cash payouts for eligible Singaporeans to help with cost-of-living. gstv cash cash payout cost of living Check your eligibility on GovBenefits (criteria vary over time). Typically auto-assessed; check payout details on GovBenefits. Identification details for the applicant and household members. Recent income or employment information, where relevant. Banking or payout-related details if requested by the official process. Any supporting documents requested on the scheme portal or by the agency. financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "GSTV — 现金发放 为符合条件者提供现金补助以缓解生活成本压力。 现金补助 现金发放 GSTV 现金 通过 GovBenefits 查询资格（条件会随政策调整）。 通常自动评估发放；在 GovBenefits 查看发放信息。 申请人及家庭成员的身份资料。 如适用，近期收入或就业信息。 如官方流程要求，准备银行收款相关资料。 按计划官网或负责机构要求提供其他补充文件。 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the applicant and household members.",
+        "Recent income or employment information, where relevant.",
+        "Banking or payout-related details if requested by the official process.",
+        "Any supporting documents requested on the scheme portal or by the agency."
+      ],
+      "docs_to_prepare_zh": [
+        "申请人及家庭成员的身份资料。",
+        "如适用，近期收入或就业信息。",
+        "如官方流程要求，准备银行收款相关资料。",
+        "按计划官网或负责机构要求提供其他补充文件。"
+      ]
     },
     {
       "id": "gstv_usave",
@@ -689,9 +737,21 @@
           "生活费",
           "债务"
         ],
-        "search_text_en": "gstv u save rebates utilities rebates to help households offset utilities bills u save utilities rebate electricity bill water bill depends on household housing type verify via govbenefits generally credited automatically if eligible financial aid cash assistance low income bills debt cost of living financial_assistance financial",
-        "search_text_zh": "gstv u save 水电费回扣 水电费回扣 帮助家庭减轻公用事业账单负担 u save 水电费 回扣 公用事业 与住房 家庭条件有关 以 govbenefits 为准 一般自动入账 抵扣 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
-      }
+        "search_text_en": "GSTV – U-Save Rebates Utilities rebates to help households offset utilities bills. u-save utilities rebate electricity bill water bill Depends on household/housing type; verify via GovBenefits. Generally credited automatically if eligible. Identification details for the applicant and household members. Recent income or employment information, where relevant. Banking or payout-related details if requested by the official process. Any supporting documents requested on the scheme portal or by the agency. financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "GSTV — U-Save 水电费回扣 水电费回扣，帮助家庭减轻公用事业账单负担。 U-Save 水电费 回扣 公用事业 与住房/家庭条件有关；以 GovBenefits 为准。 一般自动入账/抵扣。 申请人及家庭成员的身份资料。 如适用，近期收入或就业信息。 如官方流程要求，准备银行收款相关资料。 按计划官网或负责机构要求提供其他补充文件。 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the applicant and household members.",
+        "Recent income or employment information, where relevant.",
+        "Banking or payout-related details if requested by the official process.",
+        "Any supporting documents requested on the scheme portal or by the agency."
+      ],
+      "docs_to_prepare_zh": [
+        "申请人及家庭成员的身份资料。",
+        "如适用，近期收入或就业信息。",
+        "如官方流程要求，准备银行收款相关资料。",
+        "按计划官网或负责机构要求提供其他补充文件。"
+      ]
     },
     {
       "id": "gstv_scc_rebate",
@@ -785,9 +845,21 @@
           "生活费",
           "债务"
         ],
-        "search_text_en": "gstv s cc rebates service conservancy charges s cc rebates for eligible hdb households s cc rebate conservancy charges town council rebate eligibility rules vary check govbenefits for details typically automatic for eligible households financial aid cash assistance low income bills debt cost of living financial_assistance financial",
-        "search_text_zh": "gstv s cc 杂费回扣 为符合条件的组屋家庭提供 s cc 杂费 回扣 s cc 杂费 市镇会 回扣 条件可能变动 以 govbenefits 为准 通常自动发放 抵扣 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
-      }
+        "search_text_en": "GSTV – S&CC Rebates Service & Conservancy Charges (S&CC) rebates for eligible HDB households. s&cc rebate conservancy charges town council rebate Eligibility rules vary; check GovBenefits for details. Typically automatic for eligible households. Identification details for the applicant and household members. Recent income or employment information, where relevant. Banking or payout-related details if requested by the official process. Any supporting documents requested on the scheme portal or by the agency. financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "GSTV — S&CC 杂费回扣 为符合条件的组屋家庭提供 S&CC（杂费）回扣。 S&CC 杂费 市镇会 回扣 条件可能变动；以 GovBenefits 为准。 通常自动发放/抵扣。 申请人及家庭成员的身份资料。 如适用，近期收入或就业信息。 如官方流程要求，准备银行收款相关资料。 按计划官网或负责机构要求提供其他补充文件。 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the applicant and household members.",
+        "Recent income or employment information, where relevant.",
+        "Banking or payout-related details if requested by the official process.",
+        "Any supporting documents requested on the scheme portal or by the agency."
+      ],
+      "docs_to_prepare_zh": [
+        "申请人及家庭成员的身份资料。",
+        "如适用，近期收入或就业信息。",
+        "如官方流程要求，准备银行收款相关资料。",
+        "按计划官网或负责机构要求提供其他补充文件。"
+      ]
     },
     {
       "id": "cdc_vouchers",
@@ -895,9 +967,19 @@
           "生活费",
           "债务"
         ],
-        "search_text_en": "cdc vouchers scheme vouchers for singaporean households to help with daily expenses at participating merchants hawkers supermarkets cdc vouchers vouchers hawker supermarket generally targeted at singaporean households each tranche may have specific rules check the official site go to the official cdc vouchers site log in singpass and follow on screen steps to claim you can usually share voucher links qr with household members according to site guidance use at participating hawkers merchants supermarkets as indicated on the site financial aid cash assistance low income bills debt cost of living financial_assistance financial",
-        "search_text_zh": "cdc 购物券计划 为新加坡家庭提供用于日常消费的购物券 可在指定商户 小贩中心 超市使用 cdc 购物券 消费券 小贩中心 超市 一般面向新加坡家庭 不同批次规则以官网为准 进入 cdc vouchers 官网 使用 singpass 登录并按页面步骤领取 可按官网指引将券分享给家庭成员 如适用 在参与计划的商户 小贩 超市使用 以官网列表为准 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
-      }
+        "search_text_en": "CDC Vouchers Scheme Vouchers for Singaporean households to help with daily expenses at participating merchants/hawkers/supermarkets. cdc vouchers vouchers hawker supermarket Generally targeted at Singaporean households; each tranche may have specific rules—check the official site. Go to the official CDC Vouchers site. Log in (Singpass) and follow on-screen steps to claim. You can usually share voucher links/QR with household members according to site guidance. Use at participating hawkers/merchants/supermarkets as indicated on the site. Singpass access for the household member claiming the vouchers. A mobile number or device that can receive and use the voucher link or QR, if required. Follow any claim instructions shown on the official CDC Vouchers site for the current tranche. financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "CDC 购物券计划 为新加坡家庭提供用于日常消费的购物券，可在指定商户/小贩中心/超市使用。 CDC 购物券 消费券 小贩中心 超市 一般面向新加坡家庭；不同批次规则以官网为准。 进入 CDC Vouchers 官网。 使用 Singpass 登录并按页面步骤领取。 可按官网指引将券分享给家庭成员（如适用）。 在参与计划的商户/小贩/超市使用（以官网列表为准）。 领取购物券的家庭成员需可使用 Singpass。 如流程要求，准备可接收和使用券链接或二维码的手机设备。 按 CDC Vouchers 官网当前批次页面指引完成领取。 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      },
+      "docs_to_prepare_en": [
+        "Singpass access for the household member claiming the vouchers.",
+        "A mobile number or device that can receive and use the voucher link or QR, if required.",
+        "Follow any claim instructions shown on the official CDC Vouchers site for the current tranche."
+      ],
+      "docs_to_prepare_zh": [
+        "领取购物券的家庭成员需可使用 Singpass。",
+        "如流程要求，准备可接收和使用券链接或二维码的手机设备。",
+        "按 CDC Vouchers 官网当前批次页面指引完成领取。"
+      ]
     },
     {
       "id": "wis",
@@ -1009,9 +1091,19 @@
           "生活费",
           "债务"
         ],
-        "search_text_en": "workfare income supplement wis income supplement for eligible lower wage workers to boost take home pay and retirement savings workfare wis low wage income supplement singapore citizen wis rules differ by employment type employee self employed platform worker must meet age and income criteria set by cpf mom varies by work year generally auto assessed based on cpf contributions and or declarations depending on worker type most eligible employees are auto assessed based on cpf contributions no separate application use cpf govbenefits e services to check eligibility and payment info financial aid cash assistance low income bills debt cost of living financial_assistance financial",
-        "search_text_zh": "workfare 收入补助 wis 为符合条件的低薪员工提供收入补助 提升现有收入并支持退休储蓄 workfare wis 低薪 收入补助 通常要求为新加坡公民 不同就业类型 雇员 自雇 平台工作者规则会不同 需满足 cpf mom 规定的年龄与收入条件 会随年度调整 一般会按 cpf 缴交 申报记录自动评估 视就业类型 符合条件的雇员多为自动评估 通常无需另行申请 可在 cpf govbenefits 电子服务查询资格与发放信息 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
-      }
+        "search_text_en": "Workfare Income Supplement (WIS) Income supplement for eligible lower-wage workers to boost take-home pay and retirement savings. workfare wis low wage income supplement Singapore Citizen (WIS rules differ by employment type—employee/self-employed/platform worker). Must meet age and income criteria set by CPF/MOM (varies by work year). Generally auto-assessed based on CPF contributions and/or declarations, depending on worker type. Most eligible employees are auto-assessed based on CPF contributions (no separate application). Use CPF/GovBenefits e-services to check eligibility and payment info. Most eligible employees do not submit a separate application. Keep CPF contribution and employment records up to date. Self-employed persons or other worker groups should follow any declaration or MediSave requirements stated on official channels. financial aid cash assistance low income bills debt cost of living financial_assistance financial",
+        "search_text_zh": "Workfare 收入补助（WIS） 为符合条件的低薪员工提供收入补助，提升现有收入并支持退休储蓄。 Workfare WIS 低薪 收入补助 通常要求为新加坡公民（不同就业类型：雇员/自雇/平台工作者规则会不同）。 需满足 CPF/MOM 规定的年龄与收入条件（会随年度调整）。 一般会按 CPF 缴交/申报记录自动评估（视就业类型）。 符合条件的雇员多为自动评估（通常无需另行申请）。 可在 CPF / GovBenefits 电子服务查询资格与发放信息。 多数符合条件的雇员无需单独提交申请材料。 请确保 CPF 缴交与就业记录保持最新。 自雇人士或其他工作群体应按官方要求完成申报或 MediSave 相关步骤。 经济援助 现金补助 低收入 账单 欠费 生活费 债务 financial_assistance financial"
+      },
+      "docs_to_prepare_en": [
+        "Most eligible employees do not submit a separate application.",
+        "Keep CPF contribution and employment records up to date.",
+        "Self-employed persons or other worker groups should follow any declaration or MediSave requirements stated on official channels."
+      ],
+      "docs_to_prepare_zh": [
+        "多数符合条件的雇员无需单独提交申请材料。",
+        "请确保 CPF 缴交与就业记录保持最新。",
+        "自雇人士或其他工作群体应按官方要求完成申报或 MediSave 相关步骤。"
+      ]
     },
     {
       "id": "silver_support",
@@ -1116,9 +1208,19 @@
           "居家照护",
           "日间照护"
         ],
-        "search_text_en": "silver support scheme quarterly cash payouts for eligible low income elderly auto assessed silver support senior cash payout elderly low income singapore citizen aged 65 and above eligibility is auto assessed based on factors like lifetime wages cpf contributions housing type and household income per person seniors on comcare long term assistance receive silver support at a fixed quarterly amount per cpf guidance no application needed auto assessed you can check eligibility via cpf govbenefits e services elderly caregiver home care day care elderly_support seniors",
-        "search_text_zh": "silver support 长者补助计划 为符合条件的低收入长者提供按季度发放现金补助 自动评估 silver support 长者补助 低收入长者 65 岁及以上新加坡公民 一般自动评估 常见考量包括 工作期间收入 cpf 贡献 住房类型 家庭人均收入等 若为 comcare long term assistance 受助者 silver support 发放规则以 cpf 说明为准 无需申请 自动评估 可通过 cpf govbenefits 电子服务查询资格 长者 老人 看护者 居家照护 日间照护 elderly_support seniors"
-      }
+        "search_text_en": "Silver Support Scheme Quarterly cash payouts for eligible low-income elderly; auto-assessed. silver support senior cash payout elderly low income Singapore Citizen aged 65 and above. Eligibility is auto-assessed based on factors like lifetime wages (CPF contributions), housing type, and household income per person. Seniors on ComCare Long-Term Assistance receive Silver Support at a fixed quarterly amount (per CPF guidance). No application needed (auto-assessed). You can check eligibility via CPF/GovBenefits e-services. No application is usually needed because assessment is generally automatic. Keep address, household, and CPF-related records updated so official assessment can be carried out correctly. Use CPF or GovBenefits channels if you need to check status or payment details. elderly caregiver home care day care elderly_support seniors",
+        "search_text_zh": "Silver Support 长者补助计划 为符合条件的低收入长者提供按季度发放现金补助；自动评估。 Silver Support 长者补助 低收入长者 65 岁及以上新加坡公民。 一般自动评估，常见考量包括：工作期间收入/CPF 贡献、住房类型、家庭人均收入等。 若为 ComCare Long-Term Assistance 受助者，Silver Support 发放规则以 CPF 说明为准。 无需申请（自动评估）。 可通过 CPF / GovBenefits 电子服务查询资格。 通常无需申请，因为资格多为自动评估。 请确保住址、家庭及 CPF 相关资料为最新，以便官方正确评估。 如需查询资格或发放情况，可使用 CPF 或 GovBenefits 渠道。 长者 老人 看护者 居家照护 日间照护 elderly_support seniors"
+      },
+      "docs_to_prepare_en": [
+        "No application is usually needed because assessment is generally automatic.",
+        "Keep address, household, and CPF-related records updated so official assessment can be carried out correctly.",
+        "Use CPF or GovBenefits channels if you need to check status or payment details."
+      ],
+      "docs_to_prepare_zh": [
+        "通常无需申请，因为资格多为自动评估。",
+        "请确保住址、家庭及 CPF 相关资料为最新，以便官方正确评估。",
+        "如需查询资格或发放情况，可使用 CPF 或 GovBenefits 渠道。"
+      ]
     },
     {
       "id": "comlink_plus",
@@ -1157,7 +1259,7 @@
       "sources": [
         "https://www.msf.gov.sg/what-we-do/volunteer/find-causes/comlink"
       ],
-      "domain_id": null,
+      "domain_id": "family",
       "sections": {
         "overview": {
           "en": "Longer-term support for lower-income families with children to work towards stability and self-reliance.",
@@ -1181,7 +1283,7 @@
         }
       },
       "search": {
-        "domain_id": null,
+        "domain_id": "family",
         "category": "family_support",
         "aliases_en": [
           "ComLink+",
@@ -1197,11 +1299,33 @@
           "家庭支持",
           "长期协助"
         ],
-        "broader_terms_en": [],
-        "broader_terms_zh": [],
-        "search_text_en": "comlink longer term support for lower income families with children to work towards stability and self reliance comlink rental flat families family support action plan typically targeted at lower income families with children exact criteria and support plans vary by case start via sso msf channels you may be assessed and guided to the appropriate support plan family_support",
-        "search_text_zh": "comlink 家庭长期支持 为有孩子的低收入家庭提供更长期支持 协助迈向稳定与自立 comlink 租赁组屋家庭 家庭支持 长期协助 一般面向有孩子的低收入家庭 具体条件与支持方案视个案而定 可通过 sso msf 渠道起步 后续将评估并引导进入相应支持计划 family_support"
-      }
+        "broader_terms_en": [
+          "parenting",
+          "child support",
+          "family assistance",
+          "caregiver support"
+        ],
+        "broader_terms_zh": [
+          "育儿",
+          "儿童支持",
+          "家庭援助",
+          "照护者支持"
+        ],
+        "search_text_en": "ComLink+ Longer-term support for lower-income families with children to work towards stability and self-reliance. comlink rental flat families family support action plan Typically targeted at lower-income families with children; exact criteria and support plans vary by case. Start via SSO / MSF channels; you may be assessed and guided to the appropriate support plan. Identification details for household members. Household and social support information used during assessment or case planning. Income, employment, and family situation details if requested by the programme team. Any referral or service-planning documents requested by the assigned officer. parenting child support family assistance caregiver support family_support family",
+        "search_text_zh": "ComLink+（家庭长期支持） 为有孩子的低收入家庭提供更长期支持，协助迈向稳定与自立。 ComLink+ 租赁组屋家庭 家庭支持 长期协助 一般面向有孩子的低收入家庭；具体条件与支持方案视个案而定。 可通过 SSO / MSF 渠道起步，后续将评估并引导进入相应支持计划。 家庭成员的身份资料。 用于评估或服务规划的家庭与社会支持信息。 如项目团队要求，准备收入、就业及家庭情况资料。 按负责人员要求提供转介或服务规划相关文件。 育儿 儿童支持 家庭援助 照护者支持 family_support family"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for household members.",
+        "Household and social support information used during assessment or case planning.",
+        "Income, employment, and family situation details if requested by the programme team.",
+        "Any referral or service-planning documents requested by the assigned officer."
+      ],
+      "docs_to_prepare_zh": [
+        "家庭成员的身份资料。",
+        "用于评估或服务规划的家庭与社会支持信息。",
+        "如项目团队要求，准备收入、就业及家庭情况资料。",
+        "按负责人员要求提供转介或服务规划相关文件。"
+      ]
     },
     {
       "id": "skillsfuture_credit",
@@ -1299,9 +1423,21 @@
           "技能提升",
           "职业"
         ],
-        "search_text_en": "skillsfuture credit credits for eligible singapore citizens to offset out of pocket course fees for approved courses skillsfuture credit training subsidy course fee upskill singapore citizens aged 25 subject to current policy log in to myskillsfuture and select an approved course use skillsfuture credit at checkout claim flow as guided by the portal job search unemployment training upskilling career employment_support employment",
-        "search_text_zh": "skillsfuture credit 技能未来学分 为符合条件的新加坡公民提供课程学分 用于抵扣认可课程自付费用 技能未来 学分 培训补贴 提升技能 通常为 25 新加坡公民 以现行政策为准 登录 myskillsfuture 选择认可课程 按门户流程在支付 申领时使用 skillsfuture credit 就业 找工作 失业 培训 技能提升 职业 employment_support employment"
-      }
+        "search_text_en": "SkillsFuture Credit Credits for eligible Singapore Citizens to offset out-of-pocket course fees for approved courses. skillsfuture credit training subsidy course fee upskill Singapore Citizens aged 25+ (subject to current policy). Log in to MySkillsFuture and select an approved course. Use SkillsFuture Credit at checkout / claim flow as guided by the portal. Identification details and employment records, if required. Income information or CPF-related records where relevant. Training, retrenchment, or job-search records if the scheme asks for them. Any additional documents requested by the official portal or agency. job search unemployment training upskilling career employment_support employment",
+        "search_text_zh": "SkillsFuture Credit（技能未来学分） 为符合条件的新加坡公民提供课程学分，用于抵扣认可课程自付费用。 技能未来 学分 培训补贴 提升技能 通常为 25+ 新加坡公民（以现行政策为准）。 登录 MySkillsFuture 选择认可课程。 按门户流程在支付/申领时使用 SkillsFuture Credit。 身份资料及就业记录（如需要）。 如适用，准备收入信息或 CPF 相关记录。 若计划要求，准备培训、裁员或求职相关材料。 按官方门户或负责机构要求提供其他文件。 就业 找工作 失业 培训 技能提升 职业 employment_support employment"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and employment records, if required.",
+        "Income information or CPF-related records where relevant.",
+        "Training, retrenchment, or job-search records if the scheme asks for them.",
+        "Any additional documents requested by the official portal or agency."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料及就业记录（如需要）。",
+        "如适用，准备收入信息或 CPF 相关记录。",
+        "若计划要求，准备培训、裁员或求职相关材料。",
+        "按官方门户或负责机构要求提供其他文件。"
+      ]
     },
     {
       "id": "hdb_public_rental",
@@ -1398,9 +1534,21 @@
           "临时安置",
           "过渡住房"
         ],
-        "search_text_en": "hdb public rental scheme subsidised public rental housing for eligible lower income households public rental hdb rental low income housing eligibility depends on hdb rules e g household profile and income check the official scheme page for the latest criteria apply via the official hdb route e g hdb e services designated application channel prepare required household and income information as requested in the form rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
-        "search_text_zh": "hdb 公共租赁计划 为符合条件的低收入家庭提供补贴性质公共租赁住房 公共租赁 组屋租房 低收入住房 需符合 hdb 规定 如家庭情况 收入等 以官网最新条件为准 通过 hdb 官方渠道申请 如 hdb 电子服务 指定入口 按表格要求准备家庭与收入信息 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
-      }
+        "search_text_en": "HDB Public Rental Scheme Subsidised public rental housing for eligible lower-income households. public rental hdb rental low income housing Eligibility depends on HDB rules (e.g., household profile and income). Check the official scheme page for the latest criteria. Apply via the official HDB route (e.g., HDB e-services / designated application channel). Prepare required household and income information as requested in the form. Identification details for all household members. Household income information and current housing details. Documents explaining urgent housing circumstances, if applicable. Any additional forms or supporting records requested by HDB or the service provider. rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "HDB 公共租赁计划 为符合条件的低收入家庭提供补贴性质公共租赁住房。 公共租赁 组屋租房 低收入住房 需符合 HDB 规定（如家庭情况、收入等）；以官网最新条件为准。 通过 HDB 官方渠道申请（如 HDB 电子服务/指定入口）。 按表格要求准备家庭与收入信息。 所有家庭成员的身份资料。 家庭收入信息及现有住房情况。 如适用，说明紧急住房处境的相关材料。 按 HDB 或服务机构要求提交其他表格或证明。 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for all household members.",
+        "Household income information and current housing details.",
+        "Documents explaining urgent housing circumstances, if applicable.",
+        "Any additional forms or supporting records requested by HDB or the service provider."
+      ],
+      "docs_to_prepare_zh": [
+        "所有家庭成员的身份资料。",
+        "家庭收入信息及现有住房情况。",
+        "如适用，说明紧急住房处境的相关材料。",
+        "按 HDB 或服务机构要求提交其他表格或证明。"
+      ]
     },
     {
       "id": "hdb_irh",
@@ -1493,9 +1641,21 @@
           "临时安置",
           "过渡住房"
         ],
-        "search_text_en": "interim rental housing irh temporary rental option for households awaiting their next housing arrangement subject to criteria interim rental irh temporary rental housing subject to hdb assessment and criteria refer to official hdb guidance check official hdb guidance for the latest application route and required documents rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
-        "search_text_zh": "interim rental housing irh 临时租住房 为过渡期间的家庭提供临时租住房选择 需符合条件 临时租房 irh 过渡住房 需符合 hdb 评估与条件 以 hdb 官方说明为准 查看 hdb 官网最新申请入口与材料要求 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
-      }
+        "search_text_en": "Interim Rental Housing (IRH) Temporary rental option for households awaiting their next housing arrangement (subject to criteria). interim rental irh temporary rental housing Subject to HDB assessment and criteria; refer to official HDB guidance. Check official HDB guidance for the latest application route and required documents. Identification details for all household members. Household income information and current housing details. Documents explaining urgent housing circumstances, if applicable. Any additional forms or supporting records requested by HDB or the service provider. rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "Interim Rental Housing（IRH 临时租住房） 为过渡期间的家庭提供临时租住房选择（需符合条件）。 临时租房 IRH 过渡住房 需符合 HDB 评估与条件；以 HDB 官方说明为准。 查看 HDB 官网最新申请入口与材料要求。 所有家庭成员的身份资料。 家庭收入信息及现有住房情况。 如适用，说明紧急住房处境的相关材料。 按 HDB 或服务机构要求提交其他表格或证明。 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for all household members.",
+        "Household income information and current housing details.",
+        "Documents explaining urgent housing circumstances, if applicable.",
+        "Any additional forms or supporting records requested by HDB or the service provider."
+      ],
+      "docs_to_prepare_zh": [
+        "所有家庭成员的身份资料。",
+        "家庭收入信息及现有住房情况。",
+        "如适用，说明紧急住房处境的相关材料。",
+        "按 HDB 或服务机构要求提交其他表格或证明。"
+      ]
     },
     {
       "id": "hdb_pphs",
@@ -1592,9 +1752,21 @@
           "临时安置",
           "过渡住房"
         ],
-        "search_text_en": "parenthood provisional housing scheme pphs temporary housing support for eligible families awaiting their new home pphs temporary housing waiting for flat family eligibility and quotas apply confirm on hdb s official pphs information apply via hdb according to the published pphs steps and required documents rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
-        "search_text_zh": "parenthood provisional housing scheme pphs 为等待新房的符合条件家庭提供临时住房支持 pphs 临时住房 等房 家庭 需符合资格与配额安排 以 hdb pphs 官方说明为准 按 hdb 公布步骤与材料要求申请 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
-      }
+        "search_text_en": "Parenthood Provisional Housing Scheme (PPHS) Temporary housing support for eligible families awaiting their new home. pphs temporary housing waiting for flat family Eligibility and quotas apply; confirm on HDB’s official PPHS information. Apply via HDB according to the published PPHS steps and required documents. Identification details for all household members. Household income information and current housing details. Documents explaining urgent housing circumstances, if applicable. Any additional forms or supporting records requested by HDB or the service provider. rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "Parenthood Provisional Housing Scheme（PPHS） 为等待新房的符合条件家庭提供临时住房支持。 PPHS 临时住房 等房 家庭 需符合资格与配额安排；以 HDB PPHS 官方说明为准。 按 HDB 公布步骤与材料要求申请。 所有家庭成员的身份资料。 家庭收入信息及现有住房情况。 如适用，说明紧急住房处境的相关材料。 按 HDB 或服务机构要求提交其他表格或证明。 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for all household members.",
+        "Household income information and current housing details.",
+        "Documents explaining urgent housing circumstances, if applicable.",
+        "Any additional forms or supporting records requested by HDB or the service provider."
+      ],
+      "docs_to_prepare_zh": [
+        "所有家庭成员的身份资料。",
+        "家庭收入信息及现有住房情况。",
+        "如适用，说明紧急住房处境的相关材料。",
+        "按 HDB 或服务机构要求提交其他表格或证明。"
+      ]
     },
     {
       "id": "transitional_shelter",
@@ -1694,9 +1866,21 @@
           "临时安置",
           "过渡住房"
         ],
-        "search_text_en": "transitional shelter temporary accommodation temporary accommodation for homeless families who have exhausted other options homeless no place to stay shelter eviction requires assessment referral by service providers availability and criteria vary start from supportgowhere listings for the latest contact referral route if urgent contact sso for triage and referral guidance rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
-        "search_text_zh": "transitional shelter 过渡性临时安置 为已无其他住宿选择的无家可归家庭提供临时安置 无家可归 没地方住 收容所 被驱逐 通常需要服务机构评估 转介 名额与条件视情况而定 通过 supportgowhere 查询最新联系 转介方式 如为紧急情况 可联系 sso 进行初步评估与转介 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
-      }
+        "search_text_en": "Transitional Shelter (Temporary Accommodation) Temporary accommodation for homeless families who have exhausted other options. homeless no place to stay shelter eviction Requires assessment/referral by service providers; availability and criteria vary. Start from SupportGoWhere listings for the latest contact/referral route. If urgent, contact SSO for triage and referral guidance. Identification details for all household members. Household income information and current housing details. Documents explaining urgent housing circumstances, if applicable. Any additional forms or supporting records requested by HDB or the service provider. rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "Transitional Shelter（过渡性临时安置） 为已无其他住宿选择的无家可归家庭提供临时安置。 无家可归 没地方住 收容所 被驱逐 通常需要服务机构评估/转介；名额与条件视情况而定。 通过 SupportGoWhere 查询最新联系/转介方式。 如为紧急情况，可联系 SSO 进行初步评估与转介。 所有家庭成员的身份资料。 家庭收入信息及现有住房情况。 如适用，说明紧急住房处境的相关材料。 按 HDB 或服务机构要求提交其他表格或证明。 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for all household members.",
+        "Household income information and current housing details.",
+        "Documents explaining urgent housing circumstances, if applicable.",
+        "Any additional forms or supporting records requested by HDB or the service provider."
+      ],
+      "docs_to_prepare_zh": [
+        "所有家庭成员的身份资料。",
+        "家庭收入信息及现有住房情况。",
+        "如适用，说明紧急住房处境的相关材料。",
+        "按 HDB 或服务机构要求提交其他表格或证明。"
+      ]
     },
     {
       "id": "transit_point_margaret_drive",
@@ -1788,9 +1972,21 @@
           "临时安置",
           "过渡住房"
         ],
-        "search_text_en": "transit point margaret drive temporary stay option for individuals families in housing crisis subject to referral assessment transit point emergency shelter temporary stay referral assessment required check supportgowhere listing for latest access rules use supportgowhere for the current contact and referral steps rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
-        "search_text_zh": "transit point margaret drive 临时过渡点 为住房危机个案提供临时住宿选择 通常需转介 评估 过渡点 紧急住宿 临时住宿 通常需转介 评估 以 supportgowhere 列表最新说明为准 通过 supportgowhere 查看最新联系与转介步骤 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
-      }
+        "search_text_en": "Transit Point @ Margaret Drive Temporary stay option for individuals/families in housing crisis (subject to referral/assessment). transit point emergency shelter temporary stay Referral/assessment required; check SupportGoWhere listing for latest access rules. Use SupportGoWhere for the current contact and referral steps. Identification details for all household members. Household income information and current housing details. Documents explaining urgent housing circumstances, if applicable. Any additional forms or supporting records requested by HDB or the service provider. rent rental eviction homeless shelter temporary accommodation housing_assistance housing",
+        "search_text_zh": "Transit Point @ Margaret Drive（临时过渡点） 为住房危机个案提供临时住宿选择（通常需转介/评估）。 过渡点 紧急住宿 临时住宿 通常需转介/评估；以 SupportGoWhere 列表最新说明为准。 通过 SupportGoWhere 查看最新联系与转介步骤。 所有家庭成员的身份资料。 家庭收入信息及现有住房情况。 如适用，说明紧急住房处境的相关材料。 按 HDB 或服务机构要求提交其他表格或证明。 房租 租房 驱逐 没地方住 收容 临时安置 过渡住房 housing_assistance housing"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for all household members.",
+        "Household income information and current housing details.",
+        "Documents explaining urgent housing circumstances, if applicable.",
+        "Any additional forms or supporting records requested by HDB or the service provider."
+      ],
+      "docs_to_prepare_zh": [
+        "所有家庭成员的身份资料。",
+        "家庭收入信息及现有住房情况。",
+        "如适用，说明紧急住房处境的相关材料。",
+        "按 HDB 或服务机构要求提交其他表格或证明。"
+      ]
     },
     {
       "id": "chas",
@@ -1889,9 +2085,21 @@
           "Medifund",
           "药费"
         ],
-        "search_text_en": "chas community health assist scheme subsidies for medical dental care at participating clinics for singapore citizens tiered chas clinic subsidy dental subsidy medical subsidy for singapore citizens subsidy tier depends on eligibility criteria defined by moh chas apply via the chas portal as instructed online application after approval use chas at participating gp dental clinics medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
-        "search_text_zh": "chas 社区健康援助计划 为新加坡公民在参与计划的诊所 牙科诊所提供分级补贴 chas 诊所补贴 牙科补贴 医疗补贴 面向新加坡公民 补贴等级取决于 moh chas 规定条件 按 chas 官网指引在线申请 获批后在参与计划的诊所 牙科使用补贴 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
-      }
+        "search_text_en": "CHAS (Community Health Assist Scheme) Subsidies for medical/dental care at participating clinics for Singapore Citizens (tiered). chas clinic subsidy dental subsidy medical subsidy For Singapore Citizens; subsidy tier depends on eligibility criteria defined by MOH/CHAS. Apply via the CHAS portal as instructed (online application). After approval, use CHAS at participating GP/dental clinics. Identification details and healthcare cards or account information, if applicable. Medical or treatment-related documents where the scheme requires assessment. Household income information if means-testing or subsidies apply. Any supporting records requested by the healthcare institution or official portal. medical hospital bill clinic subsidy CHAS Medifund medication healthcare_support healthcare",
+        "search_text_zh": "CHAS（社区健康援助计划） 为新加坡公民在参与计划的诊所/牙科诊所提供分级补贴。 CHAS 诊所补贴 牙科补贴 医疗补贴 面向新加坡公民；补贴等级取决于 MOH/CHAS 规定条件。 按 CHAS 官网指引在线申请。 获批后在参与计划的诊所/牙科使用补贴。 身份资料，以及如适用的医疗卡或账户信息。 如计划需要评估，准备医疗或治疗相关文件。 若涉及经济审查或补贴，准备家庭收入资料。 按医疗机构或官方门户要求提交其他证明。 医疗 医院账单 诊所补贴 CHAS Medifund 药费 healthcare_support healthcare"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and healthcare cards or account information, if applicable.",
+        "Medical or treatment-related documents where the scheme requires assessment.",
+        "Household income information if means-testing or subsidies apply.",
+        "Any supporting records requested by the healthcare institution or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料，以及如适用的医疗卡或账户信息。",
+        "如计划需要评估，准备医疗或治疗相关文件。",
+        "若涉及经济审查或补贴，准备家庭收入资料。",
+        "按医疗机构或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "medifund",
@@ -1986,9 +2194,21 @@
           "Medifund",
           "药费"
         ],
-        "search_text_en": "medifund financial assistance for patients who have difficulty paying medical bills usually via medical social worker medifund medical bill hospital social worker cannot pay assessed by the healthcare institution typically for patients who still have difficulty paying after other means ask the medical social worker at your hospital clinic for assessment and application guidance medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
-        "search_text_zh": "medifund 医疗援助基金 为难以支付医疗账单的患者提供援助 通常通过医疗社工办理 medifund 医疗账单 医疗社工 付不起 由医疗机构评估 一般用于在其他方式后仍难以负担费用的患者 联系就诊机构的医疗社工进行评估并按指引申请 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
-      }
+        "search_text_en": "MediFund Financial assistance for patients who have difficulty paying medical bills; usually via Medical Social Worker. medifund medical bill hospital social worker cannot pay Assessed by the healthcare institution; typically for patients who still have difficulty paying after other means. Ask the Medical Social Worker at your hospital/clinic for assessment and application guidance. Identification details and healthcare cards or account information, if applicable. Medical or treatment-related documents where the scheme requires assessment. Household income information if means-testing or subsidies apply. Any supporting records requested by the healthcare institution or official portal. medical hospital bill clinic subsidy CHAS Medifund medication healthcare_support healthcare",
+        "search_text_zh": "MediFund 医疗援助基金 为难以支付医疗账单的患者提供援助；通常通过医疗社工办理。 MediFund 医疗账单 医疗社工 付不起 由医疗机构评估；一般用于在其他方式后仍难以负担费用的患者。 联系就诊机构的医疗社工进行评估并按指引申请。 身份资料，以及如适用的医疗卡或账户信息。 如计划需要评估，准备医疗或治疗相关文件。 若涉及经济审查或补贴，准备家庭收入资料。 按医疗机构或官方门户要求提交其他证明。 医疗 医院账单 诊所补贴 CHAS Medifund 药费 healthcare_support healthcare"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and healthcare cards or account information, if applicable.",
+        "Medical or treatment-related documents where the scheme requires assessment.",
+        "Household income information if means-testing or subsidies apply.",
+        "Any supporting records requested by the healthcare institution or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料，以及如适用的医疗卡或账户信息。",
+        "如计划需要评估，准备医疗或治疗相关文件。",
+        "若涉及经济审查或补贴，准备家庭收入资料。",
+        "按医疗机构或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "medisave",
@@ -2081,9 +2301,21 @@
           "Medifund",
           "药费"
         ],
-        "search_text_en": "medisave national medical savings scheme to help pay for approved healthcare expenses medisave health savings approved claims use is subject to approved items and withdrawal limits depending on treatment service typically used at point of care the institution will guide you based on applicable rules medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
-        "search_text_zh": "medisave 保健储蓄 国家保健储蓄计划 可用于支付符合规定的医疗支出 medisave 保健储蓄 医疗支出 可使用范围与提取额度取决于医疗项目 服务类型 以官方规则为准 一般在就医结算时按规定使用 由医疗机构按规则协助处理 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
-      }
+        "search_text_en": "MediSave National medical savings scheme to help pay for approved healthcare expenses. medisave health savings approved claims Use is subject to approved items and withdrawal limits depending on treatment/service. Typically used at point of care; the institution will guide you based on applicable rules. Identification details and healthcare cards or account information, if applicable. Medical or treatment-related documents where the scheme requires assessment. Household income information if means-testing or subsidies apply. Any supporting records requested by the healthcare institution or official portal. medical hospital bill clinic subsidy CHAS Medifund medication healthcare_support healthcare",
+        "search_text_zh": "MediSave（保健储蓄） 国家保健储蓄计划，可用于支付符合规定的医疗支出。 MediSave 保健储蓄 医疗支出 可使用范围与提取额度取决于医疗项目/服务类型（以官方规则为准）。 一般在就医结算时按规定使用，由医疗机构按规则协助处理。 身份资料，以及如适用的医疗卡或账户信息。 如计划需要评估，准备医疗或治疗相关文件。 若涉及经济审查或补贴，准备家庭收入资料。 按医疗机构或官方门户要求提交其他证明。 医疗 医院账单 诊所补贴 CHAS Medifund 药费 healthcare_support healthcare"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and healthcare cards or account information, if applicable.",
+        "Medical or treatment-related documents where the scheme requires assessment.",
+        "Household income information if means-testing or subsidies apply.",
+        "Any supporting records requested by the healthcare institution or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料，以及如适用的医疗卡或账户信息。",
+        "如计划需要评估，准备医疗或治疗相关文件。",
+        "若涉及经济审查或补贴，准备家庭收入资料。",
+        "按医疗机构或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "medishield_life",
@@ -2180,9 +2412,21 @@
           "Medifund",
           "药费"
         ],
-        "search_text_en": "medishield life basic national health insurance that helps pay for large hospital bills and select costly outpatient treatments medishield life insurance hospital bill premium subsidy coverage rules and subsidies follow moh guidance premium subsidies may apply generally automatic coverage for singaporeans prs claims are made through the healthcare institution according to rules medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
-        "search_text_zh": "medishield life 终身健保 国家基础医疗保险 帮助支付较大住院费用及部分高额门诊治疗费用 medishield life 保险 住院费用 保费补贴 保障与补贴规则以 moh 官方说明为准 通常为自动覆盖 理赔一般由医疗机构按规则处理 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
-      }
+        "search_text_en": "MediShield Life Basic national health insurance that helps pay for large hospital bills and select costly outpatient treatments. medishield life insurance hospital bill premium subsidy Coverage rules and subsidies follow MOH guidance; premium subsidies may apply. Generally automatic coverage for Singaporeans/PRs; claims are made through the healthcare institution according to rules. Identification details and healthcare cards or account information, if applicable. Medical or treatment-related documents where the scheme requires assessment. Household income information if means-testing or subsidies apply. Any supporting records requested by the healthcare institution or official portal. medical hospital bill clinic subsidy CHAS Medifund medication healthcare_support healthcare",
+        "search_text_zh": "MediShield Life（终身健保） 国家基础医疗保险，帮助支付较大住院费用及部分高额门诊治疗费用。 MediShield Life 保险 住院费用 保费补贴 保障与补贴规则以 MOH 官方说明为准。 通常为自动覆盖；理赔一般由医疗机构按规则处理。 身份资料，以及如适用的医疗卡或账户信息。 如计划需要评估，准备医疗或治疗相关文件。 若涉及经济审查或补贴，准备家庭收入资料。 按医疗机构或官方门户要求提交其他证明。 医疗 医院账单 诊所补贴 CHAS Medifund 药费 healthcare_support healthcare"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and healthcare cards or account information, if applicable.",
+        "Medical or treatment-related documents where the scheme requires assessment.",
+        "Household income information if means-testing or subsidies apply.",
+        "Any supporting records requested by the healthcare institution or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料，以及如适用的医疗卡或账户信息。",
+        "如计划需要评估，准备医疗或治疗相关文件。",
+        "若涉及经济审查或补贴，准备家庭收入资料。",
+        "按医疗机构或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "pioneer_generation_package",
@@ -2274,9 +2518,21 @@
           "Medifund",
           "药费"
         ],
-        "search_text_en": "pioneer generation package healthcare support for eligible pioneer generation seniors including premium subsidies and other benefits pioneer generation senior healthcare support premium subsidy eligibility is based on official pioneer generation criteria benefits are typically administered automatically generally no application needed verify on official pages if unsure medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
-        "search_text_zh": "pioneer generation package 建国一代配套 为符合条件的建国一代长者提供医疗支持 含保费补贴等 建国一代 长者医疗支持 保费补贴 资格以官方 建国一代 条件为准 福利一般为自动评估发放 适用 通常无需申请 如不确定可在官方页面核对 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
-      }
+        "search_text_en": "Pioneer Generation Package Healthcare support for eligible Pioneer Generation seniors, including premium subsidies and other benefits. pioneer generation senior healthcare support premium subsidy Eligibility is based on official Pioneer Generation criteria; benefits are typically administered automatically. Generally no application needed; verify on official pages if unsure. Identification details and healthcare cards or account information, if applicable. Medical or treatment-related documents where the scheme requires assessment. Household income information if means-testing or subsidies apply. Any supporting records requested by the healthcare institution or official portal. medical hospital bill clinic subsidy CHAS Medifund medication healthcare_support healthcare",
+        "search_text_zh": "Pioneer Generation Package（建国一代配套） 为符合条件的建国一代长者提供医疗支持（含保费补贴等）。 建国一代 长者医疗支持 保费补贴 资格以官方“建国一代”条件为准；福利一般为自动评估发放/适用。 通常无需申请；如不确定可在官方页面核对。 身份资料，以及如适用的医疗卡或账户信息。 如计划需要评估，准备医疗或治疗相关文件。 若涉及经济审查或补贴，准备家庭收入资料。 按医疗机构或官方门户要求提交其他证明。 医疗 医院账单 诊所补贴 CHAS Medifund 药费 healthcare_support healthcare"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and healthcare cards or account information, if applicable.",
+        "Medical or treatment-related documents where the scheme requires assessment.",
+        "Household income information if means-testing or subsidies apply.",
+        "Any supporting records requested by the healthcare institution or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料，以及如适用的医疗卡或账户信息。",
+        "如计划需要评估，准备医疗或治疗相关文件。",
+        "若涉及经济审查或补贴，准备家庭收入资料。",
+        "按医疗机构或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "merdeka_generation_package",
@@ -2368,9 +2624,21 @@
           "Medifund",
           "药费"
         ],
-        "search_text_en": "merdeka generation package healthcare benefits for eligible seniors including additional outpatient subsidies and premium subsidies merdeka generation senior subsidies outpatient subsidy eligibility follows official merdeka generation criteria benefits are typically administered automatically generally no application needed verify on official pages if unsure medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
-        "search_text_zh": "merdeka generation package 立国一代配套 为符合条件的长者提供医疗支持 含门诊补贴 保费补贴等 立国一代 长者补贴 门诊补贴 资格以官方 立国一代 条件为准 福利一般自动适用 发放 通常无需申请 如不确定可在官方页面核对 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
-      }
+        "search_text_en": "Merdeka Generation Package Healthcare benefits for eligible seniors, including additional outpatient subsidies and premium subsidies. merdeka generation senior subsidies outpatient subsidy Eligibility follows official Merdeka Generation criteria; benefits are typically administered automatically. Generally no application needed; verify on official pages if unsure. Identification details and healthcare cards or account information, if applicable. Medical or treatment-related documents where the scheme requires assessment. Household income information if means-testing or subsidies apply. Any supporting records requested by the healthcare institution or official portal. medical hospital bill clinic subsidy CHAS Medifund medication healthcare_support healthcare",
+        "search_text_zh": "Merdeka Generation Package（立国一代配套） 为符合条件的长者提供医疗支持（含门诊补贴、保费补贴等）。 立国一代 长者补贴 门诊补贴 资格以官方“立国一代”条件为准；福利一般自动适用/发放。 通常无需申请；如不确定可在官方页面核对。 身份资料，以及如适用的医疗卡或账户信息。 如计划需要评估，准备医疗或治疗相关文件。 若涉及经济审查或补贴，准备家庭收入资料。 按医疗机构或官方门户要求提交其他证明。 医疗 医院账单 诊所补贴 CHAS Medifund 药费 healthcare_support healthcare"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and healthcare cards or account information, if applicable.",
+        "Medical or treatment-related documents where the scheme requires assessment.",
+        "Household income information if means-testing or subsidies apply.",
+        "Any supporting records requested by the healthcare institution or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料，以及如适用的医疗卡或账户信息。",
+        "如计划需要评估，准备医疗或治疗相关文件。",
+        "若涉及经济审查或补贴，准备家庭收入资料。",
+        "按医疗机构或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "careshield_life",
@@ -2465,9 +2733,21 @@
           "Medifund",
           "药费"
         ],
-        "search_text_en": "careshield life long term care insurance scheme that provides monthly payouts if an insured develops severe disability careshield life long term care severe disability payout payout claims require meeting the programme s severe disability definition and assessment process per official guidance follow official claim guidance and submit required documents assessment as instructed medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
-        "search_text_zh": "careshield life 长期护理险 长期护理保险 若发生严重失能 可获得月度现金给付 careshield life 长期护理 严重失能 月度给付 申请给付需符合官方 严重失能 定义与评估流程 按官方理赔指引提交评估与材料 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
-      }
+        "search_text_en": "CareShield Life Long-term care insurance scheme that provides monthly payouts if an insured develops severe disability. careshield life long-term care severe disability payout Payout claims require meeting the programme’s severe disability definition and assessment process, per official guidance. Follow official claim guidance and submit required documents/assessment as instructed. Identification details and healthcare cards or account information, if applicable. Medical or treatment-related documents where the scheme requires assessment. Household income information if means-testing or subsidies apply. Any supporting records requested by the healthcare institution or official portal. medical hospital bill clinic subsidy CHAS Medifund medication healthcare_support healthcare",
+        "search_text_zh": "CareShield Life（长期护理险） 长期护理保险；若发生严重失能，可获得月度现金给付。 CareShield Life 长期护理 严重失能 月度给付 申请给付需符合官方“严重失能”定义与评估流程。 按官方理赔指引提交评估与材料。 身份资料，以及如适用的医疗卡或账户信息。 如计划需要评估，准备医疗或治疗相关文件。 若涉及经济审查或补贴，准备家庭收入资料。 按医疗机构或官方门户要求提交其他证明。 医疗 医院账单 诊所补贴 CHAS Medifund 药费 healthcare_support healthcare"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and healthcare cards or account information, if applicable.",
+        "Medical or treatment-related documents where the scheme requires assessment.",
+        "Household income information if means-testing or subsidies apply.",
+        "Any supporting records requested by the healthcare institution or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料，以及如适用的医疗卡或账户信息。",
+        "如计划需要评估，准备医疗或治疗相关文件。",
+        "若涉及经济审查或补贴，准备家庭收入资料。",
+        "按医疗机构或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "healthier_sg",
@@ -2563,9 +2843,21 @@
           "Medifund",
           "药费"
         ],
-        "search_text_en": "healthier sg national preventive health initiative enrol with a family doctor and receive structured support for healthier living healthier sg preventive health screening family doctor moh progressively invites singapore citizens and prs aged 40 and above enrolment rules can change over time check official faq follow the official enrolment guidance choose an enrolled clinic polyclinic as instructed medical hospital bill clinic subsidy chas medifund medication healthcare_support healthcare",
-        "search_text_zh": "healthier sg 健康促进计划 国家预防与健康促进计划 与家庭医生建立长期健康管理支持 healthier sg 预防保健 体检筛查 家庭医生 moh 会逐步邀请 40 岁及以上的新加坡公民与永久居民 具体报名规则以官方 faq 为准 按官方报名指引选择并登记参与诊所 综合诊疗所 医疗 医院账单 诊所补贴 chas medifund 药费 healthcare_support healthcare"
-      }
+        "search_text_en": "Healthier SG National preventive health initiative; enrol with a family doctor and receive structured support for healthier living. healthier sg preventive health screening family doctor MOH progressively invites Singapore Citizens and PRs aged 40 and above; enrolment rules can change over time—check official FAQ. Follow the official enrolment guidance; choose an enrolled clinic/polyclinic as instructed. Identification details and healthcare cards or account information, if applicable. Medical or treatment-related documents where the scheme requires assessment. Household income information if means-testing or subsidies apply. Any supporting records requested by the healthcare institution or official portal. medical hospital bill clinic subsidy CHAS Medifund medication healthcare_support healthcare",
+        "search_text_zh": "Healthier SG（健康促进计划） 国家预防与健康促进计划；与家庭医生建立长期健康管理支持。 Healthier SG 预防保健 体检筛查 家庭医生 MOH 会逐步邀请 40 岁及以上的新加坡公民与永久居民；具体报名规则以官方 FAQ 为准。 按官方报名指引选择并登记参与诊所/综合诊疗所。 身份资料，以及如适用的医疗卡或账户信息。 如计划需要评估，准备医疗或治疗相关文件。 若涉及经济审查或补贴，准备家庭收入资料。 按医疗机构或官方门户要求提交其他证明。 医疗 医院账单 诊所补贴 CHAS Medifund 药费 healthcare_support healthcare"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and healthcare cards or account information, if applicable.",
+        "Medical or treatment-related documents where the scheme requires assessment.",
+        "Household income information if means-testing or subsidies apply.",
+        "Any supporting records requested by the healthcare institution or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料，以及如适用的医疗卡或账户信息。",
+        "如计划需要评估，准备医疗或治疗相关文件。",
+        "若涉及经济审查或补贴，准备家庭收入资料。",
+        "按医疗机构或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "aic_services",
@@ -2666,9 +2958,21 @@
           "居家照护",
           "日间照护"
         ],
-        "search_text_en": "aic care services eldercare caregiver support one stop portal for community care services and caregiver resources aic caregiver eldercare home care day care depends on service type and assessment browse the relevant care service on aic sg common route talk to your doctor hospital polyclinic for referral application or visit an aic link for assistance service dependent elderly caregiver home care day care elderly_support seniors",
-        "search_text_zh": "aic 照护服务 长者与照护者支持 提供社区照护服务与照护者资源的一站式平台 aic 照护者 长者照护 居家照护 日间照护 取决于服务类型与评估 在 aic sg 查询对应照护服务 常见路径 由医院 综合诊疗所医生协助转介 申请 或到 aic link 获取协助 视服务而定 长者 老人 看护者 居家照护 日间照护 elderly_support seniors"
-      }
+        "search_text_en": "AIC Care Services (Eldercare & Caregiver Support) One-stop portal for community care services and caregiver resources. aic caregiver eldercare home care day care Depends on service type and assessment. Browse the relevant care service on AIC.sg. Common route: talk to your doctor (hospital/polyclinic) for referral/application, or visit an AIC Link for assistance (service-dependent). Identification details for the senior and household members, if required. Assessment-related information requested by the agency or care coordinator. Household income or care-needs information where relevant. Any supporting records requested by the official portal or service provider. elderly caregiver home care day care elderly_support seniors",
+        "search_text_zh": "AIC 照护服务（长者与照护者支持） 提供社区照护服务与照护者资源的一站式平台。 AIC 照护者 长者照护 居家照护 日间照护 取决于服务类型与评估。 在 AIC.sg 查询对应照护服务。 常见路径：由医院/综合诊疗所医生协助转介/申请，或到 AIC Link 获取协助（视服务而定）。 如要求，准备长者及家庭成员的身份资料。 按机构或照护协调人员要求提供评估资料。 如适用，准备家庭收入或照护需求信息。 按官方门户或服务机构要求提交其他证明。 长者 老人 看护者 居家照护 日间照护 elderly_support seniors"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the senior and household members, if required.",
+        "Assessment-related information requested by the agency or care coordinator.",
+        "Household income or care-needs information where relevant.",
+        "Any supporting records requested by the official portal or service provider."
+      ],
+      "docs_to_prepare_zh": [
+        "如要求，准备长者及家庭成员的身份资料。",
+        "按机构或照护协调人员要求提供评估资料。",
+        "如适用，准备家庭收入或照护需求信息。",
+        "按官方门户或服务机构要求提交其他证明。"
+      ]
     },
     {
       "id": "atf_sgenable",
@@ -2764,9 +3068,21 @@
           "照护服务",
           "就业支持"
         ],
-        "search_text_en": "assistive technology fund atf subsidies for assistive technology devices for eligible persons with disabilities assessment required assistive technology wheelchair hearing aid sgenable disability eligibility and assessment apply see sg enable guidance apply via sg enable approved assessors as required by the programme pwd assistive devices care services employment support disability_support disability",
-        "search_text_zh": "辅助科技基金 atf 为符合条件的残障人士提供辅助科技器材补贴 需评估 辅助器材 轮椅 助听器 sg enable 残障 需符合条件并完成评估 以 sg enable 指引为准 按 sg enable 指引通过评估机构 渠道申请 残障 残疾 辅助器材 照护服务 就业支持 disability_support disability"
-      }
+        "search_text_en": "Assistive Technology Fund (ATF) Subsidies for assistive technology devices for eligible persons with disabilities (assessment required). assistive technology wheelchair hearing aid sgenable disability Eligibility and assessment apply; see SG Enable guidance. Apply via SG Enable / approved assessors as required by the programme. Identification details for the applicant and caregiver, if relevant. Disability or functional-needs assessment documents where required. Employment or income information if the scheme includes means-testing or employer support. Any supporting documents requested by SG Enable or the administering agency. PWD assistive devices care services employment support disability_support disability",
+        "search_text_zh": "辅助科技基金（ATF） 为符合条件的残障人士提供辅助科技器材补贴（需评估）。 辅助器材 轮椅 助听器 SG Enable 残障 需符合条件并完成评估；以 SG Enable 指引为准。 按 SG Enable 指引通过评估机构/渠道申请。 申请人及照护者的身份资料（如适用）。 若计划要求，准备残障或功能需求评估文件。 如涉及经济审查或雇主补助，准备就业或收入资料。 按 SG Enable 或负责机构要求提交其他证明。 残障 残疾 辅助器材 照护服务 就业支持 disability_support disability"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the applicant and caregiver, if relevant.",
+        "Disability or functional-needs assessment documents where required.",
+        "Employment or income information if the scheme includes means-testing or employer support.",
+        "Any supporting documents requested by SG Enable or the administering agency."
+      ],
+      "docs_to_prepare_zh": [
+        "申请人及照护者的身份资料（如适用）。",
+        "若计划要求，准备残障或功能需求评估文件。",
+        "如涉及经济审查或雇主补助，准备就业或收入资料。",
+        "按 SG Enable 或负责机构要求提交其他证明。"
+      ]
     },
     {
       "id": "open_door_programme_odp",
@@ -2858,9 +3174,21 @@
           "照护服务",
           "就业支持"
         ],
-        "search_text_en": "open door programme odp grants and employment support to help employers hire and integrate persons with disabilities odp hire persons with disabilities job redesign grant sgenable programme is employer facing details and grant components are on sg enable employers contact sg enable and follow odp application steps pwd assistive devices care services employment support disability_support disability",
-        "search_text_zh": "open door programme odp 就业支持 通过补助与就业支持 帮助雇主聘用并融入残障人士 odp 残障就业 岗位改造 sg enable 通常面向雇主 具体补助与条件以 sg enable 说明为准 雇主联系 sg enable 并按 odp 流程申请 残障 残疾 辅助器材 照护服务 就业支持 disability_support disability"
-      }
+        "search_text_en": "Open Door Programme (ODP) Grants and employment support to help employers hire and integrate persons with disabilities. odp hire persons with disabilities job redesign grant sgenable Programme is employer-facing; details and grant components are on SG Enable. Employers contact SG Enable and follow ODP application steps. Identification details for the applicant and caregiver, if relevant. Disability or functional-needs assessment documents where required. Employment or income information if the scheme includes means-testing or employer support. Any supporting documents requested by SG Enable or the administering agency. PWD assistive devices care services employment support disability_support disability",
+        "search_text_zh": "Open Door Programme（ODP 就业支持） 通过补助与就业支持，帮助雇主聘用并融入残障人士。 ODP 残障就业 岗位改造 SG Enable 通常面向雇主；具体补助与条件以 SG Enable 说明为准。 雇主联系 SG Enable 并按 ODP 流程申请。 申请人及照护者的身份资料（如适用）。 若计划要求，准备残障或功能需求评估文件。 如涉及经济审查或雇主补助，准备就业或收入资料。 按 SG Enable 或负责机构要求提交其他证明。 残障 残疾 辅助器材 照护服务 就业支持 disability_support disability"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the applicant and caregiver, if relevant.",
+        "Disability or functional-needs assessment documents where required.",
+        "Employment or income information if the scheme includes means-testing or employer support.",
+        "Any supporting documents requested by SG Enable or the administering agency."
+      ],
+      "docs_to_prepare_zh": [
+        "申请人及照护者的身份资料（如适用）。",
+        "若计划要求，准备残障或功能需求评估文件。",
+        "如涉及经济审查或雇主补助，准备就业或收入资料。",
+        "按 SG Enable 或负责机构要求提交其他证明。"
+      ]
     },
     {
       "id": "enabling_employment_credit_eec",
@@ -2952,9 +3280,21 @@
           "照护服务",
           "就业支持"
         ],
-        "search_text_en": "enabling employment credit eec wage offsets for employers hiring persons with disabilities auto assessed via cpf contributions eec wage offset employer support pwd employment eligibility and payout rules are defined by iras generally computed from cpf contributions generally no application needed if eligible follow iras guidance pwd assistive devices care services employment support disability_support disability",
-        "search_text_zh": "enabling employment credit eec 工资抵扣 雇主聘用残障人士可获得工资抵扣 通常根据 cpf 自动评估发放 eec 工资抵扣 雇主补贴 残障就业 资格与发放规则以 iras 为准 通常基于 cpf 缴交记录计算 多数情况下无需申请 以 iras 指引为准 残障 残疾 辅助器材 照护服务 就业支持 disability_support disability"
-      }
+        "search_text_en": "Enabling Employment Credit (EEC) Wage offsets for employers hiring persons with disabilities (auto-assessed via CPF contributions). eec wage offset employer support pwd employment Eligibility and payout rules are defined by IRAS; generally computed from CPF contributions. Generally no application needed if eligible; follow IRAS guidance. Identification details for the applicant and caregiver, if relevant. Disability or functional-needs assessment documents where required. Employment or income information if the scheme includes means-testing or employer support. Any supporting documents requested by SG Enable or the administering agency. PWD assistive devices care services employment support disability_support disability",
+        "search_text_zh": "Enabling Employment Credit（EEC 工资抵扣） 雇主聘用残障人士可获得工资抵扣（通常根据 CPF 自动评估发放）。 EEC 工资抵扣 雇主补贴 残障就业 资格与发放规则以 IRAS 为准；通常基于 CPF 缴交记录计算。 多数情况下无需申请；以 IRAS 指引为准。 申请人及照护者的身份资料（如适用）。 若计划要求，准备残障或功能需求评估文件。 如涉及经济审查或雇主补助，准备就业或收入资料。 按 SG Enable 或负责机构要求提交其他证明。 残障 残疾 辅助器材 照护服务 就业支持 disability_support disability"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the applicant and caregiver, if relevant.",
+        "Disability or functional-needs assessment documents where required.",
+        "Employment or income information if the scheme includes means-testing or employer support.",
+        "Any supporting documents requested by SG Enable or the administering agency."
+      ],
+      "docs_to_prepare_zh": [
+        "申请人及照护者的身份资料（如适用）。",
+        "若计划要求，准备残障或功能需求评估文件。",
+        "如涉及经济审查或雇主补助，准备就业或收入资料。",
+        "按 SG Enable 或负责机构要求提交其他证明。"
+      ]
     },
     {
       "id": "moe_fas",
@@ -3046,9 +3386,21 @@
           "幼儿园",
           "教育"
         ],
-        "search_text_en": "moe financial assistance scheme fas financial assistance for eligible students school based details vary school fees assistance fas textbook subsidy uniform subsidy eligibility and benefits vary by school level apply via the school according to moe guidance contact your child s school follow the school s moe fas application process school fees childcare student care preschool education_support education",
-        "search_text_zh": "教育部助学金 fas 为符合条件学生提供助学支持 通常以学校流程为主 助学金 学费减免 课本补贴 校服补贴 资格与补助内容随学段 学校规定而异 通常按 moe 指引由学校受理 联系学校并按学校的 moe fas 流程办理 学费 托儿 课后托管 幼儿园 教育 education_support education"
-      }
+        "search_text_en": "MOE Financial Assistance Scheme (FAS) Financial assistance for eligible students (school-based; details vary). school fees assistance fas textbook subsidy uniform subsidy Eligibility and benefits vary by school level; apply via the school according to MOE guidance. Contact your child’s school; follow the school’s MOE FAS application process. Identification details for the student and parent or guardian, if required. School enrolment or attendance information. Household income details where fee assistance or subsidies are means-tested. Any supporting records requested by the school or official portal. school fees childcare student care preschool education_support education",
+        "search_text_zh": "教育部助学金（FAS） 为符合条件学生提供助学支持（通常以学校流程为主）。 助学金 学费减免 课本补贴 校服补贴 资格与补助内容随学段/学校规定而异；通常按 MOE 指引由学校受理。 联系学校并按学校的 MOE FAS 流程办理。 如要求，准备学生及家长/监护人的身份资料。 学校注册或就读信息。 若属于经济审查型补助，准备家庭收入资料。 按学校或官方门户要求提交其他证明。 学费 托儿 课后托管 幼儿园 教育 education_support education"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the student and parent or guardian, if required.",
+        "School enrolment or attendance information.",
+        "Household income details where fee assistance or subsidies are means-tested.",
+        "Any supporting records requested by the school or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "如要求，准备学生及家长/监护人的身份资料。",
+        "学校注册或就读信息。",
+        "若属于经济审查型补助，准备家庭收入资料。",
+        "按学校或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "kifas",
@@ -3138,9 +3490,21 @@
           "幼儿园",
           "教育"
         ],
-        "search_text_en": "kindergarten fee assistance scheme kifas fee assistance for eligible children in participating kindergartens kifas kindergarten fee preschool assistance criteria apply refer to msf official guidance and participating kindergarten rules apply through the participating kindergarten as guided school fees childcare student care preschool education_support education",
-        "search_text_zh": "幼儿园学费援助 kifas 为符合条件儿童提供幼儿园学费援助 限参与机构 kifas 幼儿园 学费援助 学前教育 需符合条件 以 msf 官方说明与参与幼儿园规则为准 按参与幼儿园指引申请 学费 托儿 课后托管 幼儿园 教育 education_support education"
-      }
+        "search_text_en": "Kindergarten Fee Assistance Scheme (KiFAS) Fee assistance for eligible children in participating kindergartens. kifas kindergarten fee preschool assistance Criteria apply; refer to MSF/official guidance and participating kindergarten rules. Apply through the participating kindergarten as guided. Identification details for the student and parent or guardian, if required. School enrolment or attendance information. Household income details where fee assistance or subsidies are means-tested. Any supporting records requested by the school or official portal. school fees childcare student care preschool education_support education",
+        "search_text_zh": "幼儿园学费援助（KiFAS） 为符合条件儿童提供幼儿园学费援助（限参与机构）。 KiFAS 幼儿园 学费援助 学前教育 需符合条件；以 MSF/官方说明与参与幼儿园规则为准。 按参与幼儿园指引申请。 如要求，准备学生及家长/监护人的身份资料。 学校注册或就读信息。 若属于经济审查型补助，准备家庭收入资料。 按学校或官方门户要求提交其他证明。 学费 托儿 课后托管 幼儿园 教育 education_support education"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the student and parent or guardian, if required.",
+        "School enrolment or attendance information.",
+        "Household income details where fee assistance or subsidies are means-tested.",
+        "Any supporting records requested by the school or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "如要求，准备学生及家长/监护人的身份资料。",
+        "学校注册或就读信息。",
+        "若属于经济审查型补助，准备家庭收入资料。",
+        "按学校或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "ecda_childcare_subsidy",
@@ -3232,9 +3596,21 @@
           "幼儿园",
           "教育"
         ],
-        "search_text_en": "childcare subsidies basic additional subsidies to reduce childcare fees at licensed centres subject to criteria childcare subsidy infant care preschool subsidy ecda depends on citizenship and household factors see ecda guidance typically arranged through the childcare centre follow ecda centre instructions school fees childcare student care preschool education_support education",
-        "search_text_zh": "托儿补贴 基础补贴与额外补贴 为在持牌中心就读的儿童提供托儿费用补贴 需符合条件 托儿补贴 婴幼儿托育 学前补贴 ecda 与国籍 家庭条件相关 以 ecda 指引为准 通常通过托育中心办理 按 ecda 中心指引执行 学费 托儿 课后托管 幼儿园 教育 education_support education"
-      }
+        "search_text_en": "Childcare Subsidies (Basic & Additional) Subsidies to reduce childcare fees at licensed centres (subject to criteria). childcare subsidy infant care preschool subsidy ecda Depends on citizenship and household factors; see ECDA guidance. Typically arranged through the childcare centre; follow ECDA/centre instructions. Identification details for the student and parent or guardian, if required. School enrolment or attendance information. Household income details where fee assistance or subsidies are means-tested. Any supporting records requested by the school or official portal. school fees childcare student care preschool education_support education",
+        "search_text_zh": "托儿补贴（基础补贴与额外补贴） 为在持牌中心就读的儿童提供托儿费用补贴（需符合条件）。 托儿补贴 婴幼儿托育 学前补贴 ECDA 与国籍/家庭条件相关；以 ECDA 指引为准。 通常通过托育中心办理；按 ECDA/中心指引执行。 如要求，准备学生及家长/监护人的身份资料。 学校注册或就读信息。 若属于经济审查型补助，准备家庭收入资料。 按学校或官方门户要求提交其他证明。 学费 托儿 课后托管 幼儿园 教育 education_support education"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the student and parent or guardian, if required.",
+        "School enrolment or attendance information.",
+        "Household income details where fee assistance or subsidies are means-tested.",
+        "Any supporting records requested by the school or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "如要求，准备学生及家长/监护人的身份资料。",
+        "学校注册或就读信息。",
+        "若属于经济审查型补助，准备家庭收入资料。",
+        "按学校或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "student_care_fee_assistance",
@@ -3326,9 +3702,21 @@
           "幼儿园",
           "教育"
         ],
-        "search_text_en": "student care fee assistance scfa fee assistance for eligible primary school students attending student care centres student care after school care scfa fee assistance criteria apply check msf guidance apply via the student care centre follow msf process school fees childcare student care preschool education_support education",
-        "search_text_zh": "学生托管费用援助 scfa 为符合条件的小学生托管 student care 提供费用援助 学生托管 课后照护 scfa 费用援助 以 msf 条件为准 通过学生托管中心申请 按 msf 流程办理 学费 托儿 课后托管 幼儿园 教育 education_support education"
-      }
+        "search_text_en": "Student Care Fee Assistance (SCFA) Fee assistance for eligible primary school students attending student care centres. student care after school care scfa fee assistance Criteria apply; check MSF guidance. Apply via the student care centre; follow MSF process. Identification details for the student and parent or guardian, if required. School enrolment or attendance information. Household income details where fee assistance or subsidies are means-tested. Any supporting records requested by the school or official portal. school fees childcare student care preschool education_support education",
+        "search_text_zh": "学生托管费用援助（SCFA） 为符合条件的小学生托管（Student Care）提供费用援助。 学生托管 课后照护 SCFA 费用援助 以 MSF 条件为准。 通过学生托管中心申请，按 MSF 流程办理。 如要求，准备学生及家长/监护人的身份资料。 学校注册或就读信息。 若属于经济审查型补助，准备家庭收入资料。 按学校或官方门户要求提交其他证明。 学费 托儿 课后托管 幼儿园 教育 education_support education"
+      },
+      "docs_to_prepare_en": [
+        "Identification details for the student and parent or guardian, if required.",
+        "School enrolment or attendance information.",
+        "Household income details where fee assistance or subsidies are means-tested.",
+        "Any supporting records requested by the school or official portal."
+      ],
+      "docs_to_prepare_zh": [
+        "如要求，准备学生及家长/监护人的身份资料。",
+        "学校注册或就读信息。",
+        "若属于经济审查型补助，准备家庭收入资料。",
+        "按学校或官方门户要求提交其他证明。"
+      ]
     },
     {
       "id": "baby_bonus",
@@ -3367,7 +3755,7 @@
       "sources": [
         "https://www.msf.gov.sg/"
       ],
-      "domain_id": null,
+      "domain_id": "family",
       "sections": {
         "overview": {
           "en": "Support for families with children, including cash gift and Child Development Account benefits (per current policy).",
@@ -3391,7 +3779,7 @@
         }
       },
       "search": {
-        "domain_id": null,
+        "domain_id": "family",
         "category": "family_support",
         "aliases_en": [
           "Baby Bonus Scheme (incl. CDA)",
@@ -3407,11 +3795,33 @@
           "儿童发展账户",
           "新生儿补贴"
         ],
-        "broader_terms_en": [],
-        "broader_terms_zh": [],
-        "search_text_en": "baby bonus scheme incl cda support for families with children including cash gift and child development account benefits per current policy baby bonus cda child development account newborn support eligibility and benefits vary check official policy pages apply activate via official channels as guided e g lifesg government portal instructions family_support",
-        "search_text_zh": "baby bonus 含 cda 儿童发展账户 为育儿家庭提供支持 如现金礼与 cda 儿童发展账户等 按现行政策 baby bonus cda 儿童发展账户 新生儿补贴 条件与金额以官网为准 按官方渠道指引 如 lifesg 政府入口 申请 开通 family_support"
-      }
+        "broader_terms_en": [
+          "parenting",
+          "child support",
+          "family assistance",
+          "caregiver support"
+        ],
+        "broader_terms_zh": [
+          "育儿",
+          "儿童支持",
+          "家庭援助",
+          "照护者支持"
+        ],
+        "search_text_en": "Baby Bonus Scheme (incl. CDA) Support for families with children, including cash gift and Child Development Account benefits (per current policy). baby bonus cda child development account newborn support Eligibility and benefits vary; check official policy pages. Apply/activate via official channels as guided (e.g., LifeSG / government portal instructions). Child birth registration details and parent or guardian identification information. Singpass and any official account setup needed for Baby Bonus or CDA-related steps. Bank account and child account information where required by the official process. Follow the latest official application guidance for claim, enrolment, and CDA activation steps. parenting child support family assistance caregiver support family_support family",
+        "search_text_zh": "Baby Bonus（含 CDA 儿童发展账户） 为育儿家庭提供支持（如现金礼与 CDA 儿童发展账户等，按现行政策）。 Baby Bonus CDA 儿童发展账户 新生儿补贴 条件与金额以官网为准。 按官方渠道指引（如 LifeSG/政府入口）申请/开通。 孩子出生登记资料，以及父母或监护人的身份信息。 办理 Baby Bonus 或 CDA 流程所需的 Singpass 及相关官方账户。 如流程要求，准备银行账户及儿童账户信息。 按最新官方指引完成申请、登记及 CDA 开通步骤。 育儿 儿童支持 家庭援助 照护者支持 family_support family"
+      },
+      "docs_to_prepare_en": [
+        "Child birth registration details and parent or guardian identification information.",
+        "Singpass and any official account setup needed for Baby Bonus or CDA-related steps.",
+        "Bank account and child account information where required by the official process.",
+        "Follow the latest official application guidance for claim, enrolment, and CDA activation steps."
+      ],
+      "docs_to_prepare_zh": [
+        "孩子出生登记资料，以及父母或监护人的身份信息。",
+        "办理 Baby Bonus 或 CDA 流程所需的 Singpass 及相关官方账户。",
+        "如流程要求，准备银行账户及儿童账户信息。",
+        "按最新官方指引完成申请、登记及 CDA 开通步骤。"
+      ]
     },
     {
       "id": "kidstart",
@@ -3450,7 +3860,7 @@
       "sources": [
         "https://supportgowhere.life.gov.sg/"
       ],
-      "domain_id": null,
+      "domain_id": "family",
       "sections": {
         "overview": {
           "en": "Early childhood support programme for eligible families to give children a good start.",
@@ -3474,7 +3884,7 @@
         }
       },
       "search": {
-        "domain_id": null,
+        "domain_id": "family",
         "category": "family_support",
         "aliases_en": [
           "KidSTART",
@@ -3490,11 +3900,33 @@
           "家庭支持",
           "学前"
         ],
-        "broader_terms_en": [],
-        "broader_terms_zh": [],
-        "search_text_en": "kidstart early childhood support programme for eligible families to give children a good start kidstart early childhood family support preschool eligibility criteria apply see official info check official channels referral routes on supportgowhere or msf family_support",
-        "search_text_zh": "kidstart 儿童早期发展支持 为符合条件家庭提供儿童早期发展支持 帮助孩子更好起步 kidstart 早期发展 家庭支持 学前 以官方条件为准 通过 supportgowhere msf 查看官方入口或转介流程 family_support"
-      }
+        "broader_terms_en": [
+          "parenting",
+          "child support",
+          "family assistance",
+          "caregiver support"
+        ],
+        "broader_terms_zh": [
+          "育儿",
+          "儿童支持",
+          "家庭援助",
+          "照护者支持"
+        ],
+        "search_text_en": "KidSTART Early childhood support programme for eligible families to give children a good start. kidstart early childhood family support preschool Eligibility criteria apply; see official info. Check official channels / referral routes on SupportGoWhere or MSF. Parent or caregiver identification and contact details. Child details and household information relevant to programme assessment. Referral information or supporting records if the enrolment path requires them. Any additional documents requested by KidSTART or the referral agency. parenting child support family assistance caregiver support family_support family",
+        "search_text_zh": "KidSTART（儿童早期发展支持） 为符合条件家庭提供儿童早期发展支持，帮助孩子更好起步。 KidSTART 早期发展 家庭支持 学前 以官方条件为准。 通过 SupportGoWhere/MSF 查看官方入口或转介流程。 家长或照护者的身份与联系方式。 与项目评估相关的儿童资料及家庭信息。 如报名路径要求，准备转介资料或相关证明。 按 KidSTART 或转介机构要求提交其他文件。 育儿 儿童支持 家庭援助 照护者支持 family_support family"
+      },
+      "docs_to_prepare_en": [
+        "Parent or caregiver identification and contact details.",
+        "Child details and household information relevant to programme assessment.",
+        "Referral information or supporting records if the enrolment path requires them.",
+        "Any additional documents requested by KidSTART or the referral agency."
+      ],
+      "docs_to_prepare_zh": [
+        "家长或照护者的身份与联系方式。",
+        "与项目评估相关的儿童资料及家庭信息。",
+        "如报名路径要求，准备转介资料或相关证明。",
+        "按 KidSTART 或转介机构要求提交其他文件。"
+      ]
     },
     {
       "id": "mindline_1771_service",
@@ -3592,9 +4024,19 @@
           "心理辅导",
           "倾诉"
         ],
-        "search_text_en": "national mindline 1771 24 7 mental health support 24 7 mental health helpline textline and webchat for support and guidance mental health anxiety depression counselling 1771 open access use hotline text webchat options per mindline sg call 1771 or use mindline sg webchat follow on screen steps stress anxiety depression helpline counselling mental_health_support mental",
-        "search_text_zh": "national mindline 1771 24 7 心理支持 提供 24 7 心理支持热线 文字服务与网页聊天 协助获得帮助与转介 心理健康 焦虑 抑郁 咨询 1771 一般可直接使用 按 mindline sg 指引选择热线 网页聊天等方式 拨打 1771 或使用 mindline sg 网页聊天并按页面步骤操作 压力 焦虑 抑郁 热线 心理辅导 倾诉 mental_health_support mental"
-      }
+        "search_text_en": "national mindline 1771 (24/7 mental health support) 24/7 mental health helpline/textline and webchat for support and guidance. mental health anxiety depression counselling 1771 Open access; use hotline/text/webchat options per mindline.sg. Call 1771 or use mindline.sg webchat; follow on-screen steps. No formal documents are usually needed to access self-help resources. If you are referred onward, the provider may ask for basic contact information or assessment details. For urgent situations, follow the crisis or emergency guidance shown on official channels. stress anxiety depression helpline counselling mental_health_support mental",
+        "search_text_zh": "national mindline 1771（24/7 心理支持） 提供 24/7 心理支持热线/文字服务与网页聊天，协助获得帮助与转介。 心理健康 焦虑 抑郁 咨询 1771 一般可直接使用；按 mindline.sg 指引选择热线/网页聊天等方式。 拨打 1771 或使用 mindline.sg 网页聊天并按页面步骤操作。 使用自助资源通常不需要正式材料。 若后续转介到其他服务，服务方可能会要求基本联系方式或评估信息。 如属紧急情况，请按官方渠道显示的危机或紧急求助指引处理。 压力 焦虑 抑郁 热线 心理辅导 倾诉 mental_health_support mental"
+      },
+      "docs_to_prepare_en": [
+        "No formal documents are usually needed to access self-help resources.",
+        "If you are referred onward, the provider may ask for basic contact information or assessment details.",
+        "For urgent situations, follow the crisis or emergency guidance shown on official channels."
+      ],
+      "docs_to_prepare_zh": [
+        "使用自助资源通常不需要正式材料。",
+        "若后续转介到其他服务，服务方可能会要求基本联系方式或评估信息。",
+        "如属紧急情况，请按官方渠道显示的危机或紧急求助指引处理。"
+      ]
     },
     {
       "id": "fsc_supportgowhere",
@@ -3635,7 +4077,7 @@
         "https://supportgowhere.life.gov.sg/services/SVC-FSCF/family-service-centre-fsc",
         "https://www.msf.gov.sg/our-services/directories"
       ],
-      "domain_id": null,
+      "domain_id": "family",
       "sections": {
         "overview": {
           "en": "Community-based support for individuals/families (information, referral, casework).",
@@ -3659,7 +4101,7 @@
         }
       },
       "search": {
-        "domain_id": null,
+        "domain_id": "family",
         "category": "family_support",
         "aliases_en": [
           "Family Service Centres (FSCs)",
@@ -3675,11 +4117,31 @@
           "社工",
           "辅导"
         ],
-        "broader_terms_en": [],
-        "broader_terms_zh": [],
-        "search_text_en": "family service centres fscs community based support for individuals families information referral casework family service centre fsc counselling social worker services are generally open access actual support depends on needs and centre capacity find your nearest fsc via supportgowhere and contact the centre family_support",
-        "search_text_zh": "家庭服务中心 fsc 社区家庭支持 信息与转介 个案工作等 家庭服务中心 fsc 社工 辅导 一般可直接求助 具体服务视需求与中心安排而定 通过 supportgowhere 查询就近 fsc 并联系中心 family_support"
-      }
+        "broader_terms_en": [
+          "parenting",
+          "child support",
+          "family assistance",
+          "caregiver support"
+        ],
+        "broader_terms_zh": [
+          "育儿",
+          "儿童支持",
+          "家庭援助",
+          "照护者支持"
+        ],
+        "search_text_en": "Family Service Centres (FSCs) Community-based support for individuals/families (information, referral, casework). family service centre fsc counselling social worker Services are generally open-access; actual support depends on needs and centre capacity. Find your nearest FSC via SupportGoWhere and contact the centre. Usually no formal documents are needed for the first contact. Bring identification and any key documents related to your issue if the centre asks for follow-up assessment. You may prepare notes on your household, finances, care needs, or family situation to help the social worker understand your case. parenting child support family assistance caregiver support family_support family",
+        "search_text_zh": "家庭服务中心（FSC） 社区家庭支持（信息与转介、个案工作等）。 家庭服务中心 FSC 社工 辅导 一般可直接求助；具体服务视需求与中心安排而定。 通过 SupportGoWhere 查询就近 FSC 并联系中心。 首次联系通常不需要正式申请材料。 若中心安排后续评估，可携带身份资料及与你问题相关的重要文件。 也可提前整理家庭、经济、照护需求或家庭情况说明，方便社工了解你的处境。 育儿 儿童支持 家庭援助 照护者支持 family_support family"
+      },
+      "docs_to_prepare_en": [
+        "Usually no formal documents are needed for the first contact.",
+        "Bring identification and any key documents related to your issue if the centre asks for follow-up assessment.",
+        "You may prepare notes on your household, finances, care needs, or family situation to help the social worker understand your case."
+      ],
+      "docs_to_prepare_zh": [
+        "首次联系通常不需要正式申请材料。",
+        "若中心安排后续评估，可携带身份资料及与你问题相关的重要文件。",
+        "也可提前整理家庭、经济、照护需求或家庭情况说明，方便社工了解你的处境。"
+      ]
     },
     {
       "id": "fam_strengthening_families",
@@ -3718,7 +4180,7 @@
       "sources": [
         "https://supportgowhere.life.gov.sg/services/SVC-SFPFFF/strengthening-families-programme-fam"
       ],
-      "domain_id": null,
+      "domain_id": "family",
       "sections": {
         "overview": {
           "en": "Family counselling and support services for families facing challenges (centre-based).",
@@ -3742,7 +4204,7 @@
         }
       },
       "search": {
-        "domain_id": null,
+        "domain_id": "family",
         "category": "family_support",
         "aliases_en": [
           "Strengthening Families Programme (FAM)",
@@ -3758,11 +4220,31 @@
           "离婚支持",
           "FAM"
         ],
-        "broader_terms_en": [],
-        "broader_terms_zh": [],
-        "search_text_en": "strengthening families programme fam family counselling and support services for families facing challenges centre based family counselling marriage support divorce support fam service access depends on centre arrangements check the supportgowhere listing check the supportgowhere listing and contact the centre for appointment intake family_support",
-        "search_text_zh": "strengthening families programme fam 家庭强化计划 为面临多重挑战的家庭提供辅导与支持服务 中心服务 家庭辅导 婚姻支持 离婚支持 fam 以服务中心安排为准 参考 supportgowhere 列表说明 在 supportgowhere 查看服务点并联系中心预约 登记 family_support"
-      }
+        "broader_terms_en": [
+          "parenting",
+          "child support",
+          "family assistance",
+          "caregiver support"
+        ],
+        "broader_terms_zh": [
+          "育儿",
+          "儿童支持",
+          "家庭援助",
+          "照护者支持"
+        ],
+        "search_text_en": "Strengthening Families Programme (FAM) Family counselling and support services for families facing challenges (centre-based). family counselling marriage support divorce support fam Service access depends on centre arrangements; check the SupportGoWhere listing. Check the SupportGoWhere listing and contact the centre for appointment/intake. Basic identification and contact details for family members involved. Referral or case information if you are being referred by another agency. Any supporting records requested by the family support provider during assessment or enrolment. parenting child support family assistance caregiver support family_support family",
+        "search_text_zh": "Strengthening Families Programme（FAM 家庭强化计划） 为面临多重挑战的家庭提供辅导与支持服务（中心服务）。 家庭辅导 婚姻支持 离婚支持 FAM 以服务中心安排为准；参考 SupportGoWhere 列表说明。 在 SupportGoWhere 查看服务点并联系中心预约/登记。 相关家庭成员的基本身份与联系方式。 若由其他机构转介，请准备转介或个案信息。 按家庭支持服务机构在评估或登记时要求提交其他材料。 育儿 儿童支持 家庭援助 照护者支持 family_support family"
+      },
+      "docs_to_prepare_en": [
+        "Basic identification and contact details for family members involved.",
+        "Referral or case information if you are being referred by another agency.",
+        "Any supporting records requested by the family support provider during assessment or enrolment."
+      ],
+      "docs_to_prepare_zh": [
+        "相关家庭成员的基本身份与联系方式。",
+        "若由其他机构转介，请准备转介或个案信息。",
+        "按家庭支持服务机构在评估或登记时要求提交其他材料。"
+      ]
     },
     {
       "id": "legal_aid_bureau",
@@ -3861,9 +4343,21 @@
           "法庭",
           "纠纷"
         ],
-        "search_text_en": "legal aid bureau lab legal aid for eligible applicants application via the lab portal and processes legal aid divorce family law lab court eligibility is subject to lab s criteria commonly includes means merits considerations depending on case type check official lab guidance apply via the lab portal and follow the stated steps for forms and supporting documents legal aid lawyer divorce court dispute legal_support legal",
-        "search_text_zh": "法律援助局 lab 为符合条件者提供法律援助 可通过 lab 入口申请并按流程办理 法律援助 离婚 家庭法律 lab 诉讼 需符合 lab 的资格要求 常见会涉及经济状况 案件条件等 视案件类型而定 以官网说明为准 通过 lab 门户按步骤在线申请并提交表格与材料 法律援助 律师 离婚 法庭 纠纷 legal_support legal"
-      }
+        "search_text_en": "Legal Aid Bureau (LAB) Legal aid for eligible applicants; application via the LAB portal and processes. legal aid divorce family law lab court Eligibility is subject to LAB’s criteria (commonly includes means/merits considerations depending on case type). Check official LAB guidance. Apply via the LAB portal and follow the stated steps for forms and supporting documents. Identification details and contact information. Documents related to the legal issue, dispute, or case. Income or financial information if assistance is means-tested. Any forms or supporting records requested by the Legal Aid Bureau or the court-related process. legal aid lawyer divorce court dispute legal_support legal",
+        "search_text_zh": "法律援助局（LAB） 为符合条件者提供法律援助；可通过 LAB 入口申请并按流程办理。 法律援助 离婚 家庭法律 LAB 诉讼 需符合 LAB 的资格要求（常见会涉及经济状况/案件条件等，视案件类型而定）；以官网说明为准。 通过 LAB 门户按步骤在线申请并提交表格与材料。 身份资料及联系方式。 与法律问题、争议或案件相关的文件。 若援助涉及经济审查，准备收入或财务资料。 按法律援助局或相关司法流程要求提交表格和证明。 法律援助 律师 离婚 法庭 纠纷 legal_support legal"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and contact information.",
+        "Documents related to the legal issue, dispute, or case.",
+        "Income or financial information if assistance is means-tested.",
+        "Any forms or supporting records requested by the Legal Aid Bureau or the court-related process."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料及联系方式。",
+        "与法律问题、争议或案件相关的文件。",
+        "若援助涉及经济审查，准备收入或财务资料。",
+        "按法律援助局或相关司法流程要求提交表格和证明。"
+      ]
     },
     {
       "id": "uec",
@@ -3957,9 +4451,21 @@
           "技能提升",
           "职业"
         ],
-        "search_text_en": "uplifting employment credit uec wage offset for employers hiring eligible ex offenders time limited support rules apply uec ex offender wage offset yellow ribbon eligibility and payout rules are defined by iras see official scheme page refer to iras guidance typically computed from cpf contributions if eligible job search unemployment training upskilling career employment_support employment",
-        "search_text_zh": "uplifting employment credit uec 雇主工资抵扣 为雇主聘用符合条件的更生人士提供工资抵扣 期限与规则以官方为准 uec 更生人士 工资抵扣 黄丝带 资格与发放规则以 iras 为准 参见官方页面 按 iras 指引执行 通常基于 cpf 缴交记录计算发放 就业 找工作 失业 培训 技能提升 职业 employment_support employment"
-      }
+        "search_text_en": "Uplifting Employment Credit (UEC) Wage offset for employers hiring eligible ex-offenders (time-limited support; rules apply). uec ex-offender wage offset yellow ribbon Eligibility and payout rules are defined by IRAS; see official scheme page. Refer to IRAS guidance; typically computed from CPF contributions if eligible. Identification details and employment records, if required. Income information or CPF-related records where relevant. Training, retrenchment, or job-search records if the scheme asks for them. Any additional documents requested by the official portal or agency. job search unemployment training upskilling career employment_support employment",
+        "search_text_zh": "Uplifting Employment Credit（UEC 雇主工资抵扣） 为雇主聘用符合条件的更生人士提供工资抵扣（期限与规则以官方为准）。 UEC 更生人士 工资抵扣 黄丝带 资格与发放规则以 IRAS 为准；参见官方页面。 按 IRAS 指引执行；通常基于 CPF 缴交记录计算发放。 身份资料及就业记录（如需要）。 如适用，准备收入信息或 CPF 相关记录。 若计划要求，准备培训、裁员或求职相关材料。 按官方门户或负责机构要求提供其他文件。 就业 找工作 失业 培训 技能提升 职业 employment_support employment"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and employment records, if required.",
+        "Income information or CPF-related records where relevant.",
+        "Training, retrenchment, or job-search records if the scheme asks for them.",
+        "Any additional documents requested by the official portal or agency."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料及就业记录（如需要）。",
+        "如适用，准备收入信息或 CPF 相关记录。",
+        "若计划要求，准备培训、裁员或求职相关材料。",
+        "按官方门户或负责机构要求提供其他文件。"
+      ]
     },
     {
       "id": "pwcs",
@@ -4053,9 +4559,21 @@
           "技能提升",
           "职业"
         ],
-        "search_text_en": "progressive wage credit scheme pwcs support for employers to adjust to mandatory wage increases and uplift lower wage workers rules apply pwcs wage credit lower wage workers employer support check iras for eligibility and payout details refer to iras guidance digital services may apply job search unemployment training upskilling career employment_support employment",
-        "search_text_zh": "progressive wage credit scheme pwcs 支持雇主应对低薪员工工资提升要求并促进加薪 以官方规则为准 pwcs 工资补贴 低薪员工 雇主支持 以 iras 说明为准 按 iras 指引 可使用相关电子服务 就业 找工作 失业 培训 技能提升 职业 employment_support employment"
-      }
+        "search_text_en": "Progressive Wage Credit Scheme (PWCS) Support for employers to adjust to mandatory wage increases and uplift lower-wage workers (rules apply). pwcs wage credit lower-wage workers employer support Check IRAS for eligibility and payout details. Refer to IRAS guidance; digital services may apply. Identification details and employment records, if required. Income information or CPF-related records where relevant. Training, retrenchment, or job-search records if the scheme asks for them. Any additional documents requested by the official portal or agency. job search unemployment training upskilling career employment_support employment",
+        "search_text_zh": "Progressive Wage Credit Scheme（PWCS） 支持雇主应对低薪员工工资提升要求并促进加薪（以官方规则为准）。 PWCS 工资补贴 低薪员工 雇主支持 以 IRAS 说明为准。 按 IRAS 指引；可使用相关电子服务。 身份资料及就业记录（如需要）。 如适用，准备收入信息或 CPF 相关记录。 若计划要求，准备培训、裁员或求职相关材料。 按官方门户或负责机构要求提供其他文件。 就业 找工作 失业 培训 技能提升 职业 employment_support employment"
+      },
+      "docs_to_prepare_en": [
+        "Identification details and employment records, if required.",
+        "Income information or CPF-related records where relevant.",
+        "Training, retrenchment, or job-search records if the scheme asks for them.",
+        "Any additional documents requested by the official portal or agency."
+      ],
+      "docs_to_prepare_zh": [
+        "身份资料及就业记录（如需要）。",
+        "如适用，准备收入信息或 CPF 相关记录。",
+        "若计划要求，准备培训、裁员或求职相关材料。",
+        "按官方门户或负责机构要求提供其他文件。"
+      ]
     }
   ],
   "taxonomy": {
