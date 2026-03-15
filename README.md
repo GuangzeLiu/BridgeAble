@@ -13,7 +13,7 @@ The project is situated in the **Social Good** area. Its main goal is to reduce 
 - enable **need-based discovery** of support without requiring official scheme names;
 - improve **comprehension** by translating policy-heavy content into short, plain-language explanations;
 - promote **digital inclusion** through a guided conversational interface that feels less intimidating than navigating multiple agency websites; and
-- demonstrate **responsible AI practice** by grounding responses in trusted sources, communicating uncertainty clearly, and keeping a human escalation path available. fileciteturn6file1
+- demonstrate **responsible AI practice** by grounding responses in trusted sources, communicating uncertainty clearly, and keeping a human escalation path available. 
 
 ---
 
@@ -22,23 +22,23 @@ The project is situated in the **Social Good** area. Its main goal is to reduce 
 BridgeAble follows a **guided, retrieval-grounded design** rather than a fully open-ended chatbot. This design choice helps reduce the risk of hallucinated or misleading policy information.
 
 ### 1. Lightweight NLP intent recognition
-The system first uses lightweight NLP methods to interpret short, ambiguous, everyday user inputs. This allows users to describe needs naturally without having to know exact programme names or policy terminology. fileciteturn6file1
+The system first uses lightweight NLP methods to interpret short, ambiguous, everyday user inputs. This allows users to describe needs naturally without having to know exact programme names or policy terminology. 
 
 ### 2. Grounded retrieval from a curated knowledge base
-Once the user’s likely need is identified, the system retrieves relevant content from a **curated local knowledge base** built from trusted policy sources, official scheme pages, and verified contact information. This keeps the assistant grounded in reliable material rather than generating answers freely. fileciteturn6file1turn6file0
+Once the user’s likely need is identified, the system retrieves relevant content from a **curated local knowledge base** built from trusted policy sources, official scheme pages, and verified contact information. This keeps the assistant grounded in reliable material rather than generating answers freely. 
 
 ### 3. Controlled plain-language response construction
 On top of the retrieved content, BridgeAble reformulates policy-heavy information into short, structured explanations that focus on practical questions users care about most:
 
 - who the scheme is for,
 - what support it provides, and
-- what steps are needed to apply. fileciteturn6file1
+- what steps are needed to apply.
 
 ### 4. Bilingual support
-To improve accessibility, the prototype supports responses in **English and Chinese**, allowing users with different language preferences to access the same grounded information more comfortably. fileciteturn6file1turn6file0
+To improve accessibility, the prototype supports responses in **English and Chinese**, allowing users with different language preferences to access the same grounded information more comfortably. 
 
 ### 5. Human-agent escalation
-When a case is sensitive, urgent, or beyond system confidence, the assistant avoids making decisions and instead recommends official channels or connection with a human caseworker. This is a core safety feature of the prototype. fileciteturn6file1turn6file0
+When a case is sensitive, urgent, or beyond system confidence, the assistant avoids making decisions and instead recommends official channels or connection with a human caseworker. This is a core safety feature of the prototype. 
 
 ---
 
@@ -49,9 +49,9 @@ This repository contains a **frontend prototype** implemented with **React.js an
 - a **deterministic dialog engine / state-machine style flow**, which makes the conversation auditable and reduces free-form generation risks;
 - a **local JSON knowledge base**, used as the main source of truth for scheme summaries, official links, and contact entry points;
 - a **guided conversational flow** that narrows from broad topic to clearer need and then to relevant scheme results; and
-- a **human support layer** for escalation when the situation requires more personalised or sensitive assistance. fileciteturn6file0turn6file1
+- a **human support layer** for escalation when the situation requires more personalised or sensitive assistance. 
 
-The prototype is therefore not positioned as a replacement for public officers, social workers, or case managers. Its intended role is to make first-step navigation easier and safer. fileciteturn6file1turn6file0
+The prototype is therefore not positioned as a replacement for public officers, social workers, or case managers. Its intended role is to make first-step navigation easier and safer. 
 
 ---
 
@@ -62,34 +62,21 @@ The prototype is therefore not positioned as a replacement for public officers, 
 - plain-language summaries of support schemes;
 - bilingual output in **English / Chinese**;
 - references to official portals, agencies, and hotlines; and
-- escalation to a human support pathway for complex or sensitive cases. fileciteturn6file0turn6file1
+- escalation to a human support pathway for complex or sensitive cases.
 
 ---
 
 ## Why This Project Matters
 
-BridgeAble is motivated by a practical digital-inclusion problem. Even when support schemes exist, they can remain difficult to access in practice because users may not know where to start, may not understand formal policy language, or may feel overwhelmed by fragmented official systems. The project therefore focuses on **accessibility, clarity, and safe guidance**, especially for people who may be less confident using digital systems. fileciteturn6file1
+BridgeAble is motivated by a practical digital-inclusion problem. Even when support schemes exist, they can remain difficult to access in practice because users may not know where to start, may not understand formal policy language, or may feel overwhelmed by fragmented official systems. The project therefore focuses on **accessibility, clarity, and safe guidance**, especially for people who may be less confident using digital systems.
 
-By combining intent recognition, grounded retrieval, controlled explanation, bilingual support, and human escalation, the prototype aims to improve access to social support while keeping the role of AI appropriately limited and accountable. fileciteturn6file1
-
----
-
-## Limitations
-
-BridgeAble is still a prototype and has several important limitations:
-
-- it does **not** determine eligibility or make personalised case decisions;
-- a local knowledge base can become outdated if it is not refreshed regularly;
-- some elderly or vulnerable users may still face device, literacy, or accessibility barriers; and
-- sensitive cases may require discretion and contextual judgment beyond what a guided assistant should provide. fileciteturn6file0turn6file1
-
-For these reasons, users should always verify critical details using the attached official links or seek help from the recommended human support channels. fileciteturn6file0turn6file1
+By combining intent recognition, grounded retrieval, controlled explanation, bilingual support, and human escalation, the prototype aims to improve access to social support while keeping the role of AI appropriately limited and accountable. 
 
 ---
 
 ## Repository Purpose
 
-This repository is intended to demonstrate the **concept, interaction flow, and responsible AI design choices** behind BridgeAble. It is best understood as a prototype for guided social-support discovery rather than a production eligibility system. fileciteturn6file1turn6file0
+This repository is intended to demonstrate the **concept, interaction flow, and responsible AI design choices** behind BridgeAble. It is best understood as a prototype for guided social-support discovery rather than a production eligibility system. 
 
 ---
 
