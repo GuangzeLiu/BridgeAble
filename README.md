@@ -84,7 +84,7 @@ This repository is intended to demonstrate the **concept, interaction flow, and 
 
 Visit the prototype here:
 
-**[BridgeAble](https://guangzeliu.github.io/bridgable)**
+**[BridgeAble](https://guangzeliu.github.io/BridgeAble/)**
 
 ---
 
