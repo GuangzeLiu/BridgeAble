@@ -84,7 +84,7 @@ This repository is intended to demonstrate the **concept, interaction flow, and 
 
 Visit the prototype here:
 
-**[Social Good Chatbot](https://guangzeliu.github.io/social-good-assistant/)**
+**[BridgeAble](https://guangzeliu.github.io/social-good-assistant/)**
 
 ---
 
