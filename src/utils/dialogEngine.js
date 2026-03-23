@@ -31,7 +31,7 @@ const STOPWORDS = new Set([
 
 const SYNONYMS = [
   {
-    re: /\b(financial aid|cash help|money help|no money|broke|bills? help|overdue bills?|arrears|low income|debt|cost of living|daily expenses?|living expenses?|basic expenses?|monthly expenses?|rent\/living costs|living costs|cover my expenses?|pay my expenses?|pay my bills?|cannot afford (my )?expenses?|can't afford (my )?expenses?|money problems?|financial stress)\b/i,
+    re: /\b(financial aid|cash help|money help|no money|broke|bills? help|overdue bills?|arrears|low income|low-income|debt|cost of living|daily expenses?|living expenses?|basic expenses?|monthly expenses?|school costs?|education costs?|childcare costs?|cover my expenses?|pay my expenses?|pay my bills?|cannot afford (my )?expenses?|can't afford (my )?expenses?|money problems?|financial stress)\b/i,
     norm: "financial aid"
   },
   {
@@ -466,15 +466,16 @@ function detectDomainScores(raw) {
   }
 
   if (
-    /\b(childcare|school fees|student care|children|kid|kids)\b/i.test(t) &&
-    /\b(low income|daily expenses?|financial aid|money problems?|cost of living)\b/i.test(t)
+    /\b(childcare|school fees|school costs?|student care|children|kid|kids)\b/i.test(t) &&
+    /\b(low income|low-income|daily expenses?|financial aid|money problems?|cost of living|struggling)\b/i.test(t)
   ) {
-    score.financial += 2;
-    score.education += 2;
+    score.financial += 3;
+    score.education += 3;
   }
-  if (/(孩子|小孩|托儿|学费|学校费用)/.test(raw) && /(低收入|生活费|钱不够|经济压力)/.test(raw)) {
-    score.financial += 2;
-    score.education += 2;
+  if (/(孩子|小孩|托儿|学费|学校费用|教育开销)/.test(raw) &&
+      /(低收入|生活费|钱不够|经济压力|困难)/.test(raw)) {
+    score.financial += 3;
+    score.education += 3;
   }
 
   if (
