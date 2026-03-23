@@ -21,19 +21,37 @@ const STOPWORDS = new Set([
 
 const SYNONYMS = [
   {
-    re: /\b(financial aid|cash help|money help|no money|broke|bills? help|overdue bills?|arrears|low income|debt|cost of living|daily expenses?|living expenses?|basic expenses?|monthly expenses?|cover my expenses?|pay my expenses?|pay my bills?|cannot afford (my )?expenses?|can't afford (my )?expenses?|money problems?|financial stress)\b/i,
+    re: /\b(financial aid|cash help|money help|no money|broke|bills? help|overdue bills?|arrears|low income|debt|cost of living|daily expenses?|living expenses?|basic expenses?|monthly expenses?|rent\/living costs|living costs|cover my expenses?|pay my expenses?|pay my bills?|cannot afford (my )?expenses?|can't afford (my )?expenses?|money problems?|financial stress)\b/i,
     norm: "financial aid"
   },
-  { re: /\b(housing grant|rental support|rent help|rent problem|rent arrears|cannot pay rent|can't pay rent|no place to stay|nowhere to stay|eviction|evicted|being kicked out|homeless|rough sleeping|shelter|temporary shelter|couch surfing|sleeping outside)\b/i, norm: "housing" },
-  { re: /\b(stressed|stress|overwhelmed|anxious|anxiety|panic|panic attack|burnt out|burned out|can't cope|cannot cope|hopeless|depressed|depression|insomnia|can't sleep|cannot sleep|sleepless)\b/i, norm: "mental_support" },
+  {
+    re: /\b(housing grant|rental support|rent help|rent problem|rent arrears|cannot pay rent|can't pay rent|no place to stay|nowhere to stay|eviction|evicted|being kicked out|homeless|rough sleeping|shelter|temporary shelter|couch surfing|sleeping outside)\b/i,
+    norm: "housing"
+  },
+  {
+    re: /\b(stressed|stress|overwhelmed|anxious|anxiety|panic|panic attack|burnt out|burned out|can't cope|cannot cope|hopeless|depressed|depression|insomnia|can't sleep|cannot sleep|sleepless)\b/i,
+    norm: "mental_support"
+  },
   { re: /\b(healthcare|medical|sick|ill|clinic|doctor|gp|polyclinic|medicine|medication|dental)\b/i, norm: "medical" },
-  { re: /\b(hospital bill|ward|a&e|emergency room|cannot afford hospital|cant afford hospital)\b/i, norm: "hospital bill" },
+  { re: /\b(hospital bill|hospital bills|medical bill|medical bills|ward|a&e|emergency room|cannot afford hospital|cant afford hospital)\b/i, norm: "hospital bill" },
   { re: /\b(medical subsidy|clinic subsidy|medifund|chas|medisave|medishield)\b/i, norm: "medical" },
 
-  { re: /(经济援助|现金补助|没钱|生活费|日常开销|基本开销|每月开销|账单|欠费|补贴|发放|低收入|困难|开销|付不起生活费|付不起开销|钱不够|经济压力)/, norm: "financial aid" },
-  { re: /(住房|租房|房租|租金补贴|被驱逐|驱逐通知|没地方住|无家可归|收容|露宿|临时安置|过渡住房)/, norm: "housing" },
-  { re: /(压力大|很焦虑|焦虑|崩溃|扛不住|顶不住|情绪低落|抑郁|绝望|失眠|睡不着|恐慌|惊恐|心慌|呼吸不过来|想哭)/, norm: "mental_support" },
-  { re: /(健康|生病|看病|医疗|医药费|药|药费|太贵|诊所|医生|医院账单|住院费|急诊|A&E|社工)/i, norm: "medical" }
+  {
+    re: /(经济援助|现金补助|没钱|生活费|日常开销|基本开销|每月开销|账单|欠费|补贴|发放|低收入|困难|开销|付不起生活费|付不起开销|钱不够|经济压力|生活成本)/,
+    norm: "financial aid"
+  },
+  {
+    re: /(住房|租房|房租|租金补贴|被驱逐|驱逐通知|没地方住|无家可归|收容|露宿|临时安置|过渡住房)/,
+    norm: "housing"
+  },
+  {
+    re: /(压力大|很焦虑|焦虑|崩溃|扛不住|顶不住|情绪低落|抑郁|绝望|失眠|睡不着|恐慌|惊恐|心慌|呼吸不过来|想哭)/,
+    norm: "mental_support"
+  },
+  {
+    re: /(健康|生病|看病|医疗|医药费|药|药费|太贵|诊所|医生|医院账单|住院费|急诊|A&E|社工)/i,
+    norm: "medical"
+  }
 ];
 
 const SENSITIVE_TRIGGERS = [
@@ -109,7 +127,7 @@ function escalateQuickReply(lang) {
   return { id: "escalate", label: lang === "zh" ? "转人工" : "Human Agent", action: { type: "ESCALATE" } };
 }
 
-function baseNavQuickReplies(lang, { includeRestart = true, includeEscalate = true} = {}) {
+function baseNavQuickReplies(lang, { includeRestart = true, includeEscalate = true } = {}) {
   const arr = [];
   if (includeRestart) arr.push(restartQuickReply(lang));
   if (includeEscalate) arr.push(escalateQuickReply(lang));
@@ -239,7 +257,10 @@ function scenarioPresets(domainId, lang) {
     action: { type: "SET_QUERY", text: t }
   }));
 
-  return makeQuickReplies([...chips, ...baseNavQuickReplies(lang, { includeRestart: true, includeEscalate: false })]);
+  return makeQuickReplies([
+    ...chips,
+    ...baseNavQuickReplies(lang, { includeRestart: true, includeEscalate: false })
+  ]);
 }
 
 function piiWarningMessage(lang) {
@@ -247,7 +268,12 @@ function piiWarningMessage(lang) {
   const text = zh
     ? "我可以帮你找官方信息，但请不要输入身份证号、银行卡号、地址或验证码等隐私信息。你可以点下方选项继续。"
     : "I can help, but please don’t share personal data (ID/bank/address/OTP). You can tap options below to continue.";
-  return { role: "assistant", text, cards: [], ...baseNavQuickReplies(lang) };
+  return {
+    role: "assistant",
+    text,
+    cards: [],
+    quickReplies: baseNavQuickReplies(lang)
+  };
 }
 
 function sensitiveMessage(lang) {
@@ -271,7 +297,12 @@ function urgentMessage(lang) {
   const text = zh
     ? "收到。你可以直接点一个主题或场景，我会优先给你可联系的官方入口/热线。"
     : "Got it. Tap a topic or a scenario and I’ll prioritize official entry points / contacts.";
-  return { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)]) };
+  return {
+    role: "assistant",
+    text,
+    cards: [],
+    quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)])
+  };
 }
 
 function outOfScopeMessage(lang) {
@@ -279,7 +310,12 @@ function outOfScopeMessage(lang) {
   const text = zh
     ? "我目前主要协助：新加坡社会服务相关的官方项目导航（钱、住房、医疗、就业、教育、长者、残障、法律、心理）。你可以点一个主题开始。"
     : "Right now I focus on Singapore social-service guidance (Money, Home, Health, Jobs, School, Seniors, Disability, Legal, Mental). Tap a topic to start.";
-  return { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)]) };
+  return {
+    role: "assistant",
+    text,
+    cards: [],
+    quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)])
+  };
 }
 
 function empathyStart(primary, lang, secondary = null) {
@@ -333,7 +369,7 @@ function detectDomainScores(raw) {
     }
   }
 
-  // Stronger financial triggers
+  // stronger financial triggers
   if (/\b(daily expenses?|living expenses?|basic expenses?|monthly expenses?|cost of living|pay my bills?|cover my expenses?|financial stress|money problems?|rent\/living costs|living costs)\b/i.test(t)) {
     score.financial += 3;
   }
@@ -341,25 +377,84 @@ function detectDomainScores(raw) {
     score.financial += 3;
   }
 
-  // Job loss + expenses should lean to financial first
+  // job-loss + expenses should lean financial first
   if (
     /\b(lost my job|job loss|laid off|unemployed|lost work|income dropped|reduced income)\b/i.test(t) &&
     /\b(daily expenses?|living expenses?|basic expenses?|monthly expenses?|cover my expenses?|pay my bills?|cost of living|financial stress|money problems?)\b/i.test(t)
   ) {
-    score.financial += 3;
+    score.financial += 4;
     score.employment += 1;
   }
   if (
     /(失业|被裁员|没工作|收入下降|工时减少)/.test(raw) &&
     /(生活费|日常开销|基本开销|每月开销|钱不够|经济压力|付不起.*开销|付不起.*生活费)/.test(raw)
   ) {
-    score.financial += 3;
+    score.financial += 4;
     score.employment += 1;
   }
 
+  // rent + living cost tends to financial + housing
+  if (
+    /\b(rent arrears?|can't pay rent|cannot pay rent|rent problem|eviction notice)\b/i.test(t) &&
+    /\b(daily expenses?|living expenses?|cost of living|pay my bills?|money problems?)\b/i.test(t)
+  ) {
+    score.housing += 2;
+    score.financial += 3;
+  }
+  if (/(房租|租金|租房)/.test(raw) && /(生活费|开销|账单|钱不够|经济压力)/.test(raw)) {
+    score.housing += 2;
+    score.financial += 3;
+  }
+
+  // children + money -> financial/education
+  if (
+    /\b(childcare|school fees|student care|children|kid|kids)\b/i.test(t) &&
+    /\b(low income|daily expenses?|financial aid|money problems?|cost of living)\b/i.test(t)
+  ) {
+    score.financial += 2;
+    score.education += 2;
+  }
+  if (/(孩子|小孩|托儿|学费|学校费用)/.test(raw) && /(低收入|生活费|钱不够|经济压力)/.test(raw)) {
+    score.financial += 2;
+    score.education += 2;
+  }
+
+  // seniors + money
+  if (
+    /\b(parent|parents|elderly|senior|older adult|caregiver)\b/i.test(t) &&
+    /\b(financial aid|living expenses?|money problems?|cost of living)\b/i.test(t)
+  ) {
+    score.financial += 2;
+    score.seniors += 2;
+  }
+  if (/(长者|老人|父母|照护者|看护)/.test(raw) && /(生活费|开销|钱不够|经济压力)/.test(raw)) {
+    score.financial += 2;
+    score.seniors += 2;
+  }
+
+  // hospital bill
+  if (/\b(hospital bill|hospital bills|medical bill|medical bills|cannot afford hospital|cant afford hospital)\b/i.test(t)) {
+    score.healthcare += 4;
+  }
+  if (/(医院账单|住院费|医药费太贵|医院费用)/.test(raw)) {
+    score.healthcare += 4;
+  }
+
+  // mental-health stronger triggers
+  if (/\b(anxiety|anxious|insomnia|can't sleep|cannot sleep|overwhelmed|burnt out|burned out|panic)\b/i.test(t)) {
+    score.mental += 4;
+  }
+  if (/(焦虑|失眠|睡不着|压力大|崩溃|恐慌|惊恐)/.test(raw)) {
+    score.mental += 4;
+  }
+
   if (/\b(tonight|today|right now|immediately|urgent|emergency)\b/.test(t) || /(今晚|今天|马上|立刻|紧急|急需)/.test(raw)) {
-    if (/no place to stay|nowhere to stay|sleeping outside|evicted|locked out/.test(t) || /(没地方住|露宿|被赶出来|被锁在门外)/.test(raw)) score.housing += 3;
-    if (/a&e|emergency room|hospital bill|severe/.test(t) || /(急诊|医院账单|住院费)/.test(raw)) score.healthcare += 2;
+    if (/no place to stay|nowhere to stay|sleeping outside|evicted|locked out/.test(t) || /(没地方住|露宿|被赶出来|被锁在门外)/.test(raw)) {
+      score.housing += 3;
+    }
+    if (/a&e|emergency room|hospital bill|severe/.test(t) || /(急诊|医院账单|住院费)/.test(raw)) {
+      score.healthcare += 2;
+    }
   }
 
   return score;
@@ -516,7 +611,6 @@ function formatSchemeToCardFull(s, lang) {
   const title = zh ? (s.name_zh || s.name_en) : (s.name_en || s.name_zh);
 
   const sec = s?.sections || {};
-
   const overview = zh
     ? (s.summary_zh || sec?.overview?.zh || "")
     : (s.summary_en || sec?.overview?.en || "");
@@ -593,7 +687,12 @@ function buildResultsMessage({ lang, domainId, query, offset, pageSize }) {
 
   quick.push(...baseNavQuickReplies(lang));
 
-  return { role: "assistant", text, cards, quickReplies: makeQuickReplies(quick) };
+  return {
+    role: "assistant",
+    text,
+    cards,
+    quickReplies: makeQuickReplies(quick)
+  };
 }
 
 function snapshotState(s) {
@@ -650,6 +749,106 @@ function messageForState(state) {
   return getInitialAssistantMessage(state.lang);
 }
 
+function detectDirectScenario(raw, lang) {
+  const normalized = normalizeText(raw).toLowerCase();
+
+  const enJobLoss = /\b(lost my job|job loss|laid off|unemployed|lost work|income dropped|reduced income)\b/i;
+  const zhJobLoss = /(失业|被裁员|没工作|收入下降|工时减少)/;
+
+  const enExpenses = /\b(daily expenses?|living expenses?|basic expenses?|monthly expenses?|cover my expenses?|pay my bills?|cost of living|financial stress|money problems?)\b/i;
+  const zhExpenses = /(生活费|日常开销|基本开销|每月开销|钱不够|经济压力|付不起.*开销|付不起.*生活费|生活成本)/;
+
+  const enRent = /\b(rent arrears?|can't pay rent|cannot pay rent|rent problem|rent stress|eviction notice)\b/i;
+  const zhRent = /(房租|租金|租房|租金压力|租房压力|租金欠费|租房困难)/;
+
+  const enUrgentCash = /\b(urgent cash|need money now|need cash now|can't pay bills|cannot pay bills|money for today|money for tonight)\b/i;
+  const zhUrgentCash = /(急需现金|马上需要钱|今天没钱|今晚没钱|付不起账单|账单交不起)/;
+
+  const enLowIncomeHousehold = /\b(low income|single parent|family expenses|support my family|household bills)\b/i;
+  const zhLowIncomeHousehold = /(低收入|单亲|家庭开销|养家|家庭账单)/;
+
+  const enChildren = /\b(childcare|children|kids|school fees|student care)\b/i;
+  const zhChildren = /(孩子|小孩|托儿|学费|课后托管|学生照护)/;
+
+  const enSenior = /\b(parent|parents|elderly|senior|older adult|caregiver)\b/i;
+  const zhSenior = /(父母|老人|长者|照护者|看护)/;
+
+  const enHospital = /\b(hospital bill|hospital bills|medical bill|medical bills|cannot afford hospital|cant afford hospital)\b/i;
+  const zhHospital = /(医院账单|住院费|医院费用|医药费太贵)/;
+
+  const enMentalSleep = /\b(anxiety|anxious|insomnia|can't sleep|cannot sleep|panic|panic attack)\b/i;
+  const zhMentalSleep = /(焦虑|失眠|睡不着|惊恐|恐慌)/;
+
+  const enMentalStress = /\b(overwhelmed|burnt out|burned out|too much stress|cannot cope|can't cope)\b/i;
+  const zhMentalStress = /(压力大|崩溃|扛不住|顶不住|撑不住)/;
+
+  if ((enJobLoss.test(normalized) || zhJobLoss.test(raw)) && (enExpenses.test(normalized) || zhExpenses.test(raw))) {
+    return {
+      domainId: "financial",
+      secondaryDomainId: "employment",
+      scenarioQuery: lang === "zh" ? "失业导致经济困难" : "job loss → money issues"
+    };
+  }
+
+  if ((enRent.test(normalized) || zhRent.test(raw)) && (enExpenses.test(normalized) || zhExpenses.test(raw))) {
+    return {
+      domainId: "financial",
+      secondaryDomainId: "housing",
+      scenarioQuery: lang === "zh" ? "房租压力/生活费不足" : "rent/living costs"
+    };
+  }
+
+  if (enUrgentCash.test(normalized) || zhUrgentCash.test(raw)) {
+    return {
+      domainId: "financial",
+      secondaryDomainId: null,
+      scenarioQuery: lang === "zh" ? "短期紧急现金援助" : "urgent cash help"
+    };
+  }
+
+  if ((enLowIncomeHousehold.test(normalized) || zhLowIncomeHousehold.test(raw)) && (enChildren.test(normalized) || zhChildren.test(raw))) {
+    return {
+      domainId: "financial",
+      secondaryDomainId: "education",
+      scenarioQuery: lang === "zh" ? "低收入家庭支持" : "low-income household"
+    };
+  }
+
+  if ((enSenior.test(normalized) || zhSenior.test(raw)) && (enExpenses.test(normalized) || zhExpenses.test(raw))) {
+    return {
+      domainId: "financial",
+      secondaryDomainId: "seniors",
+      scenarioQuery: lang === "zh" ? "长者/父母经济支持" : "support for seniors"
+    };
+  }
+
+  if (enHospital.test(normalized) || zhHospital.test(raw)) {
+    return {
+      domainId: "healthcare",
+      secondaryDomainId: null,
+      scenarioQuery: lang === "zh" ? "住院账单" : "hospital bill"
+    };
+  }
+
+  if (enMentalSleep.test(normalized) || zhMentalSleep.test(raw)) {
+    return {
+      domainId: "mental",
+      secondaryDomainId: null,
+      scenarioQuery: lang === "zh" ? "焦虑/失眠" : "anxiety / insomnia"
+    };
+  }
+
+  if (enMentalStress.test(normalized) || zhMentalStress.test(raw)) {
+    return {
+      domainId: "mental",
+      secondaryDomainId: null,
+      scenarioQuery: lang === "zh" ? "压力大/情绪崩溃" : "overwhelmed / stress"
+    };
+  }
+
+  return null;
+}
+
 export function initDialogState(lang = "en") {
   return {
     lang,
@@ -673,7 +872,10 @@ export function getInitialAssistantMessage(lang = "en") {
     role: "assistant",
     text,
     cards: [],
-    quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang, { includeRestart: false, includeEscalate: false })])
+    quickReplies: makeQuickReplies([
+      ...topicQuickReplies(lang),
+      ...baseNavQuickReplies(lang, { includeRestart: false, includeEscalate: false })
+    ])
   };
 }
 
@@ -701,13 +903,54 @@ export function handleUserText(state, userText) {
   }
 
   if (containsAny(raw, PII_TRIGGERS)) return { state, message: piiWarningMessage(lang) };
+
   if (containsAny(raw, SENSITIVE_TRIGGERS)) {
-    const next = withHistoryPush({ ...state, step: "choose_domain", domainId: null, secondaryDomainId: null, lastQuery: "", offset: 0 }, state);
+    const next = withHistoryPush({
+      ...state,
+      step: "choose_domain",
+      domainId: null,
+      secondaryDomainId: null,
+      lastQuery: "",
+      offset: 0
+    }, state);
     return { state: next, message: sensitiveMessage(lang) };
   }
+
   if (containsAny(raw, URGENT_TRIGGERS)) {
-    const next = withHistoryPush({ ...state, step: "choose_domain", domainId: null, secondaryDomainId: null, lastQuery: "", offset: 0 }, state);
+    const next = withHistoryPush({
+      ...state,
+      step: "choose_domain",
+      domainId: null,
+      secondaryDomainId: null,
+      lastQuery: "",
+      offset: 0
+    }, state);
     return { state: next, message: urgentMessage(lang) };
+  }
+
+  // direct scenario routing first
+  const direct = detectDirectScenario(raw, lang);
+  if (direct) {
+    const next = withHistoryPush({
+      ...state,
+      step: "refine_and_show",
+      domainId: direct.domainId,
+      secondaryDomainId: direct.secondaryDomainId || null,
+      lastQuery: direct.scenarioQuery,
+      offset: 0,
+      ended: false
+    }, state);
+
+    return {
+      state: next,
+      message: buildResultsMessage({
+        lang,
+        domainId: next.domainId,
+        query: next.lastQuery,
+        offset: 0,
+        pageSize: next.pageSize
+      })
+    };
   }
 
   const lite = analyzeUserIssue(raw, zh ? "zh" : "en");
@@ -723,7 +966,7 @@ export function handleUserText(state, userText) {
   const normalized = normalizeText(raw).toLowerCase();
   const financialOverride =
     /\b(daily expenses?|living expenses?|basic expenses?|monthly expenses?|cover my expenses?|pay my bills?|cost of living|financial stress|money problems?)\b/i.test(normalized) ||
-    /(生活费|日常开销|基本开销|每月开销|钱不够|经济压力|付不起.*开销|付不起.*生活费)/.test(raw);
+    /(生活费|日常开销|基本开销|每月开销|钱不够|经济压力|付不起.*开销|付不起.*生活费|生活成本)/.test(raw);
 
   if (financialOverride) {
     allDomains = ["financial", ...allDomains.filter(d => d !== "financial")];
@@ -732,15 +975,32 @@ export function handleUserText(state, userText) {
   const primary = allDomains[0] || pickPrimaryDomain(scores) || softGuessDomainId(raw) || null;
   const secondary = primary ? pickSecondaryDomain(scores, primary) : null;
 
-  if (!primary && state.step === "choose_domain") return { state, message: outOfScopeMessage(lang) };
+  if (!primary && state.step === "choose_domain") {
+    return { state, message: outOfScopeMessage(lang) };
+  }
 
   if (shouldOfferMultiDomainChoice({ stateStep: state.step, currentDomainId: state.domainId, allDomains })) {
     const shown = allDomains.slice(0, 8);
     const text = zh
       ? "我在你这句话里同时看到了几个可能的方向。你想先展开哪一个？"
       : "Your message seems to match multiple areas. Which one do you want to expand first?";
-    const next = withHistoryPush({ ...state, step: "choose_domain", domainId: null, secondaryDomainId: null, lastQuery: raw, offset: 0 }, state);
-    return { state: next, message: { role: "assistant", text, cards: [], quickReplies: domainChoiceQuickReplies(shown, lang) } };
+    const next = withHistoryPush({
+      ...state,
+      step: "choose_domain",
+      domainId: null,
+      secondaryDomainId: null,
+      lastQuery: raw,
+      offset: 0
+    }, state);
+    return {
+      state: next,
+      message: {
+        role: "assistant",
+        text,
+        cards: [],
+        quickReplies: domainChoiceQuickReplies(shown, lang)
+      }
+    };
   }
 
   if (state.step === "choose_domain") {
@@ -757,7 +1017,12 @@ export function handleUserText(state, userText) {
   }
 
   if (state.step === "choose_focus") {
-    const next = withHistoryPush({ ...state, step: "refine_and_show", lastQuery: raw, offset: 0 }, state);
+    const next = withHistoryPush({
+      ...state,
+      step: "refine_and_show",
+      lastQuery: raw,
+      offset: 0
+    }, state);
     return {
       state: next,
       message: buildResultsMessage({
@@ -770,7 +1035,13 @@ export function handleUserText(state, userText) {
     };
   }
 
-  const next = withHistoryPush({ ...state, step: "refine_and_show", lastQuery: raw, offset: 0 }, state);
+  const next = withHistoryPush({
+    ...state,
+    step: "refine_and_show",
+    lastQuery: raw,
+    offset: 0
+  }, state);
+
   return {
     state: next,
     message: buildResultsMessage({
@@ -822,7 +1093,13 @@ export function handleAction(state, action) {
       const text = (action.text || "").trim();
       if (!text) return { state, message: null };
 
-      const next = withHistoryPush({ ...state, step: "refine_and_show", lastQuery: text, offset: 0, ended: false }, state);
+      const next = withHistoryPush({
+        ...state,
+        step: "refine_and_show",
+        lastQuery: text,
+        offset: 0,
+        ended: false
+      }, state);
 
       return {
         state: next,
@@ -858,7 +1135,15 @@ export function handleAction(state, action) {
       const msg = zh
         ? "没有更多匹配结果了。你可以返回并换一个场景，或者换一个主题。"
         : "No more matched results. You can go back and try another scenario, or switch topic.";
-      return { state, message: { role: "assistant", text: msg, cards: [], quickReplies: baseNavQuickReplies(lang) } };
+      return {
+        state,
+        message: {
+          role: "assistant",
+          text: msg,
+          cards: [],
+          quickReplies: baseNavQuickReplies(lang)
+        }
+      };
     }
 
     default:
