@@ -20,14 +20,17 @@ const STOPWORDS = new Set([
 ]);
 
 const SYNONYMS = [
-  { re: /\b(financial aid|cash help|money help|no money|broke|bills? help|overdue bills?|arrears|low income|debt|cost of living)\b/i, norm: "financial aid" },
+  {
+    re: /\b(financial aid|cash help|money help|no money|broke|bills? help|overdue bills?|arrears|low income|debt|cost of living|daily expenses?|living expenses?|basic expenses?|monthly expenses?|cover my expenses?|pay my expenses?|pay my bills?|cannot afford (my )?expenses?|can't afford (my )?expenses?|money problems?|financial stress)\b/i,
+    norm: "financial aid"
+  },
   { re: /\b(housing grant|rental support|rent help|rent problem|rent arrears|cannot pay rent|can't pay rent|no place to stay|nowhere to stay|eviction|evicted|being kicked out|homeless|rough sleeping|shelter|temporary shelter|couch surfing|sleeping outside)\b/i, norm: "housing" },
   { re: /\b(stressed|stress|overwhelmed|anxious|anxiety|panic|panic attack|burnt out|burned out|can't cope|cannot cope|hopeless|depressed|depression|insomnia|can't sleep|cannot sleep|sleepless)\b/i, norm: "mental_support" },
   { re: /\b(healthcare|medical|sick|ill|clinic|doctor|gp|polyclinic|medicine|medication|dental)\b/i, norm: "medical" },
   { re: /\b(hospital bill|ward|a&e|emergency room|cannot afford hospital|cant afford hospital)\b/i, norm: "hospital bill" },
   { re: /\b(medical subsidy|clinic subsidy|medifund|chas|medisave|medishield)\b/i, norm: "medical" },
 
-  { re: /(经济援助|现金补助|没钱|生活费|账单|欠费|补贴|发放|低收入|困难|开销)/, norm: "financial aid" },
+  { re: /(经济援助|现金补助|没钱|生活费|日常开销|基本开销|每月开销|账单|欠费|补贴|发放|低收入|困难|开销|付不起生活费|付不起开销|钱不够|经济压力)/, norm: "financial aid" },
   { re: /(住房|租房|房租|租金补贴|被驱逐|驱逐通知|没地方住|无家可归|收容|露宿|临时安置|过渡住房)/, norm: "housing" },
   { re: /(压力大|很焦虑|焦虑|崩溃|扛不住|顶不住|情绪低落|抑郁|绝望|失眠|睡不着|恐慌|惊恐|心慌|呼吸不过来|想哭)/, norm: "mental_support" },
   { re: /(健康|生病|看病|医疗|医药费|药|药费|太贵|诊所|医生|医院账单|住院费|急诊|A&E|社工)/i, norm: "medical" }
@@ -80,8 +83,8 @@ function normalizeText(raw = "") {
 
 function tokenize(raw = "") {
   const t = normalizeText(raw)
-      .toLowerCase()
-      .replace(/[^\p{L}\p{N}\s]+/gu, " ");
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s]+/gu, " ");
   const parts = t.split(/\s+/).filter(Boolean);
   return parts.filter(w => !STOPWORDS.has(w));
 }
@@ -115,11 +118,11 @@ function baseNavQuickReplies(lang, { includeRestart = true, includeEscalate = tr
 
 function topicQuickReplies(lang) {
   return makeQuickReplies(
-      DOMAIN.map(d => ({
-        id: `topic_${d.id}`,
-        label: langPick(lang, d.en, d.zh),
-        action: { type: "SET_DOMAIN", domainId: d.id }
-      }))
+    DOMAIN.map(d => ({
+      id: `topic_${d.id}`,
+      label: langPick(lang, d.en, d.zh),
+      action: { type: "SET_DOMAIN", domainId: d.id }
+    }))
   );
 }
 
@@ -242,16 +245,16 @@ function scenarioPresets(domainId, lang) {
 function piiWarningMessage(lang) {
   const zh = lang === "zh";
   const text = zh
-      ? "我可以帮你找官方信息，但请不要输入身份证号、银行卡号、地址或验证码等隐私信息。你可以点下方选项继续。"
-      : "I can help, but please don’t share personal data (ID/bank/address/OTP). You can tap options below to continue.";
-  return { role: "assistant", text, cards: [],...baseNavQuickReplies(lang) };
+    ? "我可以帮你找官方信息，但请不要输入身份证号、银行卡号、地址或验证码等隐私信息。你可以点下方选项继续。"
+    : "I can help, but please don’t share personal data (ID/bank/address/OTP). You can tap options below to continue.";
+  return { role: "assistant", text, cards: [], ...baseNavQuickReplies(lang) };
 }
 
 function sensitiveMessage(lang) {
   const zh = lang === "zh";
   const text = zh
-      ? "听起来你现在很难受。我不是紧急服务，但我想先确保你安全。\n\n如果你有立即危险或正在伤害自己，请立刻拨打新加坡紧急电话 995（救护）或 999（警方）。你也可以联系 SOS 1767（24小时）。\n\n你可以先点「心理」相关场景，我把可用资源列出来。"
-      : "It sounds really hard. I’m not an emergency service, but your safety matters.\n\nIf you’re in immediate danger, call 995 (ambulance) or 999 (police) in Singapore. You can also contact SOS 1767 (24/7).\n\nTap a Mental scenario and I’ll list available resources.";
+    ? "听起来你现在很难受。我不是紧急服务，但我想先确保你安全。\n\n如果你有立即危险或正在伤害自己，请立刻拨打新加坡紧急电话 995（救护）或 999（警方）。你也可以联系 SOS 1767（24小时）。\n\n你可以先点「心理」相关场景，我把可用资源列出来。"
+    : "It sounds really hard. I’m not an emergency service, but your safety matters.\n\nIf you’re in immediate danger, call 995 (ambulance) or 999 (police) in Singapore. You can also contact SOS 1767 (24/7).\n\nTap a Mental scenario and I’ll list available resources.";
   return {
     role: "assistant",
     text,
@@ -266,16 +269,16 @@ function sensitiveMessage(lang) {
 function urgentMessage(lang) {
   const zh = lang === "zh";
   const text = zh
-      ? "收到。你可以直接点一个主题或场景，我会优先给你可联系的官方入口/热线。"
-      : "Got it. Tap a topic or a scenario and I’ll prioritize official entry points / contacts.";
+    ? "收到。你可以直接点一个主题或场景，我会优先给你可联系的官方入口/热线。"
+    : "Got it. Tap a topic or a scenario and I’ll prioritize official entry points / contacts.";
   return { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)]) };
 }
 
 function outOfScopeMessage(lang) {
   const zh = lang === "zh";
   const text = zh
-      ? "我目前主要协助：新加坡社会服务相关的官方项目导航（钱、住房、医疗、就业、教育、长者、残障、法律、心理）。你可以点一个主题开始。"
-      : "Right now I focus on Singapore social-service guidance (Money, Home, Health, Jobs, School, Seniors, Disability, Legal, Mental). Tap a topic to start.";
+    ? "我目前主要协助：新加坡社会服务相关的官方项目导航（钱、住房、医疗、就业、教育、长者、残障、法律、心理）。你可以点一个主题开始。"
+    : "Right now I focus on Singapore social-service guidance (Money, Home, Health, Jobs, School, Seniors, Disability, Legal, Mental). Tap a topic to start.";
   return { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)]) };
 }
 
@@ -330,6 +333,30 @@ function detectDomainScores(raw) {
     }
   }
 
+  // Stronger financial triggers
+  if (/\b(daily expenses?|living expenses?|basic expenses?|monthly expenses?|cost of living|pay my bills?|cover my expenses?|financial stress|money problems?|rent\/living costs|living costs)\b/i.test(t)) {
+    score.financial += 3;
+  }
+  if (/(生活费|日常开销|基本开销|每月开销|经济压力|钱不够|付不起.*开销|付不起.*生活费|生活成本)/.test(raw)) {
+    score.financial += 3;
+  }
+
+  // Job loss + expenses should lean to financial first
+  if (
+    /\b(lost my job|job loss|laid off|unemployed|lost work|income dropped|reduced income)\b/i.test(t) &&
+    /\b(daily expenses?|living expenses?|basic expenses?|monthly expenses?|cover my expenses?|pay my bills?|cost of living|financial stress|money problems?)\b/i.test(t)
+  ) {
+    score.financial += 3;
+    score.employment += 1;
+  }
+  if (
+    /(失业|被裁员|没工作|收入下降|工时减少)/.test(raw) &&
+    /(生活费|日常开销|基本开销|每月开销|钱不够|经济压力|付不起.*开销|付不起.*生活费)/.test(raw)
+  ) {
+    score.financial += 3;
+    score.employment += 1;
+  }
+
   if (/\b(tonight|today|right now|immediately|urgent|emergency)\b/.test(t) || /(今晚|今天|马上|立刻|紧急|急需)/.test(raw)) {
     if (/no place to stay|nowhere to stay|sleeping outside|evicted|locked out/.test(t) || /(没地方住|露宿|被赶出来|被锁在门外)/.test(raw)) score.housing += 3;
     if (/a&e|emergency room|hospital bill|severe/.test(t) || /(急诊|医院账单|住院费)/.test(raw)) score.healthcare += 2;
@@ -361,8 +388,8 @@ function pickPrimaryDomain(scores) {
 
 function pickSecondaryDomain(scores, primary) {
   const entries = Object.entries(scores)
-      .filter(([k, v]) => k !== primary && v > 0)
-      .sort((a, b) => b[1] - a[1]);
+    .filter(([k, v]) => k !== primary && v > 0)
+    .sort((a, b) => b[1] - a[1]);
   return entries[0]?.[0] || null;
 }
 
@@ -398,9 +425,9 @@ function buildQueryTokensWithLite(rawQuery, lang) {
   const base = tokenize(rawQuery);
   const lite = analyzeUserIssue(rawQuery, lang === "zh" ? "zh" : "en");
   const liteWords = (lite?.keywords || [])
-      .map(x => (x || "").toLowerCase().trim())
-      .filter(Boolean)
-      .filter(w => !STOPWORDS.has(w));
+    .map(x => (x || "").toLowerCase().trim())
+    .filter(Boolean)
+    .filter(w => !STOPWORDS.has(w));
   return Array.from(new Set([...base, ...liteWords])).slice(0, 60);
 }
 
@@ -449,8 +476,8 @@ function retrieveAllSchemes({ query, domainId, lang }) {
 
   const run = (tokens) => {
     const scored = schemes
-        .map(s => ({ s, score: scoreScheme(tokens, s, domainId) }))
-        .sort((a, b) => b.score - a.score);
+      .map(s => ({ s, score: scoreScheme(tokens, s, domainId) }))
+      .sort((a, b) => b.score - a.score);
     return scored.filter(x => x.score > 0).slice(0, MAX_MATCHES_CAP);
   };
 
@@ -491,20 +518,20 @@ function formatSchemeToCardFull(s, lang) {
   const sec = s?.sections || {};
 
   const overview = zh
-      ? (s.summary_zh || sec?.overview?.zh || "")
-      : (s.summary_en || sec?.overview?.en || "");
+    ? (s.summary_zh || sec?.overview?.zh || "")
+    : (s.summary_en || sec?.overview?.en || "");
 
   const eligibility = zh
-      ? (s.eligibility_zh || sec?.eligibility?.zh || [])
-      : (s.eligibility_en || sec?.eligibility?.en || []);
+    ? (s.eligibility_zh || sec?.eligibility?.zh || [])
+    : (s.eligibility_en || sec?.eligibility?.en || []);
 
   const steps = zh
-      ? (s.how_to_apply_zh || sec?.steps?.zh || [])
-      : (s.how_to_apply_en || sec?.steps?.en || []);
+    ? (s.how_to_apply_zh || sec?.steps?.zh || [])
+    : (s.how_to_apply_en || sec?.steps?.en || []);
 
   const docs = zh
-      ? (s.docs_to_prepare_zh || [])
-      : (s.docs_to_prepare_en || []);
+    ? (s.docs_to_prepare_zh || [])
+    : (s.docs_to_prepare_en || []);
 
   const links = (s.official_links || s.links || []).filter(Boolean);
 
@@ -540,8 +567,8 @@ function buildResultsMessage({ lang, domainId, query, offset, pageSize }) {
 
   if (!total) {
     const text = zh
-        ? `在「${name}」下暂时没有匹配到具体项目。你可以换一个场景点选，或先从官方入口开始（可转介/查询）。`
-        : `No specific match under “${name}”. Try another scenario, or start from official entry points (they can refer you).`;
+      ? `在「${name}」下暂时没有匹配到具体项目。你可以换一个场景点选，或先从官方入口开始（可转介/查询）。`
+      : `No specific match under “${name}”. Try another scenario, or start from official entry points (they can refer you).`;
     return {
       role: "assistant",
       text,
@@ -555,8 +582,8 @@ function buildResultsMessage({ lang, domainId, query, offset, pageSize }) {
 
   const hint = usedUpsearch ? (zh ? "（已扩大搜索范围）" : "(broadened search applied)") : "";
   const text = zh
-      ? `我在「${name}」里根据「${query}」找到这些项目${hint}：`
-      : `Based on “${query}” under “${name}” ${hint}, here are relevant schemes:`;
+    ? `我在「${name}」里根据「${query}」找到这些项目${hint}：`
+    : `Based on “${query}” under “${name}” ${hint}, here are relevant schemes:`;
 
   const cards = page.map(s => formatSchemeToCardFull(s, lang));
 
@@ -605,8 +632,8 @@ function messageForState(state) {
     const d = domainById(state.domainId);
     const title = d ? langPick(lang, d.en, d.zh) : (zh ? "该主题" : "this topic");
     const text = zh
-        ? `${empathyStart(state.domainId, lang, state.secondaryDomainId)}\n\n好的，我们先从「${title}」开始。你先点一个常见情况，我就把相关项目完整信息列出来。`
-        : `${empathyStart(state.domainId, lang, state.secondaryDomainId)}\n\nOK — starting with “${title}”. Tap a common scenario and I’ll return full scheme details.`;
+      ? `${empathyStart(state.domainId, lang, state.secondaryDomainId)}\n\n好的，我们先从「${title}」开始。你先点一个常见情况，我就把相关项目完整信息列出来。`
+      : `${empathyStart(state.domainId, lang, state.secondaryDomainId)}\n\nOK — starting with “${title}”. Tap a common scenario and I’ll return full scheme details.`;
     return { role: "assistant", text, cards: [], quickReplies: scenarioPresets(state.domainId, lang) };
   }
 
@@ -640,8 +667,8 @@ export function initDialogState(lang = "en") {
 export function getInitialAssistantMessage(lang = "en") {
   const zh = lang === "zh";
   const text = zh
-      ? "你好！你可以直接说一句你的情况（例如：‘租金欠费 + 医药费太贵’）。如果一句话里同时有多个方向，我会先给你多个标签让你选要先展开哪个。\n\n你想先从哪一类开始？"
-      : "Hi! Describe your situation in one sentence (e.g., ‘rent arrears + medical bills’). If it matches multiple areas, I’ll show multiple tags so you can pick what to expand first.\n\nWhich area do you want to start with?";
+    ? "你好！你可以直接说一句你的情况（例如：‘租金欠费 + 医药费太贵’）。如果一句话里同时有多个方向，我会先给你多个标签让你选要先展开哪个。\n\n你想先从哪一类开始？"
+    : "Hi! Describe your situation in one sentence (e.g., ‘rent arrears + medical bills’). If it matches multiple areas, I’ll show multiple tags so you can pick what to expand first.\n\nWhich area do you want to start with?";
   return {
     role: "assistant",
     text,
@@ -662,7 +689,15 @@ export function handleUserText(state, userText) {
 
   if (!raw) {
     const text = zh ? "你可以点一个主题开始。" : "Please tap a topic to start.";
-    return { state, message: { role: "assistant", text, cards: [], quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)]) } };
+    return {
+      state,
+      message: {
+        role: "assistant",
+        text,
+        cards: [],
+        quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)])
+      }
+    };
   }
 
   if (containsAny(raw, PII_TRIGGERS)) return { state, message: piiWarningMessage(lang) };
@@ -683,7 +718,17 @@ export function handleUserText(state, userText) {
     scores[liteDomainId] = (scores[liteDomainId] || 0) + 2;
   }
 
-  const allDomains = pickAllDomains(scores, 2);
+  let allDomains = pickAllDomains(scores, 2);
+
+  const normalized = normalizeText(raw).toLowerCase();
+  const financialOverride =
+    /\b(daily expenses?|living expenses?|basic expenses?|monthly expenses?|cover my expenses?|pay my bills?|cost of living|financial stress|money problems?)\b/i.test(normalized) ||
+    /(生活费|日常开销|基本开销|每月开销|钱不够|经济压力|付不起.*开销|付不起.*生活费)/.test(raw);
+
+  if (financialOverride) {
+    allDomains = ["financial", ...allDomains.filter(d => d !== "financial")];
+  }
+
   const primary = allDomains[0] || pickPrimaryDomain(scores) || softGuessDomainId(raw) || null;
   const secondary = primary ? pickSecondaryDomain(scores, primary) : null;
 
@@ -692,8 +737,8 @@ export function handleUserText(state, userText) {
   if (shouldOfferMultiDomainChoice({ stateStep: state.step, currentDomainId: state.domainId, allDomains })) {
     const shown = allDomains.slice(0, 8);
     const text = zh
-        ? "我在你这句话里同时看到了几个可能的方向。你想先展开哪一个？"
-        : "Your message seems to match multiple areas. Which one do you want to expand first?";
+      ? "我在你这句话里同时看到了几个可能的方向。你想先展开哪一个？"
+      : "Your message seems to match multiple areas. Which one do you want to expand first?";
     const next = withHistoryPush({ ...state, step: "choose_domain", domainId: null, secondaryDomainId: null, lastQuery: raw, offset: 0 }, state);
     return { state: next, message: { role: "assistant", text, cards: [], quickReplies: domainChoiceQuickReplies(shown, lang) } };
   }
@@ -712,14 +757,30 @@ export function handleUserText(state, userText) {
   }
 
   if (state.step === "choose_focus") {
-    // User typed after choosing a domain → interpret as query and show full results
     const next = withHistoryPush({ ...state, step: "refine_and_show", lastQuery: raw, offset: 0 }, state);
-    return { state: next, message: buildResultsMessage({ lang, domainId: next.domainId, query: next.lastQuery, offset: 0, pageSize: next.pageSize }) };
+    return {
+      state: next,
+      message: buildResultsMessage({
+        lang,
+        domainId: next.domainId,
+        query: next.lastQuery,
+        offset: 0,
+        pageSize: next.pageSize
+      })
+    };
   }
 
-  // Already in results → new query search within current domain
   const next = withHistoryPush({ ...state, step: "refine_and_show", lastQuery: raw, offset: 0 }, state);
-  return { state: next, message: buildResultsMessage({ lang, domainId: next.domainId, query: next.lastQuery, offset: 0, pageSize: next.pageSize }) };
+  return {
+    state: next,
+    message: buildResultsMessage({
+      lang,
+      domainId: next.domainId,
+      query: next.lastQuery,
+      offset: 0,
+      pageSize: next.pageSize
+    })
+  };
 }
 
 export function handleAction(state, action) {
@@ -778,8 +839,8 @@ export function handleAction(state, action) {
     case "MORE": {
       if (state.step !== "refine_and_show") return { state, message: null };
       const next = withHistoryPush(
-          { ...state, offset: (state.offset || 0) + (state.pageSize || DEFAULT_PAGE_SIZE) },
-          state
+        { ...state, offset: (state.offset || 0) + (state.pageSize || DEFAULT_PAGE_SIZE) },
+        state
       );
       return {
         state: next,
@@ -795,8 +856,8 @@ export function handleAction(state, action) {
 
     case "NO_MORE": {
       const msg = zh
-          ? "没有更多匹配结果了。你可以返回并换一个场景，或者换一个主题。"
-          : "No more matched results. You can go back and try another scenario, or switch topic.";
+        ? "没有更多匹配结果了。你可以返回并换一个场景，或者换一个主题。"
+        : "No more matched results. You can go back and try another scenario, or switch topic.";
       return { state, message: { role: "assistant", text: msg, cards: [], quickReplies: baseNavQuickReplies(lang) } };
     }
 
