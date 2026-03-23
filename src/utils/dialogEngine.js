@@ -1,7 +1,16 @@
 /*
 Dialog engine overview
-Flow: guardrails → detect domain(s) → (if multi) ask user to pick one → scenario tabs → show matched schemes (each card returns full info: Overview + Eligibility + Steps).
-UI: Restart is shown; End is not shown. Back returns to previous step via history stack.
+Flow:
+- guardrails
+- direct scenario routing for strong cases
+- detect domain(s)
+- if multi-domain: user confirms the most relevant 1–2 domains
+- search starts with original input + confirmed domains
+- otherwise normal scenario flow / result flow
+
+UI:
+- Restart is shown; End is not shown
+- Back returns to previous step via history stack
 */
 
 import kb from "../data/sg_services_kb_updated.json";
@@ -10,6 +19,7 @@ import { analyzeUserIssue } from "./nlpLite";
 const DEFAULT_PAGE_SIZE = 3;
 const MAX_MATCHES_CAP = 80;
 const HISTORY_CAP = 20;
+const MAX_CONFIRMED_DOMAINS = 2;
 
 const STOPWORDS = new Set([
   "the","a","an","to","for","and","or","of","in","on","at","is","are","am",
@@ -73,6 +83,18 @@ const PII_TRIGGERS = [
   /(银行卡|卡号|账号|银行账户|开户地址|详细地址|身份证|护照|密码|验证码)/
 ];
 
+const PROFANITY_TRIGGERS = [
+  /\b(fuck|fucking|shit|bitch|asshole|wtf|stfu|damn)\b/i,
+  /(操|傻逼|妈的|靠北|草泥马|他妈的|滚)/
+];
+
+const LOW_INFO_PATTERNS = [
+  /^[\W_]+$/i,
+  /^[a-zA-Z]{1,2}$/i,
+  /^\d+$/i,
+  /^(ok|okay|yes|no|lol|haha|hhh|umm|uhh|test|hello|hi)$/i
+];
+
 const DOMAIN = [
   { id: "financial",  en: "Money",      zh: "钱" },
   { id: "housing",    en: "Home",       zh: "住房" },
@@ -111,6 +133,33 @@ function containsAny(raw, regexList) {
   return regexList.some(re => re.test(raw));
 }
 
+function isLowInformationInput(raw = "") {
+  const text = (raw || "").trim();
+  if (!text) return true;
+  if (LOW_INFO_PATTERNS.some(re => re.test(text))) return true;
+
+  const normalized = normalizeText(text).toLowerCase();
+  const tokens = tokenize(normalized);
+
+  if (tokens.length === 0) return true;
+  if (tokens.length === 1 && PROFANITY_TRIGGERS.some(re => re.test(text))) return true;
+
+  return false;
+}
+
+function invalidInputMessage(lang) {
+  const zh = lang === "zh";
+  const text = zh
+    ? "我暂时没法把这句话匹配到明确的求助需求。你可以换一种更具体的说法，例如“房租交不起”或“最近失业了生活费不够”，或者先点下面的主题标签。"
+    : "I couldn’t match that to a clear support need. Try describing your situation in a short phrase, such as “I can’t pay my rent” or “I recently lost my job and I’m short on living expenses”, or tap one of the topic tags below.";
+  return {
+    role: "assistant",
+    text,
+    cards: [],
+    quickReplies: makeQuickReplies([...topicQuickReplies(lang), ...baseNavQuickReplies(lang)])
+  };
+}
+
 function domainById(id) {
   return DOMAIN.find(d => d.id === id) || null;
 }
@@ -125,6 +174,14 @@ function restartQuickReply(lang) {
 
 function escalateQuickReply(lang) {
   return { id: "escalate", label: lang === "zh" ? "转人工" : "Human Agent", action: { type: "ESCALATE" } };
+}
+
+function searchConfirmedDomainsQuickReply(lang) {
+  return {
+    id: "search_confirmed_domains",
+    label: lang === "zh" ? "开始搜索" : "Search with selected area(s)",
+    action: { type: "SEARCH_CONFIRMED_DOMAINS" }
+  };
 }
 
 function baseNavQuickReplies(lang, { includeRestart = true, includeEscalate = true } = {}) {
@@ -144,16 +201,26 @@ function topicQuickReplies(lang) {
   );
 }
 
-function domainChoiceQuickReplies(domainIds, lang) {
+function domainChoiceQuickReplies(domainIds, lang, selectedDomains = []) {
+  const selected = Array.isArray(selectedDomains) ? selectedDomains : [];
   const picks = (domainIds || []).slice(0, 8).map(id => {
     const d = domainById(id);
+    const isSelected = selected.includes(id);
     return {
       id: `pick_${id}`,
-      label: d ? langPick(lang, d.en, d.zh) : id,
-      action: { type: "SET_DOMAIN", domainId: id }
+      label: `${isSelected ? "✓ " : ""}${d ? langPick(lang, d.en, d.zh) : id}`,
+      action: { type: "TOGGLE_CONFIRMED_DOMAIN", domainId: id }
     };
   });
-  return makeQuickReplies([...picks, ...baseNavQuickReplies(lang)]);
+
+  const actions = [];
+  if (selected.length >= 1) actions.push(searchConfirmedDomainsQuickReply(lang));
+
+  return makeQuickReplies([
+    ...picks,
+    ...actions,
+    ...baseNavQuickReplies(lang)
+  ]);
 }
 
 function scenarioPresets(domainId, lang) {
@@ -268,12 +335,7 @@ function piiWarningMessage(lang) {
   const text = zh
     ? "我可以帮你找官方信息，但请不要输入身份证号、银行卡号、地址或验证码等隐私信息。你可以点下方选项继续。"
     : "I can help, but please don’t share personal data (ID/bank/address/OTP). You can tap options below to continue.";
-  return {
-    role: "assistant",
-    text,
-    cards: [],
-    quickReplies: baseNavQuickReplies(lang)
-  };
+  return { role: "assistant", text, cards: [], quickReplies: baseNavQuickReplies(lang) };
 }
 
 function sensitiveMessage(lang) {
@@ -369,7 +431,6 @@ function detectDomainScores(raw) {
     }
   }
 
-  // stronger financial triggers
   if (/\b(daily expenses?|living expenses?|basic expenses?|monthly expenses?|cost of living|pay my bills?|cover my expenses?|financial stress|money problems?|rent\/living costs|living costs)\b/i.test(t)) {
     score.financial += 3;
   }
@@ -377,7 +438,6 @@ function detectDomainScores(raw) {
     score.financial += 3;
   }
 
-  // job-loss + expenses should lean financial first
   if (
     /\b(lost my job|job loss|laid off|unemployed|lost work|income dropped|reduced income)\b/i.test(t) &&
     /\b(daily expenses?|living expenses?|basic expenses?|monthly expenses?|cover my expenses?|pay my bills?|cost of living|financial stress|money problems?)\b/i.test(t)
@@ -393,7 +453,6 @@ function detectDomainScores(raw) {
     score.employment += 1;
   }
 
-  // rent + living cost tends to financial + housing
   if (
     /\b(rent arrears?|can't pay rent|cannot pay rent|rent problem|eviction notice)\b/i.test(t) &&
     /\b(daily expenses?|living expenses?|cost of living|pay my bills?|money problems?)\b/i.test(t)
@@ -406,7 +465,6 @@ function detectDomainScores(raw) {
     score.financial += 3;
   }
 
-  // children + money -> financial/education
   if (
     /\b(childcare|school fees|student care|children|kid|kids)\b/i.test(t) &&
     /\b(low income|daily expenses?|financial aid|money problems?|cost of living)\b/i.test(t)
@@ -419,7 +477,6 @@ function detectDomainScores(raw) {
     score.education += 2;
   }
 
-  // seniors + money
   if (
     /\b(parent|parents|elderly|senior|older adult|caregiver)\b/i.test(t) &&
     /\b(financial aid|living expenses?|money problems?|cost of living)\b/i.test(t)
@@ -432,7 +489,6 @@ function detectDomainScores(raw) {
     score.seniors += 2;
   }
 
-  // hospital bill
   if (/\b(hospital bill|hospital bills|medical bill|medical bills|cannot afford hospital|cant afford hospital)\b/i.test(t)) {
     score.healthcare += 4;
   }
@@ -440,11 +496,17 @@ function detectDomainScores(raw) {
     score.healthcare += 4;
   }
 
-  // mental-health stronger triggers
-  if (/\b(anxiety|anxious|insomnia|can't sleep|cannot sleep|overwhelmed|burnt out|burned out|panic)\b/i.test(t)) {
+  if (/\b(anxiety|anxious|insomnia|can't sleep|cannot sleep|panic|panic attack)\b/i.test(t)) {
     score.mental += 4;
   }
-  if (/(焦虑|失眠|睡不着|压力大|崩溃|恐慌|惊恐)/.test(raw)) {
+  if (/(焦虑|失眠|睡不着|惊恐|恐慌)/.test(raw)) {
+    score.mental += 4;
+  }
+
+  if (/\b(overwhelmed|burnt out|burned out|too much stress|cannot cope|can't cope)\b/i.test(t)) {
+    score.mental += 4;
+  }
+  if (/(压力大|崩溃|扛不住|顶不住|撑不住)/.test(raw)) {
     score.mental += 4;
   }
 
@@ -509,11 +571,20 @@ function softGuessDomainId(raw) {
   return best.score >= 2 ? best.id : null;
 }
 
-function shouldOfferMultiDomainChoice({ stateStep, currentDomainId, allDomains }) {
-  if (!allDomains || allDomains.length < 2) return false;
-  if (stateStep === "choose_domain") return true;
-  if (!currentDomainId) return true;
-  return !allDomains.includes(currentDomainId);
+function isClearlyIrrelevantInput(raw, scores) {
+  const text = (raw || "").trim();
+  if (!text) return true;
+  if (containsAny(text, PROFANITY_TRIGGERS)) return true;
+  if (isLowInformationInput(text)) return true;
+
+  const normalized = normalizeText(text).toLowerCase();
+  const tokens = tokenize(normalized);
+  const positiveScores = Object.values(scores).filter(v => v > 0);
+  const maxScore = positiveScores.length ? Math.max(...positiveScores) : 0;
+
+  if (tokens.length <= 1 && maxScore === 0) return true;
+
+  return false;
 }
 
 function buildQueryTokensWithLite(rawQuery, lang) {
@@ -565,27 +636,38 @@ function domainSynonymsTokens(domainId, lang) {
   return tokenize(list.join(" "));
 }
 
-function retrieveAllSchemes({ query, domainId, lang }) {
+function retrieveSchemesForOneDomain({ query, domainId, lang }) {
   const tokens0 = buildQueryTokensWithLite(query, lang);
   const schemes = kb?.schemes || [];
 
   const run = (tokens) => {
     const scored = schemes
-      .map(s => ({ s, score: scoreScheme(tokens, s, domainId) }))
+      .map(s => ({ s, score: scoreScheme(tokens, s, domainId), domainId }))
       .sort((a, b) => b.score - a.score);
     return scored.filter(x => x.score > 0).slice(0, MAX_MATCHES_CAP);
   };
 
   let matched = run(tokens0);
+  let usedUpsearch = false;
 
   if (matched.length === 0) {
     const broaden = domainSynonymsTokens(domainId, lang);
     const tokens1 = Array.from(new Set([...tokens0, ...broaden]));
     matched = run(tokens1);
-    return { matched, usedUpsearch: true };
+    usedUpsearch = true;
   }
 
-  return { matched, usedUpsearch: false };
+  return { matched, usedUpsearch };
+}
+
+function dedupeScoredSchemes(scoredItems) {
+  const seen = new Map();
+  for (const item of scoredItems) {
+    const key = `${item.s?.name_en || ""}|${item.s?.name_zh || ""}|${item.s?.domain_id || ""}`;
+    const prev = seen.get(key);
+    if (!prev || item.score > prev.score) seen.set(key, item);
+  }
+  return Array.from(seen.values()).sort((a, b) => b.score - a.score);
 }
 
 function entryPointsCards(lang) {
@@ -651,33 +733,58 @@ function formatSchemeToCardFull(s, lang) {
   };
 }
 
-function buildResultsMessage({ lang, domainId, query, offset, pageSize }) {
+function buildResultsMessage({ lang, domainId, query, offset, pageSize, secondaryDomainId = null }) {
   const zh = lang === "zh";
-  const d = domainById(domainId);
-  const name = d ? langPick(lang, d.en, d.zh) : (zh ? "该主题" : "this topic");
+  const d1 = domainById(domainId);
+  const d2 = secondaryDomainId ? domainById(secondaryDomainId) : null;
 
-  const { matched, usedUpsearch } = retrieveAllSchemes({ query, domainId, lang });
-  const total = matched.length;
+  const name1 = d1 ? langPick(lang, d1.en, d1.zh) : (zh ? "该主题" : "this topic");
+  const name2 = d2 ? langPick(lang, d2.en, d2.zh) : null;
+
+  let combinedMatched = [];
+  let usedUpsearch = false;
+
+  const r1 = retrieveSchemesForOneDomain({ query, domainId, lang });
+  combinedMatched.push(...r1.matched);
+  usedUpsearch = usedUpsearch || r1.usedUpsearch;
+
+  if (secondaryDomainId) {
+    const r2 = retrieveSchemesForOneDomain({ query, domainId: secondaryDomainId, lang });
+    combinedMatched.push(...r2.matched);
+    usedUpsearch = usedUpsearch || r2.usedUpsearch;
+  }
+
+  combinedMatched = dedupeScoredSchemes(combinedMatched);
+  const total = combinedMatched.length;
 
   if (!total) {
-    const text = zh
-      ? `在「${name}」下暂时没有匹配到具体项目。你可以换一个场景点选，或先从官方入口开始（可转介/查询）。`
-      : `No specific match under “${name}”. Try another scenario, or start from official entry points (they can refer you).`;
+    const text = secondaryDomainId
+      ? (zh
+          ? `在「${name1} / ${name2}」下暂时没有匹配到具体项目。你可以换一种描述，或先从官方入口开始。`
+          : `No specific match under “${name1} / ${name2}”. Try another description, or start from official entry points.`)
+      : (zh
+          ? `在「${name1}」下暂时没有匹配到具体项目。你可以换一个场景点选，或先从官方入口开始（可转介/查询）。`
+          : `No specific match under “${name1}”. Try another scenario, or start from official entry points (they can refer you).`);
+
     return {
       role: "assistant",
       text,
       cards: entryPointsCards(lang),
-      quickReplies: scenarioPresets(domainId, lang)
+      quickReplies: secondaryDomainId ? baseNavQuickReplies(lang) : scenarioPresets(domainId, lang)
     };
   }
 
-  const page = matched.slice(offset, offset + pageSize).map(x => x.s);
+  const page = combinedMatched.slice(offset, offset + pageSize).map(x => x.s);
   const hasMore = offset + pageSize < total;
-
   const hint = usedUpsearch ? (zh ? "（已扩大搜索范围）" : "(broadened search applied)") : "";
-  const text = zh
-    ? `我在「${name}」里根据「${query}」找到这些项目${hint}：`
-    : `Based on “${query}” under “${name}” ${hint}, here are relevant schemes:`;
+
+  const text = secondaryDomainId
+    ? (zh
+        ? `我会结合你刚才的描述，并优先从「${name1} / ${name2}」这两个方向开始搜索${hint}：`
+        : `I’ll use your description and start searching mainly under “${name1} / ${name2}” ${hint}:`)
+    : (zh
+        ? `我在「${name1}」里根据「${query}」找到这些项目${hint}：`
+        : `Based on “${query}” under “${name1}” ${hint}, here are relevant schemes:`);
 
   const cards = page.map(s => formatSchemeToCardFull(s, lang));
 
@@ -703,7 +810,9 @@ function snapshotState(s) {
     lastQuery: s.lastQuery,
     offset: s.offset,
     pageSize: s.pageSize,
-    ended: s.ended
+    ended: s.ended,
+    candidateDomains: Array.isArray(s.candidateDomains) ? [...s.candidateDomains] : [],
+    confirmedDomains: Array.isArray(s.confirmedDomains) ? [...s.confirmedDomains] : []
   };
 }
 
@@ -725,6 +834,24 @@ function messageForState(state) {
 
   if (state.step === "choose_domain") return getInitialAssistantMessage(state.lang);
 
+  if (state.step === "confirm_domains") {
+    const lang = state.lang;
+    const zh = lang === "zh";
+    const candidates = Array.isArray(state.candidateDomains) ? state.candidateDomains : [];
+    const confirmed = Array.isArray(state.confirmedDomains) ? state.confirmedDomains : [];
+
+    const text = zh
+      ? `你这句话里可能涉及不止一个方向。请选择你觉得目前最相关的一个到两个领域，我会结合你刚才的描述，从这些方向开始搜索。${confirmed.length ? `（已选择 ${confirmed.length} 个）` : ""}`
+      : `Your message may involve more than one area. Please choose the one or two areas that feel most relevant right now, and I’ll use your description together with them to start searching.${confirmed.length ? ` (${confirmed.length} selected)` : ""}`;
+
+    return {
+      role: "assistant",
+      text,
+      cards: [],
+      quickReplies: domainChoiceQuickReplies(candidates, lang, confirmed)
+    };
+  }
+
   if (state.step === "choose_focus") {
     const lang = state.lang;
     const zh = lang === "zh";
@@ -740,6 +867,7 @@ function messageForState(state) {
     return buildResultsMessage({
       lang: state.lang,
       domainId: state.domainId,
+      secondaryDomainId: state.secondaryDomainId || null,
       query: state.lastQuery || "",
       offset: state.offset || 0,
       pageSize: state.pageSize || DEFAULT_PAGE_SIZE
@@ -859,7 +987,9 @@ export function initDialogState(lang = "en") {
     offset: 0,
     pageSize: DEFAULT_PAGE_SIZE,
     ended: false,
-    history: []
+    history: [],
+    candidateDomains: [],
+    confirmedDomains: []
   };
 }
 
@@ -904,6 +1034,10 @@ export function handleUserText(state, userText) {
 
   if (containsAny(raw, PII_TRIGGERS)) return { state, message: piiWarningMessage(lang) };
 
+  if (containsAny(raw, PROFANITY_TRIGGERS) || isLowInformationInput(raw)) {
+    return { state, message: invalidInputMessage(lang) };
+  }
+
   if (containsAny(raw, SENSITIVE_TRIGGERS)) {
     const next = withHistoryPush({
       ...state,
@@ -911,7 +1045,9 @@ export function handleUserText(state, userText) {
       domainId: null,
       secondaryDomainId: null,
       lastQuery: "",
-      offset: 0
+      offset: 0,
+      candidateDomains: [],
+      confirmedDomains: []
     }, state);
     return { state: next, message: sensitiveMessage(lang) };
   }
@@ -923,12 +1059,13 @@ export function handleUserText(state, userText) {
       domainId: null,
       secondaryDomainId: null,
       lastQuery: "",
-      offset: 0
+      offset: 0,
+      candidateDomains: [],
+      confirmedDomains: []
     }, state);
     return { state: next, message: urgentMessage(lang) };
   }
 
-  // direct scenario routing first
   const direct = detectDirectScenario(raw, lang);
   if (direct) {
     const next = withHistoryPush({
@@ -938,7 +1075,9 @@ export function handleUserText(state, userText) {
       secondaryDomainId: direct.secondaryDomainId || null,
       lastQuery: direct.scenarioQuery,
       offset: 0,
-      ended: false
+      ended: false,
+      candidateDomains: [],
+      confirmedDomains: []
     }, state);
 
     return {
@@ -946,6 +1085,7 @@ export function handleUserText(state, userText) {
       message: buildResultsMessage({
         lang,
         domainId: next.domainId,
+        secondaryDomainId: next.secondaryDomainId,
         query: next.lastQuery,
         offset: 0,
         pageSize: next.pageSize
@@ -959,6 +1099,10 @@ export function handleUserText(state, userText) {
   const scores = detectDomainScores(raw);
   if (liteDomainId && (lite?.confidence ?? 0) >= 0.45) {
     scores[liteDomainId] = (scores[liteDomainId] || 0) + 2;
+  }
+
+  if (isClearlyIrrelevantInput(raw, scores)) {
+    return { state, message: invalidInputMessage(lang) };
   }
 
   let allDomains = pickAllDomains(scores, 2);
@@ -979,28 +1123,19 @@ export function handleUserText(state, userText) {
     return { state, message: outOfScopeMessage(lang) };
   }
 
-  if (shouldOfferMultiDomainChoice({ stateStep: state.step, currentDomainId: state.domainId, allDomains })) {
-    const shown = allDomains.slice(0, 8);
-    const text = zh
-      ? "我在你这句话里同时看到了几个可能的方向。你想先展开哪一个？"
-      : "Your message seems to match multiple areas. Which one do you want to expand first?";
+  if (allDomains && allDomains.length >= 2) {
     const next = withHistoryPush({
       ...state,
-      step: "choose_domain",
+      step: "confirm_domains",
       domainId: null,
       secondaryDomainId: null,
       lastQuery: raw,
-      offset: 0
+      offset: 0,
+      candidateDomains: allDomains.slice(0, 8),
+      confirmedDomains: []
     }, state);
-    return {
-      state: next,
-      message: {
-        role: "assistant",
-        text,
-        cards: [],
-        quickReplies: domainChoiceQuickReplies(shown, lang)
-      }
-    };
+
+    return { state: next, message: messageForState(next) };
   }
 
   if (state.step === "choose_domain") {
@@ -1010,7 +1145,9 @@ export function handleUserText(state, userText) {
       domainId: primary,
       secondaryDomainId: secondary,
       lastQuery: raw,
-      offset: 0
+      offset: 0,
+      candidateDomains: [],
+      confirmedDomains: []
     }, state);
 
     return { state: next, message: messageForState(next) };
@@ -1021,13 +1158,17 @@ export function handleUserText(state, userText) {
       ...state,
       step: "refine_and_show",
       lastQuery: raw,
-      offset: 0
+      offset: 0,
+      candidateDomains: [],
+      confirmedDomains: []
     }, state);
+
     return {
       state: next,
       message: buildResultsMessage({
         lang,
         domainId: next.domainId,
+        secondaryDomainId: next.secondaryDomainId,
         query: next.lastQuery,
         offset: 0,
         pageSize: next.pageSize
@@ -1047,6 +1188,7 @@ export function handleUserText(state, userText) {
     message: buildResultsMessage({
       lang,
       domainId: next.domainId,
+      secondaryDomainId: next.secondaryDomainId,
       query: next.lastQuery,
       offset: 0,
       pageSize: next.pageSize
@@ -1076,7 +1218,84 @@ export function handleAction(state, action) {
       return { state: s, message: messageForState(s) };
     }
 
+    case "TOGGLE_CONFIRMED_DOMAIN": {
+      if (state.step !== "confirm_domains") return { state, message: null };
+
+      const current = Array.isArray(state.confirmedDomains) ? [...state.confirmedDomains] : [];
+      const id = action.domainId;
+      const exists = current.includes(id);
+
+      let nextConfirmed;
+      if (exists) {
+        nextConfirmed = current.filter(x => x !== id);
+      } else {
+        nextConfirmed = current.length >= MAX_CONFIRMED_DOMAINS
+          ? [...current.slice(0, MAX_CONFIRMED_DOMAINS - 1), id]
+          : [...current, id];
+      }
+
+      const next = {
+        ...state,
+        confirmedDomains: nextConfirmed
+      };
+
+      return { state: next, message: messageForState(next) };
+    }
+
+    case "SEARCH_CONFIRMED_DOMAINS": {
+      if (state.step !== "confirm_domains") return { state, message: null };
+
+      const confirmed = Array.isArray(state.confirmedDomains) ? state.confirmedDomains : [];
+      if (!confirmed.length) return { state, message: messageForState(state) };
+
+      const next = withHistoryPush({
+        ...state,
+        step: "refine_and_show",
+        domainId: confirmed[0],
+        secondaryDomainId: confirmed[1] || null,
+        offset: 0,
+        ended: false
+      }, state);
+
+      return {
+        state: next,
+        message: buildResultsMessage({
+          lang,
+          domainId: next.domainId,
+          secondaryDomainId: next.secondaryDomainId,
+          query: next.lastQuery,
+          offset: 0,
+          pageSize: next.pageSize
+        })
+      };
+    }
+
     case "SET_DOMAIN": {
+      const hasExistingQuery = !!(state.lastQuery && state.lastQuery.trim());
+
+      if (state.step === "choose_domain" && hasExistingQuery) {
+        const next = withHistoryPush({
+          ...state,
+          step: "refine_and_show",
+          domainId: action.domainId,
+          secondaryDomainId: null,
+          offset: 0,
+          ended: false
+        }, state);
+
+        return {
+          state: next,
+          message: buildResultsMessage({
+            lang,
+            domainId: next.domainId,
+            secondaryDomainId: next.secondaryDomainId,
+            query: next.lastQuery,
+            offset: 0,
+            pageSize: next.pageSize
+          })
+        };
+      }
+
       const next = withHistoryPush({
         ...state,
         step: "choose_focus",
@@ -1084,8 +1303,11 @@ export function handleAction(state, action) {
         secondaryDomainId: null,
         lastQuery: "",
         offset: 0,
-        ended: false
+        ended: false,
+        candidateDomains: [],
+        confirmedDomains: []
       }, state);
+
       return { state: next, message: messageForState(next) };
     }
 
@@ -1098,7 +1320,9 @@ export function handleAction(state, action) {
         step: "refine_and_show",
         lastQuery: text,
         offset: 0,
-        ended: false
+        ended: false,
+        candidateDomains: [],
+        confirmedDomains: []
       }, state);
 
       return {
@@ -1106,6 +1330,7 @@ export function handleAction(state, action) {
         message: buildResultsMessage({
           lang,
           domainId: next.domainId,
+          secondaryDomainId: next.secondaryDomainId,
           query: next.lastQuery,
           offset: next.offset,
           pageSize: next.pageSize
@@ -1115,15 +1340,18 @@ export function handleAction(state, action) {
 
     case "MORE": {
       if (state.step !== "refine_and_show") return { state, message: null };
+
       const next = withHistoryPush(
         { ...state, offset: (state.offset || 0) + (state.pageSize || DEFAULT_PAGE_SIZE) },
         state
       );
+
       return {
         state: next,
         message: buildResultsMessage({
           lang,
           domainId: next.domainId,
+          secondaryDomainId: next.secondaryDomainId,
           query: next.lastQuery,
           offset: next.offset,
           pageSize: next.pageSize
@@ -1135,6 +1363,7 @@ export function handleAction(state, action) {
       const msg = zh
         ? "没有更多匹配结果了。你可以返回并换一个场景，或者换一个主题。"
         : "No more matched results. You can go back and try another scenario, or switch topic.";
+
       return {
         state,
         message: {
